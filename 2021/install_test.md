@@ -9,7 +9,6 @@ Click the menu, then type "terminal," then click the terminal icon.
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.terminal_commands }}
-* `source /opt/ros/melodic/setup.bash`
 * `roslaunch texas_robocamp test_world.launch`
 {{ site.data.alerts.terminal_commands_end }}
 
@@ -22,7 +21,6 @@ img/successful_install.png
 Open a new terminal by right clicking in the terminal window and clicking “open tab”.
 
 {{ site.data.alerts.terminal_commands }}
-* `source /opt/ros/melodic/setup.bash`
 * `rosrun texas_robocamp teleop_texbot`
 {{ site.data.alerts.terminal_commands_end }}
 
@@ -47,6 +45,7 @@ Congrats! You are set up and configured for camp!
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.important }}
-If you had problems and could not complete the install, then please let us know *during the setup day on July 5.*
+If you had problems and could not complete the install, then please let us know *during the setup day on July 10.*
 {{ site.data.alerts.end }}
 
+{{=}}{{=}}

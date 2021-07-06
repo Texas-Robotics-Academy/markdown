@@ -33,10 +33,8 @@ img/grub_menu.jpg
 {{ site.data.alerts.img_50_end }}
 
 {{ site.data.alerts.note }}
-The Thumb Drive comes with all of the Texas Robotics Academy software pre-installed.
-
-You still need to *Test Your Installation* to assure that all features perform properly on your computer.
+You will need to follow the instructions from "Install the Robotics Academy Software" to set up your thumb drive. This will install software to an operating system running on the thumb drive. It will not install it to the hard drive of your computer.
 {{ site.data.alerts.end }}
 
 
-{{-}}Test Your Installation, install_test, Next, you should go to{{-}}
+{{-}}Install the Robotics Academy Software, install_academy, Next, you should go to{{-}}

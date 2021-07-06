@@ -22,11 +22,14 @@ If you would like to try this method. Click the link below.
 
 Virtual machines allow users to run one operating system from inside another operating system.
 
+Note, if you are running a new Mac with an M1 (ARM) chip, then you should follow the instructions for Parallels.
+
 {{ site.data.alerts.note }}
 You will need 20 GB of free hard drive space to use this method.
 {{ site.data.alerts.end }}
 
 {{-}}Running from a Virtual Machine (Mac), install_virtual_machine_mac, Try{{-}}
+{{-}}Running from a Virtual Machine (Mac/Parallels), install_virtual_machine_parallels, Try{{-}}
 {{-}}Running from a Virtual Machine (Windows or Linux), install_virtual_machine_win, Try{{-}}
 
 ## Native Ubuntu 18.04 Installation

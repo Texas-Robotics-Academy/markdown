@@ -1,7 +1,7 @@
 # Please follow these instructions
 
 {{ site.data.alerts.important }}
-Do these tasks *before* the technical inspection, on July 5, 2021.
+Do these tasks *before* the technical inspection, on July 10, 2021.
 {{ site.data.alerts.end }}
 
 1. Register on this website, using the link on the top right corner of the page.

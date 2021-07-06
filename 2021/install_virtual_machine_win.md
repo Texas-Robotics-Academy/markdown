@@ -6,8 +6,8 @@ The virtual machine that you will use is VMWare. It is available for free. Insta
 Installing with VMWare will require 20GB of free space on your hard drive.
 {{ site.data.alerts.end }}
 
-## Download Ubuntu 18.04 and VMWare
-1. Download Ubuntu 18.04.4 from https://releases.ubuntu.com/18.04.4/ubuntu-18.04.4-desktop-amd64.iso
+## Download Ubuntu 20.04 and VMWare
+1. Download Ubuntu 20.04.2 from https://releases.ubuntu.com/20.04/ubuntu-20.04.2.0-desktop-amd64.iso
     * This is a large file, and may take some time to download.
 2. Download and run the VMWare Installer and go through the installation prompts on the screen
     * Download VMWare Workstation Player 16.1.2 from https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=WKST-PLAYER-1612&productId=1039&rPId=66621
@@ -54,7 +54,7 @@ Installing with VMWare will require 20GB of free space on your hard drive.
     {{ site.data.alerts.end }}
 
     {{ site.data.alerts.note }}
-    Upon first booting your Virtual Machine, VMWare will automatically install Ubuntu 18.04.
+    Upon first booting your Virtual Machine, VMWare will automatically install Ubuntu 20.04.
     {{ site.data.alerts.end }}
 
     {{ site.data.alerts.note }}

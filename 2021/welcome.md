@@ -1,7 +1,7 @@
 # Please follow these instructions
 
 {{ site.data.alerts.important }}
-Do these tasks *before* the technical inspection, on July 5, 2021.
+Do these tasks *before* the technical inspection, on July 10, 2021.
 
 If you run into problems, please email texas.robotics.academy@gmail.com
 {{ site.data.alerts.end }}
