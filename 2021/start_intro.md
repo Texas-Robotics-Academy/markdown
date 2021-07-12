@@ -22,7 +22,7 @@ I know that you want to dive right in. I do too. Please stay engaged with the ic
     * The first button is used to request help in completing the exercise.
     * The second button is used to indicate that you have completed the exercise, and need to have your work checked by a counselor for correctness.
     * The third button doesn't work for you. Counselors use it to indicate that you have completed the exercise.
-{{+}}THIS IS A PLACEHOLDER{{+}}
+{{+}}DEMO 0, 0{{+}}
 7. You will have a counselor check your work at the end of each tutorial.
     * You may proceed to tutorials further along in the academy material while waiting for your work to be checked.
 8. If you need help, aside from the checkpoints, click "Raise Hand" at the top of the page.

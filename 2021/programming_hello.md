@@ -142,8 +142,6 @@ Remember, this is a relative path, so this literally tells the computer, "Run th
 Many of you will have problems right now, so, we'll synchronize to get everyone through their errors.
 {{ site.data.alerts.end }}
 
-{{+}}If you ever forget how to compile a C++ program, we've provided an example in the [documentation](docs.html) that you can always reference in the future.{{+}}
-
 ## Exercise 3.1:
 
 - Modify the Hello World program so that it prints, "Hello <Your Name>!"
