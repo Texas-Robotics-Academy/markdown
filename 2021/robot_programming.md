@@ -172,8 +172,6 @@ To run **your** code, you'll always do the **rosrun** command, which we also men
 rosrun 4_1 ex_4_1_1
 {{site.data.alerts.terminal_commands_end}}
 
-If you ever need a refresher on how all of this works, feel free to go back to the [documentation](docs.html)!
-
 ### Exercise 4.1.1
 
 - Write your first Hello World program on the robot!
