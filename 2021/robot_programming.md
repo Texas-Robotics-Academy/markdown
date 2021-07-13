@@ -15,7 +15,7 @@ To get us started, here's a simple, brief ROS program that is a sort of "empty" 
 ```
 #include <ros/ros.h>
 #include <unistd.h>
-#include "texas_robocamp/texbot_wrapper.h"
+#include "texas_robotics_academy/texbot_wrapper.h"
 
 int main(int argc, char **argv) {
     
@@ -155,7 +155,7 @@ roslaunch <package_name> <file_name>
 For the first few exercises, we'll be using the boxed world that we've built for you.
 
 {{site.data.alerts.terminal_commands}}
-roslaunch texas_robocamp box.launch
+roslaunch texas_robotics_academy box.launch
 {{site.data.alerts.terminal_commands_end}}
 
 Launch files aren't the only way to run a ROS program however; like we said earlier, they're actually launching smaller executables that are called ROS **nodes**. To launch a single node, do:
@@ -176,7 +176,7 @@ rosrun 4_1 ex_4_1_1
 
 - Write your first Hello World program on the robot!
 
-- Make this program say "Hello World!" on the first line in the LCD, and "Texas RoboCamp!" on the second line.
+- Make this program say "Hello World!" on the first line in the LCD, and "Texas Robotics Academy!" on the second line.
 
 ## Sleep
 
@@ -195,7 +195,7 @@ You'll want to use `usleep` whenever you want to keep a robot in a certain state
 
 In the ex_4_1_2.cpp file we have provided you, copy in your code from Exercise 4.1.1 and modify your program to:
 
-- Say: "Hello World!" on the first line in the LCD, and "Texas RoboCamp!" on the second line.
+- Say: "Hello World!" on the first line in the LCD, and "Texas Texas Robotics Academy!" on the second line.
 - Wait 2 seconds
 - Say: "Hook 'em" on the first line in the LCD, and "Horns!" on the second line.
 - Then repeat this in a loop, after waiting 2 seconds with "Hook 'em Horns!" displayed.
