@@ -187,14 +187,7 @@ In practice, you can compute your numerical integral by adding up your potential
 {{+}}Tutorial 7.1.5, 7_1_5{{+}}
 
 
-## Next Step
-
-Proceed to ["Race!"](/race.html)
-
-
-
-
-ke the potential calculated in Exercise 7.1.2 at your current time step, subtract the potential computed at the *previous* time step (a time step being one execution of your `loop` function) and arrive at the derivative that you want.
+Take the potential calculated in Exercise 7.1.2 at your current time step, subtract the potential computed at the *previous* time step (a time step being one execution of your `loop` function) and arrive at the derivative that you want.
 
 You now have 3 terms for your controller:
 - **Constant gain** (`K_c`).
