@@ -4,7 +4,7 @@ You have several options for installing the Texas RoboCamp software. *You only n
 
 1. A bootable thumb drive (which we are sending to you with everything pre-installed).
 2. A virtual machine running in your host operating system.
-3. A native Linux installation (either because you already run Ubuntu 18.04, or feel prepared to dual-boot your machine).
+3. A native Linux installation (either because you already run Ubuntu 18.04 or 20.04, or feel prepared to dual-boot your machine).
 
 {{ site.data.alerts.note }}
 You only need to choose *one* method of installing the Texas Robotics Academy software, but you *must* do one of these.
@@ -32,7 +32,7 @@ You will need 20 GB of free hard drive space to use this method.
 {{-}}Running from a Virtual Machine (Mac/Parallels), install_virtual_machine_parallels, Try{{-}}
 {{-}}Running from a Virtual Machine (Windows or Linux), install_virtual_machine_win, Try{{-}}
 
-## Native Ubuntu 18.04 Installation
+## Native Ubuntu 18.04 or 20.04 Installation
 
 If you are already familiar with Ubuntu Linux, then this is the simplest method, but note that you *will need root access to install the Texas Robotics Academy software*.
 
@@ -44,4 +44,4 @@ That means that if this is your parents' machine, you're going to need their hel
 
 If you are running a different version of Linux, then install a virtual machine to run Ubuntu 18.04 under, with the help of the system's administrator.
 
-{{-}}Running from Ubuntu 18.04, install_linux, Try{{-}}
+{{-}}Running from Ubuntu 18.04 or 20.04, install_linux, Try{{-}}

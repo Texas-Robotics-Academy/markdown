@@ -32,6 +32,12 @@ The answer is *NO.* Doing so will prevent the Texas Robotics Academy software fr
 img/grub_menu.jpg
 {{ site.data.alerts.img_50_end }}
 
+4. Once logged
+    * Type sudo -s
+    * Type cd /etc/apt
+    * Type gedit sources.list
+    * After every occurrence of "main restricted" add "universe multiverse" so what was "main restricted" now reads "main restricted universe multiverse"
+
 {{ site.data.alerts.note }}
 You will need to follow the instructions from "Install the Robotics Academy Software" to set up your thumb drive. This will install software to an operating system running on the thumb drive. It will not install it to the hard drive of your computer.
 {{ site.data.alerts.end }}

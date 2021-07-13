@@ -1,6 +1,6 @@
 # Install the Robotics Academy Software
 {{ site.data.alerts.note }}
-These instructions require for you to have Ubuntu 18.04 or 20.04 currently running.
+These instructions require for you to have Ubuntu 20.04 currently running. If you are running 18.04, get help from the instructor or a counselor, as there are slight differences.
 {{ site.data.alerts.end }}
 
 ## Installing ROS
@@ -29,10 +29,6 @@ These instructions require for you to have Ubuntu 18.04 or 20.04 currently runni
 * `sudo apt update`
 * `sudo apt upgrade -y`
 * `sudo apt install ros-noetic-desktop-full`
-
-**Setting up dependencies for ROS**
-* `sudo rosdep init`
-* `rosdep update`
 
 **Installing Visual Studio Code**
 * `sudo snap install --classic code`
@@ -66,6 +62,8 @@ These instructions require for you to have Ubuntu 18.04 or 20.04 currently runni
 * `catkin_init_workspace`
 * `git clone https://github.com/Texas-Robotics-Academy/texas_robotics_academy.git`
 * `cd ..`
+* `sudo rosdep init`
+* `rosdep update`
 * `catkin build`
 
 **Setting up your catkin workspace to start every time you log in**

@@ -9,7 +9,7 @@ Click the menu, then type "terminal," then click the terminal icon.
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.terminal_commands }}
-* `roslaunch texas_robocamp test_world.launch`
+* `roslaunch texas_robotics_academy test_world.launch`
 {{ site.data.alerts.terminal_commands_end }}
 
 You should see two windows appear. One will have the UT logo and our simulated robot in the middle.
@@ -21,8 +21,14 @@ img/successful_install.png
 Open a new terminal by right clicking in the terminal window and clicking “open tab”.
 
 {{ site.data.alerts.terminal_commands }}
-* `rosrun texas_robocamp teleop_texbot`
+* `rosrun texas_robotics_academy teleop_texbot`
 {{ site.data.alerts.terminal_commands_end }}
+
+{{ site.data.alerts.note }}
+roslaunch and rosrun may not find "test_world.launch" or "teleop_texbot."
+
+If this is the case, cd (change directory) into the "catkin_ws" directory and type "source devel/setup.bash"
+{{ site.data.alerts.end }}
 
 1. Use the keys listed on the screen to drive the robot around. (You must have this terminal selected for them to work.)
 2. At the bottom of the simulator, you will see a bar with a bunch of numbers. Write down the number next to the FPS label
