@@ -121,8 +121,4 @@ Want Ubuntu full-screen? Hit ctrl-alt-enter.
 Want it back in windowed mode? Do the same thing.
 {{ site.data.alerts.end }}
 
-{{ site.data.alerts.warning }}
-Ubuntu will ask you if you want to upgrade to 20.04. *DON'T DO THIS!!* ROS Melodic will not run under 20.04, and thus the robot simulator for the camp will not work.
-{{ site.data.alerts.end }}
-
 {{-}}Install the Robotics Academy Software, install_academy, Next, you should go to{{-}}

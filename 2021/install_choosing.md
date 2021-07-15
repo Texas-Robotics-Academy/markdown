@@ -1,6 +1,6 @@
 # Installing the Texas Robotics Academy Software
 
-You have several options for installing the Texas RoboCamp software. *You only need to set up one of these things.*
+You have several options for installing the Texas Robotics Academy software. *You only need to set up one of these things.*
 
 1. A bootable thumb drive (which we are sending to you with everything pre-installed).
 2. A virtual machine running in your host operating system.
