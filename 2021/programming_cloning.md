@@ -1,13 +1,10 @@
-# Using Git
+# Cloning the Exercises
 
-Git is a version control system.
+{{ site.data.alerts.note }}
+We won't really be exploding how git works for the academy, but we will use it to clone (think "download) the exercises for the camp.
+{{ site.data.alerts.end }}
 
-It allows multiple programmers to collaborate by synchronizing code across their machines.
-
-We will be using git to provide the C++ and robot programming exercises. 
-
-1. Clone the C++ exercises.
-
+1. Run the following git command to get you C++ exercises.
 
 {{site.data.alerts.terminal_commands}}
 cd ~

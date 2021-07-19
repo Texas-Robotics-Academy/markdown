@@ -1,10 +1,8 @@
 # Simple Math and User Input
 
-An object that weighs 1.0 pounds on Earth would weigh 0.1654 pounds on the moon.
-
 In C++, multiplication is represented with the * symbol.
 
-The program will save all the numbers it needs in **variables**. A variable stores a number or a mathematical formula.
+C++ stores values in **variables**.
 
 For example:
 
@@ -41,11 +39,11 @@ Variable names cannot have spaces in them and cannot start with numbers.
 
 C++ requires types for variables.
 
-For example, a variable storing a number with a decimal should be a `float`, which stands for floating (decimal) point number.
+A variable storing a number with a decimal should be a `float`, which stands for floating (decimal) point number.
 
-Variables must be declared before they are used. Generally this is done by saying the variable **type** and then the names of all the variables that are of that type at the first line of the function.
+Variables must be declared before they are used. This is done by saying the variable **type** and then the name the variable.
 
-Here's a quick reference of types in C++:
+Here's a quick reference.
 
 Type    | Example
 --------|-------------
@@ -54,7 +52,7 @@ int	    | 4 or -134
 string	| "Hello World"
 bool	| true/false
 
-Let's write an algorithm for this conversion program together. Here's what we'll have it do:
+An object that weighs 1.0 pounds on Earth would weigh 0.1654 pounds on the moon. You will now write a short computer program which converts Earth weight to Moon weight.
 
 1. Save the conversion factor (0.1654) as the variable `conversionFactor`
 
@@ -147,7 +145,7 @@ Operator |	Operation
 
 When you divide two integers, the remainder of the two numbers is left out. This is called **truncation**.
 
-In integer division, `5 / 2` will give you 2, not 2.5. If you want the full value, you must use floats.
+In integer division, `5 / 2` will give you 2, not 2.5. If you want the full value, you must a float.
 
 The `%` (**modulus**) operator gives you the remainder of integer division.
 

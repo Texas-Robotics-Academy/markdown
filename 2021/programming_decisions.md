@@ -1,28 +1,18 @@
-# Decisions
-In this section, we're going to learn how to control the flow of a C++ program. Sometimes, you want your program to do one thing if certain conditions are met and to do another thing if other conditions are met. We make decisions and control the flow of the program using logical expressions and if-else statements.
+# If and Switch
 
-Earlier, we asked you how the `withdraw` function might be different from the `deposit` function for your `BankAccount` class. The difference is that you cannot withdraw more money than you have! 
+if-else statements enable the programmer to make a decision at a given point during the program’s operation.
 
-You might not know this, but most banks have a minimum balance requirement as well - if your account doesn't stay above the minimum balance, you get charged a fee.
-
-Here's how the `withdraw` function will work: The function receives an amount of money to withdraw. If the resulting balance would be less than zero, we print a message saying that this is an invalid amount of money to withdraw, and don't change the balance. If the amount to withdraw is less than the current balance, but would result in being less than the minimum balance requirement, we warn the user that they aren't meeting the requirement, and subtract a fee from their account. If the amount to withdraw is less than the current balance and still results in the account meeting the minimum balance requirement, we simply report the remaining balance.
+Before learning if-statements, we must learn logical operators. 
 
 ## Logical Operators
 
-In order to do this, we will need to test the amount being withdrawn by the user. Let's call the variable `request`, since they are requesting to withdraw money. We will want to see if the amount is greater than the current balance, and then store that as a variable:
+Logical operators are used to compare two different variables.
 
-```cpp
-isValidRequest = (accountBalance - request) > 0;
-```
+{{site.data.alerts.tip}}
+You cannot use logical operators to compare strings in C++!
+{{site.data.alerts.end}}
 
-In C++, the above statement can either be true or false, depending upon the values of `accountBalance` and `request`, so `isValidRequest` will either be true or false. A variable that is either true or false is called a **boolean**. 
-
-In C++, we can represent booleans in multiple ways: as an `int` type, or as a `bool` type. A boolean that is true displays as a 1, and a `boolean` that is false displays as a 0 when you print it out to the screen. 
-
-In our line of code above, if the value of `accountBalance - request` is 20, and you printed out `isValidRequest`, you would see a 1, because 20 is greater than 0 and thus the statement is true.
-
-The following chart shows all the logical operators, most of which should be familiar to you from math class:
-
+This chart shows the logical operators:
 
 | Logical Operator | Meaning             | Example of True Statement |
 |:---:|---|:---:|
@@ -36,206 +26,180 @@ The following chart shows all the logical operators, most of which should be fam
 
 The last two operations, `==` and `!=`, are called equivalency operators because they check if two things are exactly the same, or equivalent. For example, 9==9 is true because 9 is exactly the same as 9. Additionally, if we have a variable `myVar` and is set to 9, then `myVar==9` is true. However, 9=="nine" is false because an integer (9) is never exactly the same as a `string` ("nine"). 
 
-{{site.data.alerts.tip}}
-In general, you cannot use logical operators to compare strings at all in C++!
+The important thing to understand about logical operators is that they return a **bool**. So, if you wrote `5 < 9`, it would return **false**, and if you wrote `10 > 9`, it would return **true**. 
+
+## if-statements
+
+if-statements evaluate conditions. **if** something is true, do one thing; **else** do something else. 
+
+When we use if statements, we put the **conditional clause**, which is the logical expression we are checking, in parentheses after the word "if". Then we put all of the code that we want the computer to execute *if* the conditional clause is true inside of curly braces. After an `if`, we can have an `else if`, which works exactly the same as an `if` but is only checked by the computer when the if the first statement is false, or an `else`, which is the code that is executed if the `if` statement is false, or nothing.
+
+Here is an example of a simple if-statement use case:
+
+{{site.data.alerts.callout_code_div}}
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age = 0;
+    cout << "Enter your age:  ";
+    cin >> age;
+
+    if(age >= 20) {
+        cout << “You are more than 20 years old!” << endl;
+    } else if(age >= 13) {
+        cout << “Wow, you’re a teenager!” << endl;
+    } else {
+        cout << “You’ve still got a ways to go young Padawan” << endl;
+    }
+
+    return 0;
+}
+```
 {{site.data.alerts.end}}
-
-## If-Statements
-
-To test values and perform a set of instructions (or not) based on the result, we use **if statements**, which are used in programming exactly the same way we use it in real life. **If** something is true, we do one thing; **else** (otherwise) we do something else. To come back to the bank account program we described above, we could test whether `accountBalance - request` is greater than the minimum balance by using the following syntax:
-
-{{ site.data.alerts.callout_code_div }}
-```
-double newBalance = accountBalance - request;
-
-if (newBalance <= 0){
- return; // Don't withdraw anything, because the balance would be invalid
-}
-else{
-  accountBalance = newBalance; // Update the balance
-}
-```
-{{ site.data.alerts.end }}
-
-When we use if statements, we put the **conditional clause**, which is the logical expression we are checking or testing, in parentheses after the word "if". Then we put all of the code that we want the computer to execute *if* the conditional clause is true inside of curly braces. After an `if`, we can have: an `else if`, which works exactly the same as an `if` but is only checked by the computer when the if statement is false, or an `else`, which is the code that is executed if the `if` statement is false, or nothing.
 
 {{site.data.alerts.note}}
 Please ask questions if any of this explanation didn't make sense—-we are happy to explain in person.
 {{site.data.alerts.end}}
 
-We now know everything we need to be able to write the withdraw function. We will use an if-else pattern for this program, so we will first check if the remaining balance is greater than 0, and if that is false we will check if balance is greater than our minimum balance, and if that is also false, then we will update our balance.
+### Exercise 3.4.1:
 
-{{ site.data.alerts.callout_code_div }}
-```
-#include <iostream>
-using namespace std;
+- Write a short program, like the one from the example, in which the user enters the number of miles they drive to work. Tell the user if you think that they live "near," "far," or "very far" from their workplace using if statements.
 
-class BankAccount {
-  public:
-    float getAccountBalance() {
-      return accountBalance;
-    }
-
-    void deposit(float amount) {
-      accountBalance += amount;
-    }
-    
-    void withdraw(float request) {
-      double newBalance = accountBalance - request;
-
-      if (newBalance <= 0){
-        return; // Don't withdraw anything, because the balance would be invalid
-      }
-      else if(newBalance < minBalance) {
-        accountBalance = newBalance - fee; // Update the balance, but subtract a fee
-      }
-      else{
-        accountBalance = newBalance; // Update the balance
-      }
-
-    }
-
-    BankAccount() {
-      accountNumber = 0;
-      accountBalance = 0.0;
-      fee = 50.0;
-      minBalance = 100.0;
-      name = "";
-      address = "";
-    }
-
-  private:
-    int accountNumber;
-    float accountBalance;
-    string name;
-    string address;
-    float minBalance;
-    float fee;
-      
-};
-
-int main(){
-
-    float withdrawRequest;
-    BankAccount myAccount;
-    myAccount.deposit(1000.00);
-
-    cout << "Hello customer, please enter the amount you would like to withdraw: ";
-    cin >> withdrawRequest;
-
-    myAccount.withdraw(withdrawRequest);
-
-    cout << "Your remaining balance is : " << myAccount.getAccountBalance() << endl;
-    return 0;
-}
-```
-{{ site.data.alerts.end }}
-
-
-### Exercise 3.5.1:
-
-- Modify the `withdraw` function so that it prints out a separate message for each kind of withdraw case.
-
-For example, if the user attempts to withdraw more money than they have, you should probably let them know that you didn't change the balance. If a fee is applied, you might want to let the user know how much money the fee was, and what balance they should be maintaining.
-
-Thanks for enabling better communication!
-
-{{+}}Tutorial 3.5.1, 3_5_1{{+}}
+{{+}}Tutorial 3.4.1, 3_4_1{{+}}
 
 ## Nested if-statements
 
-You can also nest if-statements inside each other. For example, let's consider what happens if our account has enough money to make the withdraw request, but not enough money to cover the fee. We still don't want the user's account to be negative, so let's just say that in this case, we also don't let them withdraw their money:
+You can also nest if-statements inside each other to handle more complex scenarios. Here is an example:
 
-{{ site.data.alerts.callout_code_div }}
+{{site.data.alerts.callout_code_div}}
 ```
-   [...] // ignoring the beginning stuff
+#include <iostream>
+#include <string>
+using namespace std;
 
-    void withdraw(float request) {
-      double newBalance = accountBalance - request;
+int main() {
+    string username;
+    string password;
 
-      if (newBalance <= 0){
-        return; // Don't withdraw anything, because the balance would be invalid
-      }
-      else if(newBalance < minBalance) {
+    cout << “Enter username: “ << endl;
+    cin >> username;
+    cout << “Enter password: “ << endl;
+    cin >> password;
 
-        if(newBalance <= fee) { // They can't afford the fee
-          return; // Don't withdraw anything, because the balance would be negative
+    if(username.compare(“Bevo”) == 0) {
+        if(password.compare(“bot28”) == 0) {
+            cout << “You have successfully logged in!” << endl;
+        } else {
+            cout << “Incorrect password, please try again” << enld;
         }
-        else {
-          accountBalance = newBalance - fee; // Update the balance, but subtract a fee
-        }
-      }
-      else{
-        accountBalance = newBalance; // Update the balance
-      }
-
+    } else {
+        cout << “Incorrect username, please try again” << endl;
     }
 
-  [...]  //rest of the program
-```
-{{ site.data.alerts.end }}
-
-You can also check if two or more conditions are both true in the same if-statement. You do this by using **and operator** `&&`. So you can say,
-
-{{ site.data.alerts.callout_code_div }}
-```
-//true if both conditionals are true
-if ((newBalance < minBalance ) && (newBalance > fee)){
-   accountBalance = newBalance - fee;
+    return 0;
 }
 ```
-{{ site.data.alerts.end }}
+{{site.data.alerts.end}}
 
-You may have noticed that we have redundant behavior in our code now: we do nothing if `newBalance <= 0`, but we also do nothing if `newBalance <= fee`! But if the second statement is true, then the first statement `newBalance <= 0` is also true! We can modify our first conditional statement to only consider if `newBalance <= fee`.
+{{site.data.alerts.note}}
+Notice that we are using the function `compare()` to compare two strings. This is how string comparisons should be done in C++.
 
-We're almost done! There's one major problem with our code right now though. What happens if someone tries to `withdraw` a negative amount of money? They end up with more money! 
+If you would like to use this method in your program, be sure to include <string> in your program. 
+{{site.data.alerts.end}}
 
-To avoid this behavior, we will want to do nothing to the balance if our new balance is greater than the original balance. But, we also want to do nothing if the new balance is less than the fee. Since we have the same behavior for *either* condition, we can use the **or operator** `||` to check these conditions:
+## AND, OR, and NOT operators
 
-{{ site.data.alerts.callout_code_div }}
+AND and OR operators let us check two conditions in the same if statement. The three types of conditional operators - the **and operator** &&, the **or operator** ||, and the **not operator** !. 
+
+### The AND Operator
+
+The **and operator** checks if two separate conditions both return true. If so, then it returns, true, otherwise it returns false.
+
 ```
-// true if one or both conditionals are true
-if ((newBalance < fee) || (newBalance > accountBalance)){
-  return;
+int x = 1;
+int y = 2;
+
+if((x==1) && (y==2)) {
+    // this will enter the if statement, because both the conditions evaluated to true
+}
+
+if((x==2) && (y==2)) {
+    // the first condition evaluates to false, so the whole statement is false. We won’t enter the      
+    // if-statement
+}
+
+if((x==2) && (y==3)) {
+    // both conditions are false, so we won’t enter this if-statement
 }
 ```
-{{ site.data.alerts.end }}
+
+### The OR Operator
+
+The **or operator** checks if ONE of two separate conditions returns true. If so, it returns true, otherwise it returns false.
+
+```
+int x = 1;
+int y = 2;
+
+if((x==1) || (y==2)) {
+    // this will enter the if statement, because both the conditions evaluated to true
+}
+
+if((x==2) || (y==2)) {
+    // we will still enter the if-statement because the second condition evaluates to true
+}
+
+if((x==2) || (y==3)) {
+    // both conditions are false, so we won’t enter this if-statement
+}
+```
+
+### The NOT Operator
+
+The **not operator** “flips” the result of some condition. Here is the **not operator** in action:
+
+```
+int x = 1;
+
+if(!(x==1)) {
+    // x is equal to 1, so we get true, but the not operator would “flip” true to false, so we won’t 
+    // enter the if-statement
+}
+
+if(!(x==2)) {
+    // x is not equal to 1, so we get false, but the not operator would “flip” false to true, so we 
+    // would enter the if-statement
+}
+```
 
 Note how we use parentheses to group each conditional, and then group both the conditionals into one statement.
 
-Finally, there is the **not operator** (!), which negates a conditional clause (again, note the parentheses!):
-
-{{ site.data.alerts.callout_code_div }}
-```
-if ((newBalance < fee) || (!(newBalance <= accountBalance))){
-  return;
-}
-```
-{{ site.data.alerts.end }}
-
-Here's a quick overview of all of the conditional operators. We've also included this in the documentation for future reference.
-
+Here's a quick overview of all of the conditional operators.
 | Conditional Operator | Meaning | Example of True Statement |
 | :--- | :--- | :---: |
 | `&&` | Both conditions must be true | `(2 > 1) && (5 != 0)` |
 | `||` | Either condition must be true | `(1 > 2) || (5 != 0)` |
 | `!` | True if the condition is false | `!(1 > 2)` |
 
-{{site.data.alerts.tip}}
-Did you notice that the last two conditional statements were testing for the same conditions? This is because `a > b` is the same thing as `!(a <= b)`. Try plugging in values for `a` and `b` to see why!
-{{site.data.alerts.end}}
+### Exercise 3.4.2:
 
-### Exercise 3.5.2:
+Let’s make a simple program that will help Spock determine if a student is qualified for the Vulcan Academy of Science and Technology! Here are the conditions:
 
-- Our `deposit` function has a similar bug right now with negative numbers. Modify it so that you can only input positive values.
-- Most banks also have a deposit limit. Create a member variable `float depositLimit` and modify your `deposit` function to also prevent users from depositing too much money at once.
-- Modify the main function to allow users to input a deposit amount. Check the functionality of the previous two steps (i.e, ensure the deposit is not negative and not above the maximum limit).
+If a student scored above a 97 in both math and science, they’re automatically in
+If a student scored above a 90 in math, they need to take the supplementary science test
+If a student scored above a 90 in science, they need to take the supplementary math test
+If a student scored below 90 but above 80 in math, they should be deferred
+If a student scored below 90 but above 80 in science, they should submit a supplemental recommendation letter
+If a student scored below 80 but above 70 in both math and science, put them on the waitlist
+If a student did not score 70 or above, they should try again next year
 
-{{+}}Tutorial 3.5.2, 3_5_2{{+}}
+{{+}}Tutorial 3.4.2, 3_4_2{{+}}
 
-## Switch-statements
+## switch-statements
 
-Switch-statements allow you to check the value of a variable against many cases in a compact way. Say you want to write a program that let's the user access any of our `BankAccount` functions by pressing a number. Writing an if-statement (or nested if-statement) for every function we have sounds tedious. However, you only need to write one switch-statement for all the cases:
+switch statements allow the programmer to make a choice based on the value of an integer. They make a choice, like if statements do, but the choice is from a list of options defined by the programmer
 
 {{ site.data.alerts.callout_code_div }}
 ```
@@ -244,22 +208,17 @@ int main() {
   int option;
   cin >> option;
 
-  BankAccount myAccount;
-  myAccount.deposit(100);
-
   switch (option) {
     case 0: // if the option is 0
-        float amount;
-        cout << "Enter deposit amount: ";
-        cin >> amount; // Store the amount to deposit
-        myAccount.deposit(amount);
-        break; // This terminates the switch so we don't check all the other cases.
+        cout << “You get to go to Disney Land!” << endl;
+        break;
     case 1: // if the option is 1
-        // do something else
+        cout << “You get to go to Universal Studios!” << endl;
         break;
     // Have as many cases as you want
     default:
-        // do something if none of the cases above apply. This is optional.
+        cout << “You don’t get to go on vacation right now, sorry!” << endl;
+        break;
   }
 
   return 0;
@@ -267,12 +226,19 @@ int main() {
 ```
 {{ site.data.alerts.end }}
 
-### Exercise 3.5.3
+{{site.data.alerts.note}}
+Note the `break` at the end of each case. It is important that you put that break, otherwise you would just keep going through the cases below!
+{{site.data.alerts.end}}
 
-- Complete the example above so that when the program runs, a user can type a 1 to withdraw money from their account, and a 2 to display their current balance.
-  - You'll need to store the amount to withdraw in a similar way to how we've stored the amount to deposit in the 0 case.
+### Exercise 3.4.3
 
-{{+}}Tutorial 3.5.3, 3_5_3{{+}}
+- Write a simple ordering system in which the user picks what they would like to have for lunch using an `if` statement. For example, `1` might be an apple, `2` might be fugu, and `3` might be a donut.
+
+{{site.data.alerts.note}}
+Fugu is a dish made from puffer fish. If is an adventurous Japanese delicacy valued for the skill that a chef must have in order to prepare it. If it is not prepared exactly correctly, the chef may accidentally slice into one of the venom sacs in the puffer fish's skin, or worse, serve the sac to their guest. Only the most highly-trained chefs should prepare this dish, because eating fugu is fatal if the venom is consumed.
+{{site.data.alerts.end}}
+
+{{+}}Tutorial 3.4.3, 3_4_3{{+}}
 
 
-{{-}}Repetition, programming_repetition, Next{{-}}
+{{-}}Loops, programming_repetition, Next{{-}}

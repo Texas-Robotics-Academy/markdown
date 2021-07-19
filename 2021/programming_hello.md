@@ -1,27 +1,29 @@
 # Hello World
-{{ site.data.alerts.important }}
-Do this section slowly, so you completely understand it.
-{{ site.data.alerts.end }}
 
+{{ site.data.alerts.note }}
 It's customary when you learn a new programming language, to write a program to display the text "Hello World."
 
 Displaying text is often referred to as "printing" it, so we're going to learn how to print "Hello World".
+{{ site.data.alerts.end }}
 
----
 
 ## Main
 
-Most C++ programs begin in a function called **main**.
+C++ programs begin in a function called **main**. You will understand this after a few examples.
 
+
+{{ site.data.alerts.note }}
 - The **main** function is the first function that executes in a C++ program.
 - A **function** is a set of instructions for the computer.
 - **Code** is software as written in a programming language.
 - A **coder** is someone who writes code.
 - **Libraries** contain code that has already been written and is usable in other programs.
+{{ site.data.alerts.end }}
 
-Libraries save time by providing code that does common things. When professional programmers write software such as a video game, they use libraries to render the graphics, load files, or control physics. This frees the coders who write the rules of the game to concentrate on that aspect. It also frees the ones who specialize in graphics to continually improve on the graphics code used by all of their users.
 
-The "Hello World" example uses the **iostream** library. iostream includes a **stream** called **cout**. cout allows users to write a series of formatted text characters to the terminal, which is often called **printing** the text.
+Libraries save time by providing code that does common things.
+
+The "Hello World" example uses the **iostream** library. iostream includes a **stream** called **cout**. cout allows users to write to the terminal, which is often called **printing**.
 
 {{ site.data.alerts.terminal_commands }}
 cd ~/cpp_exercises/3_1
@@ -58,7 +60,9 @@ Let's look at this code line-by-line.
 
 This line **includes** `iostream` into our program, making its contents available to our program. `iostream` is what is called a **header** or a **header file**. It contains the code needed to interface a library called the *Standard Input/Output Streams Library*. Including `iostream` allows us to use `cout`.
 
-In general you will enclose header names in angle brackets. When you write your own headers, you will probably enclose them in double quotes. 
+{{ site.data.alerts.note }}
+In general you will enclose header names in angle brackets. 
+{{ site.data.alerts.end }}
 
 ```cpp
 using namespace std;
@@ -82,31 +86,26 @@ The code for *main*, like the code for all functions, is wrapped in curly braces
 cout << "Hello World!" << endl;
 ```
 
-We only have one command for this program. Here we tell the computer to use *cout* and then put what we want to print after *<<*.
+Here print using *cout*. Put what should be printed after *<<*.
 
 The double left-angle brackets are like an arrow pointing toward *cout*, sending something into it (in this case, *"Hello World"*) to *cout*.
 
-After *"Hello World"* there is `<< endl`, which tells the program to end the line of text and follows it with a **newline**, which literally tells the terminal to go to a new line. This is kind of like hitting *enter* at the end of a line when you're typing text.
+After *"Hello World"* there is `<< endl`. This tells the program to end the line of text and put any new content on the next line.
 
-We put quotation marks around the words we want to display (this is called a **string**). In cpp, every line of code (ones without braces) ends in a semi-colon.
+The quotation marks indicate that what is inside is a **string**, that is, literal text that we want in the program.
 
-So, you are telling the computer to send *"Hello World!"* as a string to *cout* to be displayed on the screen.
+In c++, every line of code (ones without braces) ends in a semi-colon.
 
 ```cpp
 return 0;
 ```
 
-This last line **returns** the number zero. We will get into what this means in a later tutorial, but for now, we can understand it as telling the computer that our program ran properly.
-
-We then use a closing brace to end the function, and with it, the program.
-
+We will come back to what **return** means later in the academy. For now, just place it here because it is necessary for the program to execute properly.
 
 
 ## Compiling and Executing from the Command Line
 
-Compiling code is the act of turning your code into a program that the machine can **execute** or run.
-
-To compile your code, we will use the GNU C++ compiler, better known as *g++*.
+Compiling code turns the code into a program that can be **executed**.
 
 - Go back to your terminal where you should be in ~/cpp_exercises/3_1
   - Use the `cd` command to get there if you aren't there already!
@@ -115,15 +114,11 @@ To compile your code, we will use the GNU C++ compiler, better known as *g++*.
 g++ ex_3_1.cpp -o HelloWorld
 {{ site.data.alerts.terminal_commands_end }}
 
-What does this line do?
-
 *g++* runs the g++ compiler.
 
-*ex_3_1.cpp* is the file to be compiled. In this case, it is the file that we just wrote. In future usages of g++, replace *ex_3_1.cpp* with the file that you intend to compile.
+*ex_3_1.cpp* is the file to be compiled. In this case, it is the file that we just wrote.
 
-*-o HelloWorld* tells the compiler that the compiled program should be named *HelloWorld*. If you typed *-o MyProgram*, it would name your program *MyProgram*.
-
-Hopefully, your program just compiled.
+*-o HelloWorld* tells the compiler that the compiled program should be named *HelloWorld*.
 
 - Check the output in the terminal to see if the build was a success.
   - If your build is successful, there will be no output.
@@ -135,11 +130,7 @@ Hopefully, your program just compiled.
 
 
 {{ site.data.alerts.note }}
-Remember, this is a relative path, so this literally tells the computer, "Run the HelloWorld that is in this directory."
-{{ site.data.alerts.end }}
-
-{{ site.data.alerts.callout_synchronize }}
-Many of you will have problems right now, so, we'll synchronize to get everyone through their errors.
+This is a relative path, so this literally tells the computer, "Run the HelloWorld that is in this directory."
 {{ site.data.alerts.end }}
 
 ## Exercise 3.1:

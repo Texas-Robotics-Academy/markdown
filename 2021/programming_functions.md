@@ -1,10 +1,8 @@
 # Functions
 
-A **function** is a group of instructions. Usually, functions are used to organize code by breaking long programs into shorter functions that together make up the composition of the longer program.
+A **function** is a group of instructions.
 
-We might have a `getLetter` function that asks the user for a lowercase letter, or an `averageNumbers` function that averages a list of numbers.
-
-Functions allow code to be **modular** --- write a function once, and use that function many times.
+Functions are used to organize code by writing shorter functions that can be used in longer programs.
 
 ## Defining a Function
 
@@ -22,7 +20,7 @@ We begin by declaring the **return type** of main to be an `int` (integer). This
 
 Usually, this is accomplished through a **return statement**.
 
-`main()` generally returns a 1 if there was an error and 0 if the program completes successfully. We'll talk more about return types soon.
+`main()` generally returns a 0 if the program completes successfully. We'll talk more about return types soon.
 
 We then write the name of the function, main, and follow it with a set of parentheses.
 
@@ -364,5 +362,5 @@ You will be 50 next January.
 
 {{+}}Tutorial 3.3.5, 3_3_5{{+}}
 
-{{-}}Objects, programming_objects, Next{{-}}
+{{-}}If and Switch, programming_decisions, Next{{-}}
 
