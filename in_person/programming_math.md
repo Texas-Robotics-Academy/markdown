@@ -41,7 +41,7 @@ C++ requires types for variables.
 
 A variable storing a number with a decimal should be a `float`, which stands for floating (decimal) point number.
 
-Variables must be declared before they are used. This is done by saying the variable **type** and then the name the variable.
+Variables must be declared before they are used. This is done by saying the variable **type** and then the name of the variable.
 
 Here's a quick reference.
 
@@ -52,7 +52,7 @@ int	    | 4 or -134
 string	| "Hello World"
 bool	| true/false
 
-An object that weighs 1.0 pounds on Earth would weigh 0.1654 pounds on the moon. You will now write a short computer program which converts Earth weight to Moon weight.
+An object that weighs 1.0 pounds on Earth would weigh 0.1654 pounds on the moon. You will now write a short computer program which converts Earth weight to Moon weight. (This is a brief outline of all the steps.)
 
 1. Save the conversion factor (0.1654) as the variable `conversionFactor`
 
@@ -98,7 +98,7 @@ Comments are ignored by the compiler and are used by programmers to explain part
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.tip }}
-It's good practice to have short comments in your code, so you can remember what it does later.
+It's good practice to have short comments in your code to remeber what your code does later.
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.callout_code_div }}
@@ -141,7 +141,7 @@ Operator |	Operation
 
 When you divide two integers, the remainder of the two numbers is left out. This is called **truncation**.
 
-In integer division, `5 / 2` will give you 2, not 2.5. If you want the full value, you must a float.
+In integer division, `5 / 2` will give you 2, not 2.5. If you want the full value, you must use a float.
 
 The `%` (**modulus**) operator gives you the remainder of integer division.
 
