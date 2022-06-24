@@ -162,7 +162,7 @@ class Buddy {
 
 int main() {
   Buddy justin("Justin");
-  return 0;
+  return 0;, and 
 }
 ```
 {{ site.data.alerts.end }}
@@ -313,6 +313,19 @@ int main() {
 }
 ```
 {{ site.data.alerts.end }}
+
+
+### Exercise 3.7.2:
+- Create a new class called 'Fibonacci'
+- Create a private array of size 20 in the class 'Fibonacci'.
+- In the constructor assign the first two elements of the array to one.
+- Create a method called 'compute' that takes in two integers, and returns the sum of the element at the two indexes in the array.
+- Create a method that assigns a value to an index in the array, 'assign'. 
+- Store the result in the next element of the array. 
+- Create a method called 'printFib' and use a for loop to print the entire fibonacci sequence.
+
+{{ site.data.alerts.callout_code_div }}
+```
 class Fibonacci {
     private:
         int arr[?];
@@ -334,20 +347,8 @@ class Fibonacci {
             
         }
 };
-
-{{ site.data.alerts.callout_code_div }}
-```
 ```
 {{ site.data.alerts.end }}
-
-### Exercise 3.7.2:
-- Create a new class called 'Fibonacci'
-- Create a private array of size 20 in the class 'Fibonacci'.
-- In the constructor assign the first two elements of the array to one.
-- Create a method called 'compute' that takes in two integers, and returns the sum of the element at the two indexes in the array.
-- Create a method that assigns a value to an index in the array, 'assign'. 
-- Store the result in the next element of the array. 
-- Create a method called 'printFib' and use a for loop to print the entire fibonacci sequence.
 
 - In your main method create a Fibonacci object and compute the first 20 elements of the fibonacci sequence.
 - Use a for loop.
