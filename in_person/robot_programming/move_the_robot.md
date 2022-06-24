@@ -69,7 +69,7 @@ one.readButton();
 
 The `readButton` function indicates which of the pushbuttons PB1, PB2 or PB3 is being pressed. The function returns an int, with the possible values:
 
----|---
+| :--- | :---: |
 | 0 | no button is being pressed |
 | 1 | PB1 pressed |
 | 2 | PB2 pressed |
