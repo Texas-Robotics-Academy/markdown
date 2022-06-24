@@ -180,7 +180,7 @@ Here's a quick overview of all of the conditional operators.
 | Conditional Operator | Meaning | Example of True Statement |
 | :--- | :--- | :---: |
 | `&&` | Both conditions must be true | `(2 > 1) && (5 != 0)` |
-| `||` | Either condition must be true | `(1 > 2) || (5 != 0)` |
+| ``||`` | Either condition must be true | `(1 > 2) || (5 != 0)` |
 | `!` | True if the condition is false | `!(1 > 2)` |
 
 ### Exercise 3.4.2:
