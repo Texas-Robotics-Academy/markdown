@@ -360,4 +360,6 @@ class Fibonacci {
 
 Great! You're now ready to work on the robot.
 
+Make sure you have gone through the arduino intro page before continuing.
+
 {{-}}Cloning the Robotics Exercises, robot_cloning, Next{{-}}
