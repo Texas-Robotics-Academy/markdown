@@ -13,10 +13,10 @@ C++ programs begin in a function called **main**. You will understand this after
 
 
 {{ site.data.alerts.note }}
-- The **main** function is the first function that executes in a C++ program.
-- A **function** is a set of instructions for the computer.
-- **Code** is software as written in a programming language.
-- A **coder** is someone who writes code.
+- The **main** function: the first function that executes in a C++ program.
+- A **function**: a set of instructions for the computer.
+- **Code**: software as written in a programming language.
+- A **coder**: someone who writes code.
 - **Libraries** contain code that has already been written and is usable in other programs.
 {{ site.data.alerts.end }}
 
@@ -46,6 +46,7 @@ To create a new file in VSCode, type *"ctrl+n"*. To save the file, type *"ctrl+s
 using namespace std;
 
 int main(){
+  //endl is a l not a 1
   cout << "Hello World!" << endl;
   return 0;
 }
