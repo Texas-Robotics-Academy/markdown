@@ -59,7 +59,7 @@ begin_block
         markdown_page: in_person/robot_programming/move_the_robot.md
         label: Move the Robot
 
-        markdown_page: in_person/robot_programming/turn_and_push.md
+        markdown_page: in_person/robot_programming/turn-and-push.md
         label: Turn and Push
 
         markdown_page: in_person/robot_programming/line_follower.md
