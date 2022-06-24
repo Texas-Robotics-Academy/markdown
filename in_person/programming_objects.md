@@ -1,5 +1,5 @@
 # Classes and Objects
-Consider this scenario. You and your friends believe that one of you gets called on **way** more often by your teacher. You want to make sure, so, you write a simple `class`. A class is a type. A variable whose type is a class is called an `object.` A class lets you associate multiple pieces of data together in a single variable
+Consider this scenario. You and your friends believe that one of you gets called on **way** more often by your teacher. You want to make sure so you write a simple `class`. A class is a type. A variable whose type is a class is called an `object.` A class lets you associate multiple pieces of data together in a single variable
 
 Consider these attributes of the class that will be used to count how often you are called on.
 
