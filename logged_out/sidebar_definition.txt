@@ -1,0 +1,2 @@
+markdown_page: in_person/welcome.md
+label: Welcome!

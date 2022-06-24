@@ -90,7 +90,7 @@ cout << "Something weighing " << earthWeight << "lbs on earth would weigh "<< mo
 
 This sends the whole sequence of things to cout to be displayed.
 
-### Exercise 3.2.1: Full Program
+### Tutorial 3.2.1: Full Program
 
 {{ site.data.alerts.note }}
 Any text preceded by `//` is a comment.
@@ -121,10 +121,6 @@ int main(){
 }
 ```
 {{ site.data.alerts.end }}
-
-- Copy this code into a new file named ex_3_2_1.cpp in the directory named 3_2. Then compile and run this program to ensure it is working properly.
-
-If you ever forget how to compile and run your code, feel free to go back to the [documentation](docs.html)
 
 {{ site.data.alerts.tip }}
 Notice how the value for earthWeight is printed with "lbs" right next to it? Cout will not add spaces between the strings and the variables you print. For readability, it's good practice to include these spaces yourself.
@@ -164,7 +160,10 @@ In programming there is a difference between variable defintition and assignment
 
 This is very useful in programming, since you can easily decide if a number is even, odd, or a multiple of some other number.
 
-{{+}}Tutorial 3.2.1, 3_2_1{{+}}
+### Exercise 3.2.1:
+Copy the code above (Tutorial 3.2.1) into a new file named ex_3_2_1.cpp in the directory named 3_2. Then compile and run this program to ensure it is working properly.
+
+{{+}}Exercise 3.2.1, 3_2_1{{+}}
 
 ### Exercise 3.2.2:
 
@@ -182,5 +181,4 @@ Write a new program that asks the user for two numbers, and then prints out the 
 
 {{+}}Tutorial 3.2.3, 3_2_3{{+}}
 
-
-{{-}}Functions, programming_functions, Next{{-}}
+{{-}}Functions, in_person/programming_functions.md, Next{{-}}

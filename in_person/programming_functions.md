@@ -1,38 +1,36 @@
 # Functions
 
-A **function** is a group of instructions.
-
-Functions are used to organize code by writing shorter functions that can be used in longer programs.
+A **function** is a short program that is used as part of a larger program.
 
 ## Defining a Function
 
-Recall the function `main()`
+Look at `main()`
 
 {{ site.data.alerts.callout_code_div }}
 ```
 int main(){
      //code goes here
+     return 0;
 }
 ```
 {{ site.data.alerts.end }}
 
-We begin by declaring the **return type** of main to be an `int` (integer). This tells the computer that we intend for main to send back an integer when it is finished.
+`main()`'s return type is `int` (it says so to the left of `main`). `return` gives a value back to the thing that called the function, in this case, the operating system.
 
-Usually, this is accomplished through a **return statement**.
+When `main()` is done running, it gives back an int to Linux.
 
-`main()` generally returns a 0 if the program completes successfully. We'll talk more about return types soon.
+{{ site.data.alerts.note }}
 
-We then write the name of the function, main, and follow it with a set of parentheses.
+`main()` should always return 0, because this tells Linux that the program ran successfully.
+{{ site.data.alerts.end }}
 
-These parentheses are for **parameters**. Parameters are things like numbers or variables that are sent into a function so that it can use them in its code.
+### Tutorial 3.3.1: Example Function
 
-For our purposes, they are empty for main, but we'll see them in action in other functions soon.
+Let's write a "Hello World!" function.
 
-Finally we have a code **block** inside curly braces.
+We will **call** (run) this function from `main()`.
 
-### Exercise 3.3.1: Example Function
-
-Let's try writing a very simple function that prints the greeting "Hello World!". We will **call** (run) this function from main. It won't take any parameters or return anything, so the **return type** of this function will be **void**, the return type for a function which returns nothing. Here's how we would set it up:
+A function that does not return anything has a **return type** of **void**. This function does not return anything.
 
 {{ site.data.alerts.callout_code_div }}
 ```
@@ -50,23 +48,27 @@ int main(){
 ```
 {{ site.data.alerts.end }}
 
-Here, we made the printGreeting function exactly like we made main. We declared its `return` type to be void, named it `printGreeting`, and put no parameters inside the parentheses. Inside the curly braces, we wrote the same code we used for our very first C++ program.
+This function works like the first **Hello World!** program, but the printing happens in a function.
 
 ```cpp
 printGreeting();
 ```
 
-What's interesting is how we call, or run, the function. Inside of main, we call the function by naming it and then following it by a set of empty parentheses, which we'll explain in a minute. As always, we end the line with a semi-colon.
+This line **calls* the function, running the code inside of it.
 
-The way that this program works is the following: the computer begins running the program inside the `main` function. When it gets to the `printGreeting` function, it "jumps" to where we defined the `printGreeting` function and starts executing that code. When it gets to the end of the `printGreeting` function, it "jumps" back to the `main` function exactly where it left off and continues executing the rest of the code in main.
+Here's how the program works:
+1. The computer begins running the program inside the `main` function.
+2. When it gets to `printGreeting()` function, it **executes** `printGreeting()`.
+3. When it gets to the end of the `printGreeting` function, it **returns** back to the `main` function where it left off.
+4. It continues executing the rest of the code in main.
 
-- Type in the code above and see that it executes.
+### Exercise 3.3.1: Example Function
+Copy the code above and see that it executes.
 
 {{+}}Tutorial 3.3.1, 3_3_1{{+}}
 
 ### Exercise 3.3.2:
-
-- Modify the program so that main calls `printGreeting()` twice. How does the output change?
+Modify the program so that main calls `printGreeting()` twice.
 
 {{+}}Tutorial 3.3.2, 3_3_2{{+}}
 
@@ -85,13 +87,6 @@ The general layout of this program will be:
 3. Send that name to `printGreeting`
 4. Print out the hello message, return to `main`
 
-{{ site.data.alerts.tip }}
-Do you notice any similarities between these steps and the algorithm we outlined in Exercise 3.2.1?
-{{ site.data.alerts.end }}
-
-When a function takes a parameter, we tell the function the type of the parameter, as well as give it a name, much like a variable.
-
-For `printGreeting` the parameter will be a `string`. We will call it `name`.
 
 
 {{ site.data.alerts.callout_code_div }}
@@ -102,9 +97,7 @@ void printGreeting(string name){
 ```
 {{ site.data.alerts.end }}
 
-Anything that calls the `printGreeting` function needs to provide a `string` value that will be called name inside the function.
-
-We will need to get input from the user and provide that input when we call the `printGreeting` function from `main`:
+`printGreeting` takes a parameter called `name` of type `string`.
 
 {{ site.data.alerts.callout_code_div }}
 ```
@@ -120,18 +113,16 @@ int main(){
 
 Here, we get a value for `string userName` from the user and send it to the `printGreeting` function by placing it inside the parentheses.
 
-## As an Aside - Scoping 
+## Scoping 
 
-In the previous example code,`name` is **scoped** to `printGreeting`. It can be referred to and used like a variable, but only inside this function.
+In the example,`name` is **scoped** to `printGreeting`. It can be used like a variable, but only inside `printGreeting`.
 
-Scoping applies to variables, too. If you declare a variable inside `printGreeting`, you cannot use it outside of `printGreeting`.
-
-As an example, consider the following piece of code:
+Similarly, if you declare a variable inside `printGreeting`, you cannot use it outside of `printGreeting`.
 
 {{ site.data.alerts.callout_code_div }}
 ```
 void printGreeting(string name){
-   string myName;
+   string myName = "Bob";
    cout << "Hello " << name << "! My name is " << myName << "." << endl;
 }
 
@@ -142,31 +133,31 @@ int main(){
 ```
 {{ site.data.alerts.end }}
 
-This code is invalid, because the variable `myName` was declared inside `printGreeting`, and therefore its scope is limited to that function. `main` cannot access that variable.
-
-We will discuss **scoping** a bit more in the next section.
+This code won't work. `myName` is scoped to `printGreeting`. `main` cannot access that variable.
 
 ### Arguments vs Parameters
 
-Before going further, we need to discuss the difference between arguments and parameters. The value that is placed in the parentheses is called the **argument** to the function. (Or, if there are more than one, they are the arguments) 
+In the program above `string name` is a **parameter**.
+`"Hannah"` is an **argument**.
 
-```cpp
-printGreeting(userName);
-```
+The **parameter** states information the function needs.
 
-Arguments differ from parameters in that arguments are what you send to a function and parameters are what a function expects to receive. 
-
-When the `printGreeting` function is called from `main`, the **argument** is `userName`.
+The **argument** is the information.
 
 {{ site.data.alerts.callout_code_div }}
 ```
 void printGreeting(string name){
    cout << "Hello " << name << "!" << endl;
 }
+
+int main(){
+   string userName ="Hannah";
+   printGreeting(userName);
+}
 ```
 {{ site.data.alerts.end }}
 
-During the execution of this code, the value for `userName` is copied to the **parameter** `name` in `printGreeting`.
+During the execution of this code, the variable `userName` is copied to the **parameter** `name` in `printGreeting`.
 
 While the computer is executing the code in `printGreeting`, it can't use the variable `userName`. This is because `userName` is only defined (available) in `main` (due to **scoping**). 
 
@@ -178,9 +169,9 @@ When the computer finishes executing `printGreeting` and returns to `main`, it c
 Code blocks are a great way to keep track of scoping! Any variables that are declared inside of a block (enclosed by `{}`) can only be used inside of that block.
 {{ site.data.alerts.end }}
 
-As we mentioned before, one of the reasons that functions are so great is that we can reuse them and give them different arguments. 
+Functions are great because they can be called with different arguments. 
 
-For example, without changing the `printGreeting` function at all, we can use it to print greetings to three different people:
+Without changing `printGreeting`, we can use it to print greetings to three different people:
 
 {{ site.data.alerts.callout_code_div }}
 ```
@@ -193,32 +184,28 @@ void printGreeting(string name){
 
 
 int main(){
-   printGreeting("Alison");
-   printGreeting("Brian");
-   printGreeting("Clifford the Big Red Dog");
+   printGreeting("Peter");
+   printGreeting("Justin");
+   printGreeting("Joydeep");
    return 0;
 }
 ```
 {{ site.data.alerts.end }}
 
-And we would get the following output:
+This gives us the following output:
 
 {{ site.data.alerts.callout_code_div }}
 ```
-Hello Alison!
-Hello Brian!
-Hello Clifford the Big Red Dog!
+Hello Peter!
+Hello Justin!
+Hello Joydeep!
 ```
 {{ site.data.alerts.end }}
 
-That's pretty convenient. 
-
 ### Exercise 3.3.3:
-Using the code above as a base, add a call to printGreeting() in main so that you are also greeted.
+Edit the code above to add a call to printGreeting() in main so that you are also greeted.
 
 {{+}}Tutorial 3.3.3, 3_3_3{{+}}
-
-Now that you've been greeted...
 
 ## Returning Results
 
@@ -362,5 +349,5 @@ You will be 50 next January.
 
 {{+}}Tutorial 3.3.5, 3_3_5{{+}}
 
-{{-}}If and Switch, programming_decisions, Next{{-}}
+{{-}}If and Switch, in_person/programming_decisions.md, Next{{-}}
 

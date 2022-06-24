@@ -1,13 +1,3 @@
----
-title: "Robot Programming Introduction"
-tags: [robot programming]
-keywords:
-sidebar: tutorials
-permalink: robot_programming_introduction.html
----
-
-
-
 ## Getting Started
 Now that you've learned the basics of C++, we can move on to programming on the robot!
 

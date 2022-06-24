@@ -1,12 +1,3 @@
----
-title: "First Few Functions & Exploring the Obstacle Detector"
-tags: [robot programming]
-keywords:
-sidebar: tutorials
-permalink: first_few_functions.html
----
-
-
 {% include callout_synchronize.html comment="This tutorial introduces you to the functionality from the Bot'n Roll Library. We will walk through the first few functions together, and you will work on some brief exercises to become more familiar with your robot." %}
 
 ## Software Manual

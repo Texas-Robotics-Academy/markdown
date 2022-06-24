@@ -140,10 +140,10 @@ This is a relative path, so this literally tells the computer, "Run the HelloWor
 - Next, add a second line of text that says, "Programming is actually pretty fun when you get right down to it."
 
 {{site.data.alerts.tip}}
+
 From here on out you will be creating new files for each exercise you do. It would be a good idea to name the files for each exercise according to the exercise name. For example, directory 3_1 will contain exercise ex_3_1.cpp, and directory 3_2 will contain exercises ex_3_2_1.cpp, ex_3_2_2.cpp, and ex_3_2_3.cpp
 {{site.data.alerts.end}}
 
 {{+}}Tutorial 3.1, 3_1{{+}}
 
-
-{{-}}Simple Math and User Input, programming_math, Next{{-}}
+{{-}}Simple Math and User Input, in_person/programming_math.md, Next{{-}}
