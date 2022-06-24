@@ -34,16 +34,16 @@ begin_block
         markdown_page: in_person/programming_functions.md
         label: Functions
 
-        markdown_page: in_person/programming/objects.md
+        markdown_page: in_person/programming_objects.md
         label: Objects
 
-        markdown_page: in_person/programming/decisions.md
+        markdown_page: in_person/programming_decisions.md
         label: Decisions
 
-        markdown_page: in_person/programming/repetition.md
+        markdown_page: in_person/programming_repetition.md
         label: Repetition
 
-        markdown_page: in_person/programming/arrays.md
+        markdown_page: in_person/programming_arrays.md
         label: Arrays
     end_folder
 
