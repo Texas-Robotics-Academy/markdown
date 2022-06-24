@@ -89,7 +89,42 @@ If you change the code above to read like this, it will work.
 
 {{ site.data.alerts.callout_code_div }}
 ```
-class Buddy {
+class Buddy {class Buddy {
+  private:
+    int _timesCalled;
+
+  public:
+    string _name;
+
+    Buddy(string name) {
+      _name = name;
+      _timesCalled = 0;
+    }
+
+    void callOn() {
+      _timesCalled++;
+    }
+};
+
+int main() {
+  Buddy justin("Justin");
+  Buddy tiffany("Tiffany");
+  Buddy maryEsther("MaryEsther");
+
+  for(int i = 0; i < 3; i++) {
+    justin.callOn();
+  }
+
+  for(int i = 0; i < 5; i++) {
+    tiffany.callOn();
+  }
+
+  for(int i = 0; i < 9; i++) {
+    maryEsther.callOn();
+  }
+
+  return 0;
+}
   public:
      string name;
      int timesCalled;
@@ -283,7 +318,7 @@ int main() {
 
 Now, put this all together.
 
-- Starting with the existing `Buddy` class, add a method to count how baskets they have scored playing basketball during recess.
+- Starting with the existing `Buddy` class, add a method to count how many baskets they have scored playing basketball during recess.
 - Declare 3 buddies (you can use the ones above)
 - Use a for loop to count how many baskets each buddy has scored
 - Modify the print method from 3.7.1 to print how many times the buddy has been called, and how many baskets they have scored.
