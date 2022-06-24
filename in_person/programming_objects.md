@@ -11,7 +11,7 @@ Classes also have `methods` which work just like functions, except that they are
 To start defining a class, type the keyword `class` and then choose a class name.
 
 {{site.data.alerts.tip}}
-Though not required, a common convention followed by programmers is to begin class names with an uppercase letter).
+Though not required, a common convention followed by programmers is to begin class names with an uppercase letter.
 {{site.data.alerts.end}}
 
 ## Class declarations
