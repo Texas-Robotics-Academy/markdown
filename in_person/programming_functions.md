@@ -1,6 +1,6 @@
 # Functions
 
-A **function** is a short program that is used as part of a larger program.
+A **function**: a short program that is used as part of a larger program.
 
 ## Defining a Function
 
@@ -76,7 +76,7 @@ Modify the program so that main calls `printGreeting()` twice.
 
 Parameters allow you **pass values** to a function.
 
-We're going to change `printGreeting` so that it prints out "Hello, <name>", where name is some name that the user enters.
+We're going to change `printGreeting` so that it prints out "Hello, {name}", where name is a name that the user enters.
 
 `printGreeting` will be passed the name to print out from `main`.
 
