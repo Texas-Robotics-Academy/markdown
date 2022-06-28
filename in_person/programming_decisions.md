@@ -240,9 +240,4 @@ Fugu is a dish made from puffer fish. If is an adventurous Japanese delicacy val
 
 {{+}}Tutorial 3.4.3, 3_4_3{{+}}
 
-
-<<<<<<< HEAD
 {{-}}Loops, in_person/programming_repetition.md, Next{{-}}
-=======
-{{-}}Loops, programming_repetition, Next{{-}}
->>>>>>> d7eb864f4280504ecbe31005742f7bee34e73296
