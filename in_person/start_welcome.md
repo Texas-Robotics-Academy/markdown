@@ -14,6 +14,10 @@ The tutorial will be interspersed with instruction, challenges and activities on
 We have done everything that we could think of to pack as much fun as possible into this week.
 {{ site.data.alerts.end }}
 
+# Seating
+
+Every time you enter the lab, your assigned seat will change. We can group campers together who are working on similar activities, so we can better help you as a group. Look for the sign indicating where you should sit every time you enter into the lab, and sit in the corresponding area.
+
 # Cups
 At this time, you should place your pair of cups on top of the computer monitor in front of you, with the blue cup facing up.
 * When the red cup is facing upward, it means:
@@ -83,4 +87,4 @@ Try to change drivers every 30 minutes.
 Feel free to use one account on texas-robotics-academy.com, or one for each teammate; but please let the counselors know so they can check you off!
 {{ site.data.alerts.end }}
 
-{{-}}Using Linux, in_person/linux_and_git/using_linux.md, Next{{-}}
+{{-}}Using Linux, in_person/start_linux.md, Next{{-}}

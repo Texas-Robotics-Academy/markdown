@@ -12,4 +12,4 @@ Your user is currently set up as a IN PERSON Robotics Academy participant. If yo
 2. Look at the bottom of the page. It will always link to the *next* tutorial.
 
 
-{{-}}Welcome to the Lab, in_person/welcome/welcome.md, Next{{-}}
+{{-}}Welcome to the Lab, in_person/start_welcome.md, Next{{-}}

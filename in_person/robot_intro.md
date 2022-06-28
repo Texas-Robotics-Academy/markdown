@@ -1,12 +1,25 @@
-## Getting Started
+# Introduction
 Now that you've learned the basics of C++, we can move on to programming on the robot!
 
 - Open up the Arduino IDE.
 
-### A Boilerplate Bot'n Roll Program
+{{ site.data.alerts.terminal_commands }}
+cd ~
+mkdir sketchbook
+mkdir sketchbook/robocamp
+wget https://github.com/texas-robocamp/exercises/raw/master/BnrOneA.zip
+arduino
+{{ site.data.alerts.terminal_commands_end }}
+
+- Navigate to "Sketch -> Import Library -> Add Library" in the menubar.
+- Click on BnrOneA.zip
+- Click Okay
+
+# A Boilerplate Bot'n Roll Program
 
 Here's a simple, brief program that you can copy as a sort of "empty" program to start your projects with.
 
+{{ site.data.alerts.callout_code_div }}
 ```
 #include <BnrOneA.h>
 #include <EEPROM.h>
@@ -26,10 +39,11 @@ void loop() {
   Serial.print("Hello World!");
 }
 ```
+{{ site.data.alerts.end }}
 
-#### A Concept You Haven't Seen Before: Global Variables
+## A Concept You Haven't Seen Before: Global Variables
 
-A <b>global variable</b> is a variable whose scope is the entire program.
+A **global variable** is a variable whose scope is the entire program.
 
 Well, that's a half-truth. It's the entire file that you are editing (and there are ways to make it accessible throughout the program, as well, if you have multiple files).
 
@@ -48,13 +62,11 @@ Well, in this program, the global variable `one` is accessed in `setup`, but can
 The variable `Serial` is also global, but it is declared in the Arduino library.
 
 {{ site.data.alerts.tip }}
-<ul>
-<li>The variable `Serial` is declared in `HardwareSerial.h`, which is included in `Arduino.h`, which is included in `BnrOneA.h`.</li>
-<li>The developer who developed `HardwareSerial.h` only concerned themselves with getting the serial port to work. The Arduino developer used the work of the developer who did `HardwareSerial.h` to develop `Arduino.h`. The Bot'n Roll folks used Arduino to build the robot. We're using `BnrOneA.h` to develop our software.</li>
-</ul>
+- The variable `Serial` is declared in `HardwareSerial.h`, which is included in `Arduino.h`, which is included in `BnrOneA.h`.
+- The developer who developed `HardwareSerial.h` only concerned themselves with getting the serial port to work. The Arduino developer used the work of the developer who did `HardwareSerial.h` to develop `Arduino.h`. The Bot'n Roll folks used Arduino to build the robot. We're using `BnrOneA.h` to develop our software.
 {{ site.data.alerts.end }}
 
-#### `Setup`
+## `Setup`
 Arduino programs are C++ programs.
 
 After practicing C++ the first thing that you are likely to notice is the lack of a `main`.
@@ -63,30 +75,32 @@ Instead, the code that we will be using is divided into two functions, `setup` a
 
 `setup` is always called first. It is sort of like a constructor for setting up the robot. Things in `setup` happen once, when the robot is started.
 
-#### `Loop`
+## `Loop`
 `loop`, on the other hand, is called over and over. You can think of there being a `while` loop running on the robot which runs the `loop` command repeatedly as long as the power switch on the side of the robot is flipped on.
 
 If you connect the Arduino IDE and use the Serial Monitor, you will notice "Connected and Running!" printing repeatedly on the serial monitor. It is sent over the USB port every time the `loop` function is called.
 
 
-### The Header Files
+# The Header Files
 
+{{ site.data.alerts.callout_code_div }}
 ```
 #include <BnrOneA.h>
 #include <EEPROM.h>
 #include <SPI.h>
 ```
+{{ site.data.alerts.end }}
 
-#### `BnrOneA.h`
+## `BnrOneA.h`
 `BnrOneA.h` contains code specific to the Bot'n Roll One A robot which we are programming. There is a whole API which has been defined to access the functionality of this robot, and we will go step-by-step through this API 
 
-#### `EEPROM.h`
+## `EEPROM.h`
 `EEPROM.h` allows you to interact with the EEPROM on the Atmega328 microcontroller. This is sort of like saving files to a hard drive. Information on the EEPROM persists when the robot is shut off. This could be useful, for instance, if you solved a maze and wanted to store the solution to it, or if you programmed your robot to draw a picture on the floor and wanted to store the picture.
 
-#### `SPI.h`
+## `SPI.h`
 `SPI.h` provides access to the Serial Peripheral Interface.
 
-### The BnrOneA Class - Your Primary Interface to the Bot'n Roll API
+# The BnrOneA Class - Your Primary Interface to the Bot'n Roll API
 
 ```
 BnrOneA one;
@@ -94,11 +108,11 @@ BnrOneA one;
 
 The `BnrOneA` class is your primary interface to interacting with the robot, through which you will read data from and control the robot.
 
-### The rest of the code
+## The rest of the code
 
 Here, we'll quickly tell you what's going on with the rest of the code.
 
-#### `#define SSPIN 2`
+### `#define SSPIN 2`
 
 `#define` is what is called a preprocessor directive.
 
@@ -110,7 +124,7 @@ The C++ preprocessor gives instructions to the compiler for how to treat the cod
 
 You won't need to worry about this in order to program your robot. We just didn't want to leave a piece of the code that you saw unexplained.
 
-#### `Serial.begin`
+### `Serial.begin`
 
 ```
 Serial.begin(57600);
@@ -120,13 +134,11 @@ This sets serial up connection and specifies its speed (baud).
 
 
 {{ site.data.alerts.tip }}
-<ul>
-<li>When using the Serial Monitor, make sure that the baud setting on the monitor is the same value as the number passed into Serial.begin(), or your output will not be understandable.</li>
-<li>Similarly, if you decide to write C++ code which communicates over the USB port, you will need the baud rates to match between the robot and computer sides of the connection, or it will not work properly.</li>
-</ul>
+- When using the Serial Monitor, make sure that the baud setting on the monitor is the same value as the number passed into Serial.begin(), or your output will not be understandable.
+- Similarly, if you decide to write C++ code which communicates over the USB port, you will need the baud rates to match between the robot and computer sides of the connection, or it will not work properly.
 {{ site.data.alerts.end }}
 
-#### `one.spiConnect`
+### `one.spiConnect`
 
 ```
 one.spiConnect(SSPIN);
@@ -140,7 +152,7 @@ The BnrOneA class formats messages to the PIC18F45K22, which are communicated us
 
 This line of code configures the connection between the two microcontrollers so the robot can operate properly.
 
-#### `one.stop`
+### `one.stop`
 
 ```
 one.stop();
@@ -148,7 +160,7 @@ one.stop();
 
 This stops the motors on the Bot'n'Roll One. This line of code is just a precaution to ensure that the robot doesn't start moving for no reason.
 
-#### `Serial.print`
+### `Serial.print`
 
 ```
 Serial.print("Hello World!");
@@ -156,11 +168,11 @@ Serial.print("Hello World!");
 
 The `Serial.print` function for the Serial class similarly to `cout` in C++. It allows you to send data across the USB cable back to the computer.
 
-## Hello World - On the Robot's LCD
+# Hello World - On the Robot's LCD
 
 Now that we're developing software on the actual robot, let's go ahead and write a new "Hello World" program. However, instead of just printing "Hello World" on the computer screen, we're going to print it on the robot's LCD screen! To do this, we'll need to use a new function in the Bot'n'Roll API, `lcd#()`.
 
-### The `lcd` Function
+## The `lcd` Function
 
 ```
 void lcd#()
@@ -184,7 +196,7 @@ one.lcd1("The number is", 12); // lcd#(string[],num)
 one.lcd2(1, 2); // lcd#(num1,num2)
 ```
 
-### Exercise 4.1.1
+## Exercise 4.1.1
 
 - Write your first Hello World program on the robot!
 
@@ -194,7 +206,9 @@ one.lcd2(1, 2); // lcd#(num1,num2)
 
 - Make this program say "Hello World!" on the first line in the LCD, and "Texas RoboCamp!" on the second line.
 
-## `delay`
+{{+}}Exercise 4.1.1, 4_1_1{{+}}
+
+# `delay`
 One function that you will find helpful this week is `delay`
 
 ```
@@ -210,7 +224,7 @@ Basically, you want to use `delay` whenever you want the robot to enter a state 
 {{ site.data.alerts.end }}
 
 
-### Exercise 4.1.2
+## Exercise 4.1.2
 
 Modify your program to:
 
@@ -223,8 +237,6 @@ Modify your program to:
 You can modify this exercise to use whatever cheer you like. The point is to learn how the code works.
 {{ site.data.alerts.end }}
 
-{% include callout_red_cup.html task="[Exercise 4.1.1, Exercise 4.1.2]" %}
+{{+}}Exercise 4.1.2, 4_1_2{{+}}
 
-## Next Step
-
-Proceed to ["First Few Functions & Exploring the Obstacle Detector"](/first_few_functions.html)
+{{-}}LCD and Obstacles, in_person/robot_functions.md, Next{{-}}

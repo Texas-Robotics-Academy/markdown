@@ -293,4 +293,4 @@ Now, put this all together.
 
 Great! You're now ready to work on the robot.
 
-{{-}}Cloning the Robotics Exercises, robot_cloning, Next{{-}}
+{{-}}Robot Introduction, in_person/robot_intro.md, Next{{-}}

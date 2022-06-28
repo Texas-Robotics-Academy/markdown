@@ -59,4 +59,4 @@ int main() {
 
 {{+}}Tutorial 3.6.2, 3_6_2{{+}}
 
-{{-}}Classes and Objects, programming_objects, Next{{-}}
+{{-}}Classes and Objects, in_person/programming_objects.md, Next{{-}}

@@ -7,10 +7,10 @@ begin_block
     begin_folder
         folder_label: Getting Started
 
-        markdown_page: in_person/welcome/welcome.md
+        markdown_page: in_person/start_welcome.md
         label: Welcome to the Lab
 
-        markdown_page: in_person/linux_and_git/using_linux.md
+        markdown_page: in_person/start_linux.md
         label: Using Linux
     end_folder
 end_block
@@ -34,41 +34,30 @@ begin_block
         markdown_page: in_person/programming_functions.md
         label: Functions
 
-        markdown_page: in_person/programming/objects.md
-        label: Objects
+        markdown_page: in_person/programming_decisions.md
+        label: If and Switch
 
-        markdown_page: in_person/programming/decisions.md
-        label: Decisions
+        markdown_page: in_person/programming_repetition.md
+        label: Loops
 
-        markdown_page: in_person/programming/repetition.md
-        label: Repetition
-
-        markdown_page: in_person/programming/arrays.md
+        markdown_page: in_person/programming_arrays.md
         label: Arrays
+
+        markdown_page: in_person/programming_objects.md
+        label: Classes and Objects
     end_folder
 
     begin_folder
         folder_label: Robot Programming
 
-        markdown_page: in_person/robot_programming/introduction.md
+        markdown_page: in_person/robot_intro.md
         label: Introduction
 
-        markdown_page: in_person/robot_programming/botnrollapi.md
-        label: LDC and Obstacles
+        markdown_page: in_person/robot_functions.md
+        label: LCD and Obstacles
 
-        markdown_page: in_person/robot_programming/move_the_robot.md
+        markdown_page: in_person/robot_move.md
         label: Move the Robot
 
-        markdown_page: in_person/robot_programming/turn_and_push.md
-        label: Turn and Push
-
-        markdown_page: in_person/robot_programming/line_follower.md
-        label: The Line Follower
-
-        markdown_page: in_person/robot_programming/line_following.md
-        label: Line Following
-
-        markdown_page: in_person/robot_programming/race.md
-        label: Race!
     end_folder
 end_block

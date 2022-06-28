@@ -1,0 +1,12 @@
+
+        markdown_page: in_person/robot_programming/turn_and_push.md
+        label: Turn and Push
+
+        markdown_page: in_person/robot_programming/line_follower.md
+        label: The Line Follower
+
+        markdown_page: in_person/robot_programming/line_following.md
+        label: Line Following
+
+        markdown_page: in_person/robot_programming/race.md
+        label: Race!

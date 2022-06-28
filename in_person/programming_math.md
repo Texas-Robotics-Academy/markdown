@@ -1,4 +1,4 @@
-# Simple Math and User Input
+# Math and User Input
 
 In C++, multiplication is represented with the * symbol.
 

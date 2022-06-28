@@ -1,21 +1,9 @@
-{% include callout_synchronize.html comment="This tutorial introduces you to the functionality from the Bot'n Roll Library. We will walk through the first few functions together, and you will work on some brief exercises to become more familiar with your robot." %}
-
-## Software Manual
+# Software Manual
 The robot comes with a software manual that you may find helpful in this week's adventure. You can find it [here](forms/software_manual.pdf)
 
-## Function List
-
-Here's a list of the functions from the Bot'n Roll Library, for your convenience.
-
-![Bot'n Roll Functions](images/software_function_list.png)
+# Function List
 
 You can find all of these functions in `BnrOneA.h`.
-
-{{ site.data.alerts.tip }}
-
-There are a handful of functions that you're simply unlikely to ever use on the robot. Most are documented in the Software Manual, though some are not, and are documented <a href="/less_used_functions.html">here</a>. Some of those functions appear in the above list.
-
-{{ site.data.alerts.end }}
 
 ## `led`
 
@@ -29,9 +17,9 @@ You already saw the `lcd#` function in the "Hello World" exercise on the robot.
 
 As you can see from the functions list, the `lcd#` function takes a variety of different arguments, to allow you to use it in various ways. The library does not come with a method for formatting text, though, as you become more advanced in your C++ programming, you will probably find that you are able to format a string without the assistance of the various methods provided.
 
-## Setup Routines
+# Setup Routines
 
-### `spiConnect`
+## `spiConnect`
 
 `void spiConnect(byte sspin);`
 
@@ -39,7 +27,7 @@ This initializes the connection between the Arduino microcontroller and the PIC 
 
 There really is no reason that you are likely to want to change this code during the camp.
 
-### `obstacleEmitters`
+## `obstacleEmitters`
 
 `void obstacleEmitters(boolean state)`
 
@@ -68,7 +56,8 @@ Value    | Means
 
 Additionally, when an obstacle sensor is activated, a corresponding LED will blink.
 
-### Exercise 4.2.1
+# Exercises
+## Exercise 4.2.1
 
 - Start by copying the "empty" program from ["Robot Programming Introduction"](/robot_programming_introduction.html) into your Arduino IDE, and saving it in a sensible place.
 - Write a short program that will print "Left Sensor Activated" when the left sensor is activated, "Right Sensor Activated" when the right sensor is activated, and "Both Sensors Activated" when both sensors are activated on the LCD on the robot.
@@ -77,25 +66,31 @@ Additionally, when an obstacle sensor is activated, a corresponding LED will bli
 Remember that Arduino programs must have the same name as the directory that they are stored in.
 {{ site.data.alerts.end }}
 
-### Exercise 4.2.2
+{{+}}Exercise 4.2.1, 4_2_1{{+}}
+
+## Exercise 4.2.2
 - Add `obstacleEmitters(false)` to the `setup` function in your program, and run it again.
 - What happens?
 
-### Exercise 4.2.3
+{{+}}Exercise 4.2.2, 4_2_2{{+}}
+
+## Exercise 4.2.3
 - Comment out `obstacleEmitters(false)`, and run it again.
 - What happens?
 
-### Exercise 4.2.4
+{{+}}Exercise 4.2.3, 4_2_3{{+}}
+
+## Exercise 4.2.4
 - Uncomment `obstacleEmitters(false)`.
 - Change it to say `obstacleEmitters(true)`.
 - What happens?
 
-### Exercise 4.2.5
+{{+}}Exercise 4.2.4, 4_2_4{{+}}
+
+## Exercise 4.2.5
 - Comment out `obstacleEmitters(true)`, and run it again.
 - What happens?
 
-{% include callout_red_cup.html task="[Exercises 4.2.1 - 4.2.5]" %}
+{{+}}Exercise 4.2.5, 4_2_5{{+}}
 
-## Next Step
-
-Proceed to ["Move The Robot"](move_the_robot.html)
+{{-}}Move The Robot, in_person/robot_move.md, Next{{-}}

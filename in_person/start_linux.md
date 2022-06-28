@@ -15,7 +15,7 @@ This basically the same as on Mac or Windows.
 # Locking Frequently-Used Programs to the Launcher
 
 1. Right-click on the application that you would like to lock to the launcher.
-2. Click "Lock to Launcher."
+2. Click "Add to Favorites."
 
 {{ site.data.alerts.note }}
 If this doesn't make sense to you, skip it.

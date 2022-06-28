@@ -1,20 +1,14 @@
----
-title: "Exploring the Robot's Motion"
-tags: [robot programming]
-keywords:
-sidebar: tutorials
-permalink: move_the_robot.html
----
-
 In this tutorial, you will create a program that uses the buttons to control the speed of the left and right motors separately. You will then use this program to learn how the robot can perform simple turns, speed up, and apply its brakes.
 
-## The Move Function
+# The Move Function
 
+{{ site.data.alerts.callout_code_div }}
 ```
 void move(int speedL,int speedR);
 
 one.move(speedL,speedR);
 ```
+{{ site.data.alerts.end }}
 
 The `move` function is part of the `BnrOneA` class, and the object `one` in our default program.
 
@@ -26,19 +20,19 @@ The values of `speedL` and `speedR` range from -100 to 100, where -100 is the ma
 
 {{ site.data.alerts.tip }}
 You can turn the robot by moving the motors at different speeds. 
-<ul>
-<li>-100, 100 would turn the robot as hard to the left as possible</li>
-<li>100, 50, would turn the robot less sharply to the right, navigating the robot in a circle..</li>
-</ul>
+- -100, 100 would turn the robot as hard to the left as possible
+- 100, 50, would turn the robot less sharply to the right, navigating the robot in a circle..
 {{ site.data.alerts.end }}
 
-## Obstacle Avoidance
+# Obstacle Avoidance
 
+{{ site.data.alerts.callout_code_div }}
 ```
 void brake(byte torqueL,byte torqueR);
 
 one.brake(100,100);
 ```
+{{ site.data.alerts.end }}
 
 The `brake()` function also takes two arguments: torqueL and torqueR.
 
@@ -46,26 +40,30 @@ These values define the braking power of each motor, which ranges between 0 and 
 
 0 corresponds to stopping without braking, whereas 100 corresponds to stopping with the maximum braking torque.
 
-### Exercise 4.3.1
+# Exercise 4.3.1
 
-- Again, Start by copying the "empty" program from ["Robot Programming Introduction"](/robot_programming_introduction.html) into your Arduino IDE, and saving it in a sensible place.
+- Again, Start by copying the "empty" program from *Introduction* into your Arduino IDE, and saving it in a sensible place.
 - Fill in the program so the robot moves when it's started, using `move`, and stops when it sees an obstacle, using `brake`.
 
 {{ site.data.alerts.tip }}
 We recommend setting both speeds to 25 for this exercise so you can easily observe the stopping behavior as well as master its usage before crashing your robot into the wall at top speed.
 {{ site.data.alerts.end }}
 
-{% include callout_red_cup.html task="[Exercise 4.3.1]" %}
+{{+}}Exercise 4.3.1, 4_3_1{{+}}
 
-{% include note.html content="Counselors should take students out to the bridge or to a wall in the 3rd floor lab to observe that this behaves properly before proceeding." %}
+{{ site.data.alerts.note }}
+Counselors should take students out to the bridge or to a wall in the 3rd floor lab to observe that this behaves properly before proceeding.
+{{ site.data.alerts.end }}
 
 ## Building a Simple Interface Using the LCD and Pushbuttons
 
+{{ site.data.alerts.callout_code_div }}
 ```
 byte readButton();
 
 one.readButton();
 ```
+{{ site.data.alerts.end }}
 
 The `readButton` function indicates which of the pushbuttons PB1, PB2 or PB3 is being pressed. The function returns an int, with the possible values:
 
@@ -78,9 +76,7 @@ The `readButton` function indicates which of the pushbuttons PB1, PB2 or PB3 is 
 ### Exercise 4.3.2
 
 {{ site.data.alerts.tip }}
-<ul>
-<li>Exercises 4.3.2 - 4.3.5 combined are the largest programming exercise in the camp so far, and the hardest we've asked you to do yet. If you are not sure what this exercise expects, ask the counselors to show you a demo.</li>
-</ul>
+Exercises 4.3.2 - 4.3.5 combined are the largest programming exercise in the camp so far, and the hardest we've asked you to do yet. If you are not sure what this exercise expects, ask the counselors to show you a demo.
 {{ site.data.alerts.end }}
 
 - Create a new Arduino program
@@ -90,6 +86,8 @@ The `readButton` function indicates which of the pushbuttons PB1, PB2 or PB3 is 
 {{ site.data.alerts.tip }}
 Using a switch-statement to identify which button is being pressed will simplify your code.
 {{ site.data.alerts.end }}
+
+{{+}}Exercise 4.3.2, 4_3_2{{+}}
 
 ### Exercise 4.3.3
 
@@ -101,6 +99,8 @@ We're going to begin to create a simple interface that will allow us to control 
 
 At this point, your program should now say which button is being pressed on the top line if a button is currently pressed, and should switch between "Left" and "Right" on the second line whenever you press PB3.
 
+{{+}}Exercise 4.3.3, 4_3_3{{+}}
+
 ### Exercise 4.3.4
 
 - Add two global variables, `int leftVal` and `int rightVal`.
@@ -111,11 +111,13 @@ At this point, your program should now say which button is being pressed on the 
 
 Now your program should allow you to increase and decrease `leftVal` and `rightVal` and select which is changed using the pushbuttons on the robot.
 
+{{+}}Exercise 4.3.4, 4_3_4{{+}}
+
 ### Exercise 4.3.5
 
 - Use `if` statements, the modulo (`%`) operator, or other logic to limit the range of `leftVal` and `rightVal` to be between -100 and 100.
 
-{% include callout_red_cup.html task="[Exercise 4.3.2, 4.3.3, 4.3.4, 4.3.5]" %}
+{{+}}Exercise 4.3.5, 4_3_5{{+}}
 
 ## Controlling the Robot's Motors
 
@@ -131,6 +133,8 @@ This will let you try different things with the robot's motors to see how the ro
   - If there is an obstacle, the robot should brake with torque 100, 100.
   - If there is not, it should put leftVal and rightVal into the left and right motors, respectively, using `move`.
 
+{{+}}Exercise 4.3.6, 4_3_6{{+}}
+
 ### Exercise 4.3.7
 
 - Go out to the bridge and try a few different things with the robot's motors.
@@ -141,13 +145,8 @@ This will let you try different things with the robot's motors to see how the ro
   - Can you make it go backwards?
 
 {{ site.data.alerts.tip }}
-<ul>
-<li>Try low values at first. The robot can move faster than you are likely to expect it to move!</li>
-</ul>
+- Try low values at first. The robot can move faster than you are likely to expect it to move!
 {{ site.data.alerts.end }}
 
-{% include callout_red_cup.html task="[Exercise 4.3.6, 4.3.7]" %}
 
-## Next Step
-
-Proceed to ["Turn & Push"](turn_and_push.html)
+{{+}}Exercise 4.3.7, 4_3_7{{+}}

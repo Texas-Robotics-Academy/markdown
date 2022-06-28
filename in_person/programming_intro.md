@@ -1,4 +1,4 @@
-# Introduction to Programming
+# Introduction
 
 C++ is a programming language. Most of the applications you use are written in C++ or a similar language. You will write the programs to control your robot in C++.
 
