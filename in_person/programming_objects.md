@@ -1,5 +1,5 @@
 # Classes and Objects
-Consider this scenario. You and your friends believe that one of you gets called on **way** more often by your teacher. You want to make sure, so, you write a simple `class`. A class is a type. A variable whose type is a class is called an `object.` A class lets you associate multiple pieces of data together in a single variable
+Consider this scenario. You and your friends believe that one of you gets called on **way** more often by your teacher. You want to make sure so you write a simple `class`. A class is a type. A variable whose type is a class is called an `object.` A class lets you associate multiple pieces of data together in a single variable
 
 Consider these attributes of the class that will be used to count how often you are called on.
 
@@ -11,7 +11,7 @@ Classes also have `methods` which work just like functions, except that they are
 To start defining a class, type the keyword `class` and then choose a class name.
 
 {{site.data.alerts.tip}}
-Though not required, a common convention followed by programmers is to begin class names with an uppercase letter).
+Though not required, a common convention followed by programmers is to begin class names with an uppercase letter.
 {{site.data.alerts.end}}
 
 ## Class declarations
@@ -89,7 +89,42 @@ If you change the code above to read like this, it will work.
 
 {{ site.data.alerts.callout_code_div }}
 ```
-class Buddy {
+class Buddy {class Buddy {
+  private:
+    int _timesCalled;
+
+  public:
+    string _name;
+
+    Buddy(string name) {
+      _name = name;
+      _timesCalled = 0;
+    }
+
+    void callOn() {
+      _timesCalled++;
+    }
+};
+
+int main() {
+  Buddy justin("Justin");
+  Buddy tiffany("Tiffany");
+  Buddy maryEsther("MaryEsther");
+
+  for(int i = 0; i < 3; i++) {
+    justin.callOn();
+  }
+
+  for(int i = 0; i < 5; i++) {
+    tiffany.callOn();
+  }
+
+  for(int i = 0; i < 9; i++) {
+    maryEsther.callOn();
+  }
+
+  return 0;
+}
   public:
      string name;
      int timesCalled;
@@ -127,7 +162,7 @@ class Buddy {
 
 int main() {
   Buddy justin("Justin");
-  return 0;
+  return 0;, and 
 }
 ```
 {{ site.data.alerts.end }}
@@ -279,15 +314,47 @@ int main() {
 ```
 {{ site.data.alerts.end }}
 
+
 ### Exercise 3.7.2:
+- Create a new class called 'Fibonacci'
+- Create a private array of size 20 in the class 'Fibonacci'.
+- In the constructor assign the first two elements of the array to one.
+- Create a method called 'compute' that takes in two integers, and returns the sum of the element at the two indexes in the array.
+- Create a method that assigns a value to an index in the array, 'assign'. 
+- Store the result in the next element of the array. 
+- Create a method called 'printFib' and use a for loop to print the entire fibonacci sequence.
 
-Now, put this all together.
+{{ site.data.alerts.callout_code_div }}
+```
+class Fibonacci {
+    private:
+        int arr[?];
 
-- Starting with the existing `Buddy` class, add a method to count how baskets they have scored playing basketball during recess.
-- Declare 3 buddies (you can use the ones above)
-- Use a for loop to count how many baskets each buddy has scored
-- Modify the print method from 3.7.1 to print how many times the buddy has been called, and how many baskets they have scored.
-- Use the print method that you have written to print out the information for each buddy.
+    public: 
+        Fibonacci(){
+            
+        }
+        
+        int compute(int num1, int num2){
+
+        }
+
+        void assign(int index, int val){
+            
+        }
+
+        void printFib(){
+            
+        }
+};
+```
+{{ site.data.alerts.end }}
+
+- In your main method create a Fibonacci object and compute the first 20 elements of the fibonacci sequence.
+- Use a for loop.
+- Use the 'compute' method to compute the next element.
+- Use the 'assign' method to set the next element in the fibonacci sequence.
+- Once your fibonacci sequence is complete, use your 'printFib' method to print the sequence
 
 {{+}}Tutorial 3.7.2, 3_7_2{{+}}
 

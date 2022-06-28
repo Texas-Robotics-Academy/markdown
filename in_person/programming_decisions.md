@@ -180,7 +180,7 @@ Here's a quick overview of all of the conditional operators.
 | Conditional Operator | Meaning | Example of True Statement |
 | :--- | :--- | :---: |
 | `&&` | Both conditions must be true | `(2 > 1) && (5 != 0)` |
-| `||` | Either condition must be true | `(1 > 2) || (5 != 0)` |
+| ``||`` | Either condition must be true | `(1 > 2) || (5 != 0)` |
 | `!` | True if the condition is false | `!(1 > 2)` |
 
 ### Exercise 3.4.2:
@@ -241,4 +241,8 @@ Fugu is a dish made from puffer fish. If is an adventurous Japanese delicacy val
 {{+}}Tutorial 3.4.3, 3_4_3{{+}}
 
 
+<<<<<<< HEAD
 {{-}}Loops, in_person/programming_repetition.md, Next{{-}}
+=======
+{{-}}Loops, programming_repetition, Next{{-}}
+>>>>>>> d7eb864f4280504ecbe31005742f7bee34e73296
