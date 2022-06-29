@@ -5,7 +5,7 @@ In this tutorial, you will learn a simple way to allow your robot to navigate it
 
 Grey Walter was a neuroscientist who developed a two robots called **tortoises** in order to demonstrate that even a small number of brain cells could give rise to complex behaviors. To demonstrate this, he created a robot with only two motors and a photo sensor on the top. One motor allowed the robot to go forward and backward, but defaulted to going forward. One motor controlled a steering column similar to the steering wheel in a car. This was attached to the photo sensor. The robot was tuned to make a spiraling motion until it saw light, and then lock onto that light signal using only a few transistors.
 
-![Tortoise](images/tortoise.JPG)
+![Tortoise]({{url(img/tortoise.JPG)}})
 (Image from Alen Winfield's [blog](http://alanwinfield.blogspot.com/p/robotics-very-short-introduction.html).)
 
 By engineering the robot to turn its steering column towards a light source, the tortoise was said to "like" light. With getting close to the light as its goal, the robot would turn its steering column.

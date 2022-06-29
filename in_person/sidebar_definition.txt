@@ -56,8 +56,11 @@ begin_block
         markdown_page: in_person/robot_functions.md
         label: LCD and Obstacles
 
-        markdown_page: in_person/robot_move.md
-        label: Move the Robot
+        markdown_page: in_person/robot_turn_push.md
+        label: Turn and Push
 
+        markdown_page: in_person/robot_line_follower.md
+        label: The Line Follower
+        
     end_folder
 end_block

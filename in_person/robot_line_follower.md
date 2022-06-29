@@ -1,10 +1,4 @@
----
-title: "The Line Follower"
-tags: [Binary]
-keywords:
-sidebar: tutorials
-permalink: line_follower.html
----
+# The Line Follower
 
 In this tutorial, we're going to do quite a lot, and it's going to be challenging. I've given you quite a lot of direction here, so you basically end up with the same program as I wrote, but hopefully figure out how to do it. You're going to need a lot of help from the counselors. This is the hardest program you've written so far this camp. It will be challenging, but that's okay! This is how you learn.
 
@@ -12,7 +6,7 @@ I'm going to tell you what this program does so you can see where this is all go
 
 The first program that you will write will allow you to use the Arduino serial monitor to see the numbers returned by the line follower. It lets you explore the raw, numerical data that the device sees, and how each number is in a position corresponding to the line. What I've said will make sense once you've tried it out.
 
-The second program that you write will allow you to <b>threshold</b> the data coming off of the line follower, to determine what is a line and what is not. It will use the LCD on the robot to print asterisks wherever the line is under the line follower, and dashes wherever there isn't.
+The second program that you write will allow you to **threshold** the data coming off of the line follower, to determine what is a line and what is not. It will use the LCD on the robot to print asterisks wherever the line is under the line follower, and dashes wherever there isn't.
 
 That will look something like this.
 
@@ -42,12 +36,10 @@ The `BnrOneA` class still has a significant amount of functionality that we have
 
 ### `int readAdc(byte), int readAdc#()`
 
-The PIC microcontroller has an 8-channel analog to digital converter on it. This allows us to hook electronics components up to the robot and read information off of them. The data comes in as analog data; that is to say, electrical voltages. An <b>analog-to-digital (ADC)</b> converter converts these voltages to digital information, allowing us to use it in our computer programs.
+The PIC microcontroller has an 8-channel analog to digital converter on it. This allows us to hook electronics components up to the robot and read information off of them. The data comes in as analog data; that is to say, electrical voltages. An **analog-to-digital (ADC)** converter converts these voltages to digital information, allowing us to use it in our computer programs.
 
 {{ site.data.alerts.tip }}
-<ul>
-<li>You can think of the analog data sort of like a dimmer switch on a light. More electricity makes the light brighter. The problem for the microcontroller is that it doesn't work with voltages as analog circuits do. It works with binary, discrete representations. The <b>analog-to-digital (ADC)</b> will convert the voltage into a number that can be understood by the computer.</li>
-</ul>
+- You can think of the analog data sort of like a dimmer switch on a light. More electricity makes the light brighter. The problem for the microcontroller is that it doesn't work with voltages as analog circuits do. It works with binary, discrete representations. The **analog-to-digital (ADC)** will convert the voltage into a number that can be understood by the computer.
 {{ site.data.alerts.end }}
 
 The PIC has 8 ADC channels, which can be accessed by calling either the corresponding `readAdc#` function, or by providing 0-7 to `readAdc`. 
@@ -66,7 +58,7 @@ Each of those blocks is hooked up to a separate channel of the ADC. Consequently
 ### Tips on Serial.print
 
 {{ site.data.alerts.tip }}
-For this exercise we're going to use a bit of the Arduino IDE that we haven't used in a while, which is the Serial Monitor. If you don't recall how to open this up, look it up in the <a href="/robot_programming_introduction.html">Robot Programming Introduction</a>.
+For this exercise we're going to use a bit of the Arduino IDE that we haven't used in a while, which is the Serial Monitor. If you don't recall how to open this up, look it up in the **Robot Programming Introduction**.
 {{ site.data.alerts.end }}
 
 - `Serial.print` is used to send text data on the USB port.
@@ -88,15 +80,12 @@ Here's what your program should do.
 When you hook this up, the numbers are going to scream past on the screen really quickly, so we suggest adding a `delay` after the for loop to make everything much easier to read.
 
 {{ site.data.alerts.tip }}
-<ul>
-<li>
-The easiest way to implement this is with a for loop and the `int readAdc(byte)` function.
-</li>
-<li>Count from 0 to 7 using the for loop.</li>
-<li>Inside the loop, read the value in the corresponding ADC channel.</li>
-<li>`Serial.print` that value and a space.</li>
-<li>After the for loop, use `Serial.println`.</li>
-</ul>
+- The easiest way to implement this is with a for loop and the `int readAdc(byte)` function.
+
+- Count from 0 to 7 using the for loop.
+- Inside the loop, read the value in the corresponding ADC channel.
+- `Serial.print` that value and a space.
+- After the for loop, use `Serial.println`.
 {{ site.data.alerts.end }}
 
 
@@ -106,13 +95,13 @@ The easiest way to implement this is with a for loop and the `int readAdc(byte)`
 - You should notice that the numbers where the black line is present are different from the numbers where there is no black.
   - How are they different?
 
-{% include callout_red_cup.html task="[Exercise 6.1.1]" %}
+{{+}}Exercise 6.1.1, 6_1_1{{+}}
 
 ## Thresholding
 
 If you did the last exercise properly, you should have noticed that ABOVE some value, you could assure that the number being returned by the line follower was the the line being picked up. Beneath some value, what you saw was the white paper reflecting light back.
 
-The difference between the region where the line was and the region where there was no line is called a <b>threshold</b>. We are going to use a threshold to determine where the line is.
+The difference between the region where the line was and the region where there was no line is called a **threshold**. We are going to use a threshold to determine where the line is.
 
 {{ site.data.alerts.tip }}
 Also, weirdly, the line follower seems to pick up the shadows of the wheels. Don't worry about it, and simply realize that even when you account for the wheels, the threshold is still higher than the value for the shadow.
@@ -128,6 +117,7 @@ The next few exercises will build up to a small user interface that will allow y
 - Write a quick function, call it `void printAsterisks()`.
 - Have `loop` call `printAsterisks`.
 
+{{ site.data.alerts.callout_code_div }}
 ```cpp
 void printAsterisks() {
 
@@ -137,6 +127,7 @@ void loop() {
   printAsterisks();
 }
 ```
+{{ site.data.alerts.end }}
 
 {{ site.data.alerts.tip }}
 It's going to be tempting to put a `delay` in there somewhere. Even some of the counselors will tell you to do this. Do yourself a favor and resist that urge. Your program will work better and look better if you avoid this.
@@ -144,19 +135,17 @@ It's going to be tempting to put a `delay` in there somewhere. Even some of the 
 
 There's a type that we didn't tell you about way back in ["Simple Math and User Input"](/simple_math_user_input.html) called `char`.
 
-`char` stands for <b>character</b>.
+`char` stands for **character**.
 Each `char` is 1 byte, meaning that it can represent 256 different numbers.
 Each `char` is `unsigned`, meaning that it cannot be negative.
 
 One way to represent text is called a C string. This is different from a C++ `string`. A C string is an array of type `char`.
 
-Every number from 0-255 is associated with a unique, printable character. This is called <b>ASCII</b>.
+Every number from 0-255 is associated with a unique, printable character. This is called **ASCII**.
 
 {{ site.data.alerts.tip }}
-<ul>
-<li>ASCII - American Standard Code for Information Interchange</li>
-<li>There's a good article on Wikipedia about learning ASCII if you really want to, but it won't be especially relevant to what we're doing here, so, save that for after camp!</li>
-</ul>
+- ASCII - American Standard Code for Information Interchange
+- There's a good article on Wikipedia about learning ASCII if you really want to, but it won't be especially relevant to what we're doing here, so, save that for after camp!
 {{ site.data.alerts.end }}
 
 - Remember the `one.lcd1` command? Use that in your program to print 2 asterisks ("*") on the top line of the LCD on your robot.
@@ -164,7 +153,8 @@ Every number from 0-255 is associated with a unique, printable character. This i
   - Make a global variable to store your C string in. Call it `lineUI`.
   - Make `lineUI` 17 chars long.
   - Make a `for` loop to fill `lineUI`.
-
+  
+{{ site.data.alerts.callout_code_div }}
 ```cpp
 void printAsterisks() {
   for(int i = 0; i < 16; i++) {
@@ -178,12 +168,13 @@ void loop() {
   printAsterisks();
 }
 ```
+{{ site.data.alerts.end }}
 
 - What the heck? You can do that?
-  - Yes! Single quotes surround a <b>character-literal</b> in C.
-  - Just like a string can be surrounded in double-quotes (which is called a <b>string-literal</b>), a single character can be surrounded in single-quotes.
+  - Yes! Single quotes surround a **character-literal** in C.
+  - Just like a string can be surrounded in double-quotes (which is called a **string-literal**), a single character can be surrounded in single-quotes.
 - You probably also noticed that I set `lineUI[16] = 0;`
-  - C strings are <b>null terminated</b>. This means that you put a 0 at the end of the string to mean that the string is done.
+  - C strings are **null terminated**. This means that you put a 0 at the end of the string to mean that the string is done.
 
 {{ site.data.alerts.tip }}
 Null termination allows us to have shorter or longer strings stored in the same memory. This means that if we only wanted lineUI to be 8 characters long, we'd just put a zero in `lineUI[8]`.
@@ -197,7 +188,7 @@ In our UI, what we want is for the top line to show us where the line is. Eventu
 
 However, we run into a problem. There are 8 sensors on the line sensor, and 16 characters on the top line. So, we'll want 2 asterisks for every sensor on the line follower. If we have that, and ONLY asterisks turned on for each sensor on the line follower that sees a part of the line, then we will be able to see the line the way that the robot sees it!
 
-- Modify the `for` loop from the example above to <b>iterate</b> through the loop 8 times so that only 8 asterisks show up on the LCD.
+- Modify the `for` loop from the example above to **iterate** through the loop 8 times so that only 8 asterisks show up on the LCD.
   - Don't forget to change your null terminator.
   - Your for loop should now count from 0-7. `int i = 0; i < 8`!
 - Modify the `for` loop so that it only iterates 8 times, but still prints 16 characters.
@@ -206,7 +197,7 @@ However, we run into a problem. There are 8 sensors on the line sensor, and 16 c
   - That, however, will skip ever other entry in `lineUI`, so, make it also fill in `i * 2 + 1` with an asterisk every time it iterates through the `for` loop.
   - Try it out!
 
-{% include callout_red_cup.html task="[Exercise 6.1.2]" %}
+{{+}}Exercise 6.1.2, 6_1_2{{+}}
 
 ## Exercise 6.1.3
 
@@ -219,7 +210,7 @@ Now we're going to write another UI. This should all go into your current progra
   - When PB2 is pushed, subtract 10 from `thresh`.
 - Try it out. The number on the second line should very quickly rise when pressing the top button and very quickly drop when pressing the lower button.
 
-{% include callout_red_cup.html task="[Exercise 6.1.3]" %}
+{{+}}Exercise 6.1.3, 6_1_3{{+}}
 
 ## Exercise 6.1.4
 
@@ -235,9 +226,4 @@ Now we're going to make it so you only see where the line is under the line foll
 - Move the target around and see how the robot can now "see" the line.
   - Ideally, you only see the line in one place on the LCD, and it is only 2 asterisks wide.
 
-{% include callout_red_cup.html task="[Exercise 6.1.4]" %}
-
-
-## Next Step
-
-Proceed to ["Line Following"](/line_following.html)
+{{+}}Exercise 6.1.4, 6_1_4{{+}}
