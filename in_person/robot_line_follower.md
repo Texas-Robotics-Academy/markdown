@@ -227,3 +227,5 @@ Now we're going to make it so you only see where the line is under the line foll
   - Ideally, you only see the line in one place on the LCD, and it is only 2 asterisks wide.
 
 {{+}}Exercise 6.1.4, 6_1_4{{+}}
+
+{{-}}Line Following, in_person/robot_line_following.md, Next{{-}}

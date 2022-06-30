@@ -61,6 +61,12 @@ begin_block
 
         markdown_page: in_person/robot_line_follower.md
         label: The Line Follower
+
+        markdown_page: in_person/robot_line_following.md
+        label: Line Following
+
+        markdown_page: in_person/robot_race.md
+        label: Race
         
     end_folder
 end_block

@@ -1,10 +1,4 @@
----
-title: "Challenge: Race!"
-tags: [robot programming]
-keywords:
-sidebar: tutorials
-permalink: race.html
----
+# Challenge: Race!
 
 Now we're going to race our robot against each other.
 
@@ -25,3 +19,5 @@ Team    | Time
 0       | 0:00        
 0       | 0:00        
 0       | 0:00        
+
+{{+}}Challenge 8, 8{{+}}
