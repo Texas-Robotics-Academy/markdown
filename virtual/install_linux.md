@@ -1,6 +1,6 @@
 # Running from Ubuntu 20.04
 
-This software is designed to run under Ubuntu 20.04. It will also run under 18.04.
+This software is designed to run under Ubuntu 18.04. It will also run under 20.04, just different versions of ROS.
 
 
 {{ site.data.alerts.note }}

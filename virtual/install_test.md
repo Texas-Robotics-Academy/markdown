@@ -18,7 +18,7 @@ You should see two windows appear. One will have the UT logo and our simulated r
 img/successful_install.png
 {{ site.data.alerts.img_50_end }}
 
-Open a new terminal by right clicking in the terminal window and clicking “open tab”.
+Open a new terminal by right clicking in the terminal window and clicking “new tab”.
 
 {{ site.data.alerts.terminal_commands }}
 * `rosrun texas_robotics_academy teleop_texbot`

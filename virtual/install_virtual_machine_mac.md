@@ -6,12 +6,13 @@ The virtual machine that you will use is VMWare. It is available for free. Insta
 Installing with VMWare will require 20GB of free space on your hard drive.
 {{ site.data.alerts.end }}
 
-## Download Ubuntu 20.04 and VMWare
-1. Download Ubuntu 20.04 from https://releases.ubuntu.com/20.04/ubuntu-20.04.2.0-desktop-amd64.iso
+## Download Ubuntu 18.04 and VMWare
+1. Download Ubuntu 18.04 from https://releases.ubuntu.com/18.04/
+    * Select "Desktop Image" and download the 64-bit PC (AMD64) desktop image.
     * This is a large file, and may take some time to download.
 2. Download and run the VMWare Installer and go through the installation prompts on the screen
     * Go to https://www.vmware.com/products/fusion/fusion-evaluation.html
-        * Under "Fusion 12 Player for macOS 10.15+" click "Register for a Personal Use License" and follow the instructions on the website to download the software.
+        * Under "Fusion 12 Player for macOS 11+" click "Register for a Personal Use License" and follow the instructions on the website to download the software.
     * Open the installer and double click the icon to start installation
 3. Follow the instructions to install VMWare with defaults selected
     {{ site.data.alerts.important }}
@@ -26,8 +27,8 @@ Installing with VMWare will require 20GB of free space on your hard drive.
 
 ## Create the virtual machine
 1. Open VMWare
-2. Click “Create a New Virtual Machine” (if the installation screen doesn’t come up automatically)
-3. Find and add your downloaded Ubuntu ISO File (drag and drop)
+2. Click the plus button on the top left corner if (if the installation screen doesn’t come up automatically)
+3. Install from disc or image then find and add your downloaded Ubuntu ISO File (drag and drop)
 
     {{ site.data.alerts.img_50 }}
     img/vmwizardmac.png
@@ -35,7 +36,7 @@ Installing with VMWare will require 20GB of free space on your hard drive.
 4. Make sure easy install is checked
 5. Set Username and Password
     * Username and Display Name: **robocamp**
-    * Password: **robocamp2021**
+    * Password: **robocamp2022**
 6. Customize your settings
         * Finish creating your VM and the option to configure settings will automatically come up upon launch
         * You can also press the wrench icon at the top of the VM Window to access settings
@@ -45,13 +46,14 @@ Installing with VMWare will require 20GB of free space on your hard drive.
             {{ site.data.alerts.img_50_end }}
 
         * Go to Hard Disk and set 20 GB Hard Drive Space 
-        * Go to advanced settings and select “Pre allocate disk space” and unselect “Split into multiple files”, then click apply
+        * Under Hard Disk select the "Advanced options" dropdown and select “Pre allocate disk space” and unselect “Split into multiple files”, then click apply
     {{ site.data.alerts.note }}
     VMWare may ask if it can access your webcam when it first loads up your OS. You should say "yes."
     {{ site.data.alerts.end }}
 
     {{ site.data.alerts.note }}
-    Upon first booting your Virtual Machine, VMWare will automatically install Ubuntu 20.04.
+    Upon first booting your Virtual Machine, VMWare will automatically install Ubuntu 18.04.
+    Make sure that you don't update your software to 20.04.
     {{ site.data.alerts.end }}
 
     {{ site.data.alerts.note }}

@@ -1,16 +1,52 @@
 begin_header
-    markdown_page: in_person/welcome.md
+    markdown_page: virtual/welcome.md
     label: Welcome!
 end_header
+begin_block
+    block_label: Installation
+    begin_folder
+        folder_label: Installation and Testing
+
+        markdown_page: virtual/install_overview.md
+        label: Getting Started with Setup
+
+        markdown_page: virtual/install_choosing.md
+        label: Choose Your Installation Method
+
+        begin_folder
+            folder_label: Install using one of the following
+            markdown_page: virutal/install_thumb_drive.md
+            label: Running from Thumb Drive
+
+            markdown_page: virtual/install_virtual_machine_mac.md
+            label: Installing on Mac (Intel)
+
+            markdown_page: virtual/install_virtual_machine_parallels.md
+            label: Installing on Mac/Parallels (M1+)
+
+            markdown_page: virtual/install_virtual_machine_win.md
+            label: Installing on Windows
+
+            markdown_page: virtual/install_linux.md
+            label: Installing on Linux
+        end_folder
+
+        markdown_page: virtual/install_academy.md
+        label: Install Academy Material
+
+        markdown_page: virtual/install_test.md
+        label: Test Your Software
+    end_folder
+end_block
 begin_block
     block_label: First Day at Camp
     begin_folder
         folder_label: Getting Started
 
-        markdown_page: in_person/welcome/welcome.md
-        label: Welcome to the Lab
+        markdown_page: virtual/start_intro.md
+        label: Welcome to the Texas Robotics Academy
 
-        markdown_page: in_person/linux_and_git/using_linux.md
+        markdown_page: virtual/start_linux.md
         label: Using Linux
     end_folder
 end_block

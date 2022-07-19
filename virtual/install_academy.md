@@ -1,6 +1,7 @@
 # Install the Robotics Academy Software
 {{ site.data.alerts.note }}
-These instructions require for you to have Ubuntu 20.04 currently running. If you are running 18.04, get help from the instructor or a counselor, as there are slight differences.
+These instructions require for you to have Ubuntu 18.04 currently running. 
+If you are running 20.04, get help from the instructor or a counselor, as there are slight differences.
 {{ site.data.alerts.end }}
 
 ## Installing ROS
@@ -12,7 +13,7 @@ These instructions require for you to have Ubuntu 20.04 currently running. If yo
 * ctrl-c works as expected from Firefox or Chrome.
 * To paste into the terminal, type ctrl-shift-v or right-click.
 * Enter the next command when you see the green line with the $ at the end. Only copy one line at a time.
-* You will need to enter the password (robocamp2021) when prompted. Nothing will appear on the screen when you do so, not even dots; this is normal.
+* You will need to enter the password (robocamp2022) when prompted. Nothing will appear on the screen when you do so, not even dots; this is normal.
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.terminal_commands }}
@@ -28,7 +29,7 @@ These instructions require for you to have Ubuntu 20.04 currently running. If yo
 **Updating and upgrading packages**
 * `sudo apt update`
 * `sudo apt upgrade -y`
-* `sudo apt install ros-noetic-desktop-full`
+* `sudo apt install ros-melodic-desktop-full`
 
 **Installing Visual Studio Code**
 * `sudo snap install --classic code`
@@ -49,8 +50,8 @@ These instructions require for you to have Ubuntu 20.04 currently running. If yo
 * `sudo apt install git`
 
 **Setting up ROS to start every time you log in**
-* `source /opt/ros/noetic/setup.bash`
-* `echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc`
+* `source /opt/ros/melodic/setup.bash`
+* `echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc`
 * `source ~/.bashrc`
 
 **Building the Robotics Academy Workspace and Packages**
