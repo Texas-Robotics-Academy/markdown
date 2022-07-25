@@ -46,12 +46,12 @@ In the next two exercises you will need to come up with a good threshold with wh
 
 ### Exercise 4.2.1
 
-- Navigate to and open the ex_4_2_1.cpp file located in the src folder of the 4_2 package. It should already be filled with the "empty program" from ["Robot Programming Introduction"](/robot_programming_introduction.html)
+- Navigate to and open the ex_4_2_1.cpp file located in the src folder of the 4_2 package. It should already be filled with the "empty program" from "Robot Programming Introduction"
 - Write a short program that will print "Left Sensor Activated" when the left sensor is activated, "Right Sensor Activated" when the right sensor is activated, and "Both Sensors Activated" when both sensors are activated on the LCD on the robot.
 - To test the program:
   - **roslaunch** the box.world launch file
   - **rosrun** your code
-  - In order to move the robot closer to a wall, you will have to teleop the robot. If you can't remember how to do that, check the [documentation](/docs.html).
+  - In order to move the robot closer to a wall, you will have to teleop the robot. `rosrun texas_robotics_academy teleop_texbot`
 
 {{+}}Tutorial 4.2.1, 4_2_1{{+}}
 
