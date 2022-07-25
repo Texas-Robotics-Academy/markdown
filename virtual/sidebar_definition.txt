@@ -83,6 +83,9 @@ begin_block
         markdown_page: virtual/robot_cloning.md
         label: Cloning the Robotics Exercises
 
+        markdown_page: virtual/robot_programming.md
+        label: Robot Programming Introduction
+
         markdown_page: virtual/robot_functions.md
         label: LCD and Obstacles
 
