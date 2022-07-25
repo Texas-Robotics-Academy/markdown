@@ -1,4 +1,4 @@
-# Running from a Virtual Machine (Mac)
+# Installing on Mac (Intel)
 The virtual machine that you will use is VMWare. It is available for free. Installation instructions are below.
 
 ## Installing VMWare
@@ -47,6 +47,7 @@ Installing with VMWare will require 20GB of free space on your hard drive.
 
         * Go to Hard Disk and set 20 GB Hard Drive Space 
         * Under Hard Disk select the "Advanced options" dropdown and select “Pre allocate disk space” and unselect “Split into multiple files”, then click apply
+        
     {{ site.data.alerts.note }}
     VMWare may ask if it can access your webcam when it first loads up your OS. You should say "yes."
     {{ site.data.alerts.end }}
@@ -123,4 +124,4 @@ Want Ubuntu full-screen? Hit ctrl-alt-enter.
 Want it back in windowed mode? Do the same thing.
 {{ site.data.alerts.end }}
 
-{{-}}Install the Robotics Academy Software, install_academy, Next, you should go to{{-}}
+{{-}}Install the Robotics Academy Software, virtual/install_academy.md, Next, you should go to{{-}}

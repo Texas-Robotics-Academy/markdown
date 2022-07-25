@@ -9,13 +9,13 @@ We will use several tools commonly used in robotics research.
 {{ site.data.alerts.warning }}
 Ubuntu 18.04 is the only supported Linux version.
 
-We provide multiple installation methods (including running in a virtual machine under Mac OS, Windows, or even other Linux versions).
+We provide multiple installation methods (including running in a virtual machine under Mac OS, Windows).
 
-We will not provide technical support for other versions of Linux or attempts to run under other operating systems.
+We will not provide technical support for other versions of Linux or attempts to run under other operating systems. The only supported Linux version is Ubuntu 18.04. If you are running a different version of Linux, please install Ubuntu 18.04 under VMWare.
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.important }}
-If you run into problems, we can be reached at *texas.robocamp@gmail.com*.
+If you run into problems, we can be reached at *hart@cs.utexas.edu* please CC *tbuckley@cs.utexas.edu* in any correspondence relating to the Texas Robotics Academy.
 {{ site.data.alerts.end }}
 
-{{-}}Choose Your Installation Method, install_choosing, Next{{-}}
+{{-}}Choose Your Installation Method, virtual/install_choosing.md, Next{{-}}

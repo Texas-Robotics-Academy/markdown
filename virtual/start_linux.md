@@ -134,8 +134,4 @@ To open VSCode you can do one of two things:
 
 Before you finish for the day, make sure you save all your work and turn off the computer. Open the account menu in the top right-hand corner of your screen, click the shut down icon, and select shut down from the power options.
 
-{{site.data.alerts.note}}
-If you are running Ubuntu from a USB, please do not unplug the USB before your computer has fully shut down, as this may corrupt files on the USB.
-{{site.data.alerts.end}}
-
-{{-}}Introduction to Programming, programming_intro, Next{{-}}
+{{-}}Introduction to Programming, virtual/programming_intro.md, Next{{-}}

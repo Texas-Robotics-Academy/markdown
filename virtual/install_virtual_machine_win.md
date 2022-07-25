@@ -1,4 +1,4 @@
-# Running from a Virtual Machine (Windows or Linux)
+# Installing on Windows
 The virtual machine that you will use is VMWare. It is available for free. Installation instructions are below.
 
 ## Installing VMWare
@@ -55,7 +55,7 @@ Installing with VMWare will require 20GB of free space on your hard drive.
     {{ site.data.alerts.end }}
 
     {{ site.data.alerts.note }}
-    Upon first booting your Virtual Machine, VMWare will automatically install Ubuntu 20.04.
+    Upon first booting your Virtual Machine, VMWare will automatically install Ubuntu 18.04.
     {{ site.data.alerts.end }}
 
     {{ site.data.alerts.note }}
@@ -118,4 +118,4 @@ Want Ubuntu full-screen? Hit ctrl-alt-enter.
 Want it back in windowed mode? Do the same thing.
 {{ site.data.alerts.end }}
 
-{{-}}Install the Robotics Academy Software, install_academy, Next, you should go to{{-}}
+{{-}}Install the Robotics Academy Software, virtual/install_academy.md, Next, you should go to{{-}}

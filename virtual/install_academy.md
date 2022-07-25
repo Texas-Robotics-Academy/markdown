@@ -1,7 +1,6 @@
-# Install the Robotics Academy Software
+# Install Academy Material
 {{ site.data.alerts.note }}
 These instructions require for you to have Ubuntu 18.04 currently running. 
-If you are running 20.04, get help from the instructor or a counselor, as there are slight differences.
 {{ site.data.alerts.end }}
 
 ## Installing ROS
@@ -43,11 +42,7 @@ If you are running 20.04, get help from the instructor or a counselor, as there 
 
 
 **Adding tools and libraries you will need**
-* `sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential`
-* `sudo apt install python3-catkin-tools`
-* `sudo apt install python3-osrf-pycommon`
-* `sudo apt install libgtk-3-dev libncurses5-dev`
-* `sudo apt install git`
+* `sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential python3-catkin-tools python3-osrf-pycommon libgtk-3-dev libncurses5-dev git`
 
 **Setting up ROS to start every time you log in**
 * `source /opt/ros/melodic/setup.bash`
@@ -63,8 +58,6 @@ If you are running 20.04, get help from the instructor or a counselor, as there 
 * `catkin_init_workspace`
 * `git clone https://github.com/Texas-Robotics-Academy/texas_robotics_academy.git`
 * `cd ..`
-* `sudo rosdep init`
-* `rosdep update`
 * `catkin build`
 
 **Setting up your catkin workspace to start every time you log in**
@@ -83,4 +76,4 @@ If you are running 20.04, get help from the instructor or a counselor, as there 
 
 
 
-{{-}}Test Your Installation, install_test, Next, you should go to{{-}}
+{{-}}Test Your Installation, virtual/install_test.md, Next, you should go to{{-}}

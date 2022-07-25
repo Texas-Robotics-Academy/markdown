@@ -1,22 +1,38 @@
-# Running from a Virtual Machine (Mac/Parallels)
+# Installing on Mac/Parallels (M1+)
 
-## Installing Parallels
+## Download Ubuntu 18.04
+1. Download Ubunto 18.04 from https://releases.ubuntu.com/18.04/
+    * Select "Desktop Image" and download the 64-bit PC (AMD64) desktop image.
+    * This is a large file, and may take some time to download.
+
+## Downloading Parallels and configuring Ubuntu
 1. Download and run the Parallels Desktop for Mac Installer and go through the installation prompts on the screen.
-    * https://www.parallels.com/products/desktop/welcome-trial/
+* https://www.parallels.com/products/desktop/welcome-trial/
+* Make sure you DON'T install Windows when Parallels opens. 
 2. After opening Parallels, create an account. Your username and password will be used to log into your account 
 
     {{ site.data.alerts.img_50 }}
     img/parallels_sign_in.png
     {{ site.data.alerts.img_50_end }}
 
-3. After opening Parallels, create an account. Your username and password will be used to log into your account 
+3. Choose "Install Windows or another OS from a DVD or image file"
 
     {{ site.data.alerts.img_50 }}
-    img/parallels_create_new.png
+    img/parallels_image2.png
     {{ site.data.alerts.img_50_end }}
 
+4. Then choose the Ubuntu Linux 18.04 desktop image. If it does not appear right away like below click "Choose Manually" and look for it in your Finder.
+
     {{ site.data.alerts.img_50 }}
-    img/parallels_install_ubuntu.png
+    img/parallels_image3.png
+    {{ site.data.alerts.img_50_end }}
+
+5. Set Username and Password
+    * Username and Display Name: **robocamp**
+    * Password: **robocamp2022**
+
+    {{ site.data.alerts.img_50 }}
+    img/parallels_image4.png
     {{ site.data.alerts.img_50_end }}
 
 4. Log in with your username and password you created
@@ -29,4 +45,4 @@
 9. Linux is now installed and configured.
 
 
-{{-}}Install the Robotics Academy Software, install_academy, Next, you should go to{{-}}
+{{-}}Install the Robotics Academy Software, virtual/install_academy.md, Next, you should go to{{-}}

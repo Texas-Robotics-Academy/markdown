@@ -190,6 +190,7 @@ Calling this function will cause your program to wait for `useconds` microsecond
 
 You'll want to use `usleep` whenever you want to keep a robot in a certain state for some time, or if you want to slow down your program to debug information.
 
+{{+}}Tutorial 4.1.1, 4_1_1{{+}}
 
 ### Exercise 4.1.2
 
@@ -204,8 +205,7 @@ In the ex_4_1_2.cpp file we have provided you, copy in your code from Exercise 4
 You can modify this exercise to use whatever cheer you like. The point is to learn how the code works.
 {{ site.data.alerts.end }}
 
-{{+}}Tutorial 4.1.1, 4_1_1{{+}}
 {{+}}Tutorial 4.1.2, 4_1_2{{+}}
 
 
-{{-}}Robot Functions & The Obstacle Detector, robot_functions, Next{{-}}
+{{-}}Robot Functions & The Obstacle Detector, virtual/robot_functions.md, Next{{-}}

@@ -1,4 +1,4 @@
-# Testing Your Installation
+# Test your Software
 
 Open a terminal.
 
@@ -37,7 +37,7 @@ If this is the case, cd (change directory) into the "catkin_ws" directory and ty
 {{ site.data.alerts.tip }}
 If your FPS is very low (below 10) or you would like to improve it, try resizing the window down.
 
-If this is too small for you to see what's going on, then please let us know *during the setup day on July 5.*
+If this is too small for you to see what's going on, then please let us know *during the setup day on July 23 and July 24.*
 {{ site.data.alerts.end }}
 
 3. If everything looks good, go back to the terminal and press ctrl-c in both windows to shut down the testing system and wait for all the windows to close completely.
@@ -51,7 +51,7 @@ Congrats! You are set up and configured for camp!
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.important }}
-If you had problems and could not complete the install, then please let us know *during the setup day on July 10.*
+If you had problems and could not complete the install, then please let us know *during the setup day on July 23 and July 24.*
 {{ site.data.alerts.end }}
 
-{{=}}{{=}}
+{{-}}Welcome!, virtual/start_welcome.md, Next{{-}}

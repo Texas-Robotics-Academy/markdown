@@ -1,4 +1,4 @@
-## Cloning the Robotics Exercises
+## Cloning the Robot Exercises
 
 You should have already created a directory named **catkin_ws** that contains another directory named **src**.
 
@@ -9,4 +9,4 @@ git clone https://github.com/texas-robocamp/robocamp_exercises.git
 {{site.data.alerts.terminal_commands_end}}
 
 
-{{-}}Robot Programming Introduction, robot_programming, Next{{-}}
+{{-}}Robot Programming Introduction, virtual/robot_programming.md, Next{{-}}

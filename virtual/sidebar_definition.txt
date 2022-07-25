@@ -5,31 +5,25 @@ end_header
 begin_block
     block_label: Installation
     begin_folder
-        folder_label: Installation and Testing
+        folder_label: Installation
 
         markdown_page: virtual/install_overview.md
-        label: Getting Started with Setup
+        label: Software Overview
 
         markdown_page: virtual/install_choosing.md
-        label: Choose Your Installation Method
+        label: Installation Method
 
-        begin_folder
-            folder_label: Install using one of the following
-            markdown_page: virutal/install_thumb_drive.md
-            label: Running from Thumb Drive
+        markdown_page: virtual/install_virtual_machine_mac.md
+        label: Installing on Mac (Intel)
 
-            markdown_page: virtual/install_virtual_machine_mac.md
-            label: Installing on Mac (Intel)
+        markdown_page: virtual/install_virtual_machine_parallels.md
+        label: Installing on Mac/Parallels (M1+)
 
-            markdown_page: virtual/install_virtual_machine_parallels.md
-            label: Installing on Mac/Parallels (M1+)
+        markdown_page: virtual/install_virtual_machine_win.md
+        label: Installing on Windows
 
-            markdown_page: virtual/install_virtual_machine_win.md
-            label: Installing on Windows
-
-            markdown_page: virtual/install_linux.md
-            label: Installing on Linux
-        end_folder
+        markdown_page: virtual/install_linux.md
+        label: Installing on Linux
 
         markdown_page: virtual/install_academy.md
         label: Install Academy Material
@@ -43,8 +37,8 @@ begin_block
     begin_folder
         folder_label: Getting Started
 
-        markdown_page: virtual/start_intro.md
-        label: Welcome to the Texas Robotics Academy
+        markdown_page: virtual/start_welcome.md
+        label: Welcome!
 
         markdown_page: virtual/start_linux.md
         label: Using Linux
@@ -55,56 +49,54 @@ begin_block
     begin_folder
         folder_label: C++ Programming
 
-        markdown_page: in_person/programming_intro.md
+        markdown_page: virtual/programming_intro.md
         label: Introduction
         
-        markdown_page: in_person/programming_cloning.md
+        markdown_page: virtual/programming_cloning.md
         label: Cloning the Exercises
 
-        markdown_page: in_person/programming_hello.md
+        markdown_page: virtual/programming_hello.md
         label: Hello World!
 
-        markdown_page: in_person/programming_math.md
+        markdown_page: virtual/programming_math.md
         label: Math and User Input
 
-        markdown_page: in_person/programming_functions.md
+        markdown_page: virtual/programming_functions.md
         label: Functions
 
-        markdown_page: in_person/programming/objects.md
-        label: Objects
+        markdown_page: virtual/programming_decisions.md
+        label: If and Switch
 
-        markdown_page: in_person/programming/decisions.md
-        label: Decisions
+        markdown_page: virtual/programming_repetition.md
+        label: Loops
 
-        markdown_page: in_person/programming/repetition.md
-        label: Repetition
-
-        markdown_page: in_person/programming/arrays.md
+        markdown_page: virtual/programming_arrays.md
         label: Arrays
-    end_folder
 
+        markdown_page: virtual/programming_objects.md
+        label: Classes and Objects
+    end_folder
+    
     begin_folder
         folder_label: Robot Programming
 
-        markdown_page: in_person/robot_programming/introduction.md
-        label: Introduction
+        markdown_page: virtual/robot_cloning.md
+        label: Cloning the Robotics Exercises
 
-        markdown_page: in_person/robot_programming/botnrollapi.md
-        label: LDC and Obstacles
+        markdown_page: virtual/robot_functions.md
+        label: LCD and Obstacles
 
-        markdown_page: in_person/robot_programming/move_the_robot.md
-        label: Move the Robot
-
-        markdown_page: in_person/robot_programming/turn_and_push.md
+        markdown_page: virtual/robot_turn_push.md
         label: Turn and Push
 
-        markdown_page: in_person/robot_programming/line_follower.md
+        markdown_page: virtual/robot_line_follower.md
         label: The Line Follower
 
-        markdown_page: in_person/robot_programming/line_following.md
+        markdown_page: virtual/robot_line_following.md
         label: Line Following
 
-        markdown_page: in_person/robot_programming/race.md
-        label: Race!
+        markdown_page: virtual/robot_race.md
+        label: Race
     end_folder
 end_block
+        

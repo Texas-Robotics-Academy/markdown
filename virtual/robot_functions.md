@@ -1,7 +1,6 @@
 # Robot Functions
 ## Documentation 
-
-We've gone ahead and included a separate page with all the documentation for using the robot [here](docs.html), but we'll be introducing you to the various functions our robot as they become useful. Feel free to come back to this page or the documentation to check up on what these functions do.
+Feel free to come back to this page to check up on what these functions do.
 
 ## `LEDs`
 
@@ -68,5 +67,5 @@ Many of you may have issues with this exercise, so please call a counselor!
 {{+}}Tutorial 4.2.2, 4_2_2{{+}}
 
 
-{{-}}Exploring the Robot's Motion, robot_move, Next{{-}}
+{{-}}Exploring the Robot's Motion, virtual/robot_move.md, Next{{-}}
 

@@ -141,6 +141,7 @@ This will let you try different things with the robot's motors to see how the ro
   - If there is an obstacle, the robot should stop, using the `move` function.
   - If there is not an obstacle, it should put leftVal and rightVal into the left and right motors, respectively, using `move` as well.
 
+{{+}}Tutorial 4.3.8, 4_3_8{{+}}
 
 ### Exercise 4.3.9
 
@@ -155,8 +156,7 @@ This will let you try different things with the robot's motors to see how the ro
 * You can use the UI you've made to adjust the speeds of the wheels to see these behaviors!
 {{ site.data.alerts.end }}
 
-{{+}}Tutorial 4.3.8, 4_3_8{{+}}
 {{+}}Tutorial 4.3.9, 4_3_9{{+}}
 
-{{-}}Turn and Push, robot_turn, Next{{-}}
+{{-}}Turn and Push, virtual/robot_turn.md, Next{{-}}
 
