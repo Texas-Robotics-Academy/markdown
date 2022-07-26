@@ -89,13 +89,13 @@ begin_block
         markdown_page: virtual/robot_functions.md
         label: LCD and Obstacles
 
-        markdown_page: virtual/robot_turn_push.md
+        markdown_page: virtual/robot_turn.md
         label: Turn and Push
 
-        markdown_page: virtual/robot_line_follower.md
+        markdown_page: virtual/robot_follower.md
         label: The Line Follower
 
-        markdown_page: virtual/robot_line_following.md
+        markdown_page: virtual/robot_following.md
         label: Line Following
 
         markdown_page: virtual/robot_race.md
