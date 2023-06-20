@@ -5,14 +5,12 @@ Now that you've learned the basics of C++, we can move on to programming on the 
 
 {{ site.data.alerts.terminal_commands }}
 cd ~
-mkdir sketchbook
-mkdir sketchbook/robocamp
-wget https://github.com/texas-robocamp/exercises/raw/master/BnrOneA.zip
+wget http://botnroll.com/onea/downloads/BnrOneA23v1.zip
 arduino
 {{ site.data.alerts.terminal_commands_end }}
 
 - Navigate to "Sketch -> Import Library -> Add Library" in the menubar.
-- Click on BnrOneA.zip
+- Click on BnrOneA23v1.zip
 - Click Okay
 
 # A Boilerplate Bot'n Roll Program
