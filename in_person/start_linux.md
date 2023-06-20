@@ -79,9 +79,20 @@ To open VSCode you can do one of two things:
 
 # Arduino IDE
 
+{{ site.data.alerts.warning }}
+We need to make a quick modification to your machine to make sure that the "arduino" program works. Do the instructions below!
+{{ site.data.alerts.end }}
+
+* Open a terminal.
+* Type gedit ~/.bashrc
+* At the bottom of the file, paste: export PATH=$PATH:/lusr/opt/firstbytes/arduino-1.8.9/
+* Save and exit the file.
+* Close the terminal and reopen it.
+
 The robot uses an Arduino microcontroller (like a small computer). For programming the robot, we will use the Arduino IDE.
 
 Opening arduino is the same as opening VS Code, except that you will type "arduino" in either the terminal or the lens.
+
 
 # Logging Out
 
