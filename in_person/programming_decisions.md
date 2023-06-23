@@ -185,15 +185,19 @@ Here's a quick overview of all of the conditional operators.
 
 ### Exercise 3.4.2:
 
-Let’s make a simple program that will help Spock determine if a student is qualified for the Vulcan Academy of Science and Technology! Here are the conditions:
+Let’s make a simple program that will help Spock determine if a student is qualified for the Vulcan Academy of Science and Technology based on their math and science grades.
 
-If a student scored above a 97 in both math and science, they’re automatically in
-If a student scored above a 90 in math, they need to take the supplementary science test
-If a student scored above a 90 in science, they need to take the supplementary math test
-If a student scored below 90 but above 80 in math, they should be deferred
-If a student scored below 90 but above 80 in science, they should submit a supplemental recommendation letter
-If a student scored below 80 but above 70 in both math and science, put them on the waitlist
-If a student did not score 70 or above, they should try again next year
+The conditions are as follows:
+
+* Below a 70 in __EITHER__ math or science means automatic denial.
+* A score of 70 - 79 in __BOTH__ math and science results in them being waitlisted.
+* A score of 80 - 89 in math results in a deferrment.
+* A score of 80 - 89 in science requires a supplementary recommendation letter.
+* A score of 90 or above in __ONLY__ math requires a supplementary science test.
+* A score of 90 or above in __ONLY__ science requires a supplementary math test.
+* A score of 90 or above in __BOTH__ math and science guarantees automatic admission.
+
+The program should ask the user to input a math and science score and it should output the the result based on the conditions above.
 
 {{+}}Tutorial 3.4.2, 3_4_2{{+}}
 
