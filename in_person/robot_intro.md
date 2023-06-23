@@ -9,9 +9,9 @@ wget http://botnroll.com/onea/downloads/BnrOneA23v1.zip
 arduino
 {{ site.data.alerts.terminal_commands_end }}
 
-- Navigate to "Sketch -> Import Library -> Add Library" in the menubar.
-- Click on BnrOneA23v1.zip
-- Click Okay
+- Navigate to "Sketch -> Include Library -> Add .ZIP Library" in the menu bar at the top left.
+- Click on BnrOneA23v1.zip.
+- Click "Okay."
 
 # A Boilerplate Bot'n Roll Program
 
