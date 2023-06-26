@@ -10,34 +10,33 @@ For example, if you wanted to store a list of 10 integers in the same list or va
 using namespace std;
 
 int main() {
-    int arr[3]; // create an array that stores 3 integer types values
+    int arr[3]; // create an array that can store 3 integers
     arr[0] = 1;
     arr[1] = 2;
     arr[2] = 3;
 ```
 {{ site.data.alerts.end }}
 
-The overall structure of defining an array in C++ is:
+Let's take a look at `int arr[3]`. The overall structure of defining an array in C++ is:
 
-Write the type of data this array is going to store (int, float, double etc.)
-Then write the name of this array variable
-Finally, open and close square brackets, and inside the square brackets specify how many items this array can store (called the **length** of the array)
+* `int`: Write the type of data this array is going to store (int, float, double, etc.).
+* `arr`: Write the name of this array variable.
+* `[3]`: Inside square brackets [], specify how many items this array can store (called the **length** of the array).
 
-Another important thing to notice is array indexing. When we make `arr` above, it has 3 slots. We started to assign values to `arr` beginning from slot 0. This is because arrays follow 0-based indexing. Simply put, this means that to access the index of the first element in any array is 0, not 1. And more generally, to access any index or slot in an array, you should do something like this:
+
+Another important thing to notice is array indexing. When we make `arr` above, it has 3 slots. We started to assign values to `arr` beginning from slot 0. This is because arrays follow 0-based indexing. Simply put, this means that the location of the first element is 0, not 1. More generally, to access any index or slot in an array, you should do something like this:
 
 ```
 cout << array[i] << endl; // this will print the value at the i^th slot of array
+
 ```
 
-### Exercise 3.6.1:
-
-- Create an array that stores 10 numbers. Then, print the average of all 10 of those numbers.
-
-{{+}}Tutorial 3.6.1, 3_6_1{{+}}
 
 ## Arrays and Loops
 
-Arrays can also be initialized using for-loops. This is how you should initialize any big array programmatically:
+Arrays can also be initialized using `for` loops. Loops execute the same code multiple times.
+
+This is how you should initialize any big array programmatically:
 
 {{ site.data.alerts.callout_code_div }}
 ```
@@ -46,12 +45,20 @@ using namespace std;
 
 int main() {
     int arr[10];
-    for(int i = 1; i <= 10; i++) {
+    for (int i = 0; i < 10; i++) {
         // this array stores integers 1 - 10
         arr[i] = i + 1;
     }
 ```
 {{ site.data.alerts.end }}
+
+
+### Exercise 3.6.1:
+
+- Create an array that stores 10 integers. Then, print the average of all 10 of those numbers. Hint: loop through each index of the array using a `for` loop.
+
+{{+}}Tutorial 3.6.1, 3_6_1{{+}}
+
 
 ### Exercise 3.6.2:
 
