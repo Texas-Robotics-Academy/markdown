@@ -20,7 +20,11 @@ This chart shows the logical operators:
 |!=   | is not the same as           | 3 != 5                |
 
 
-The last two operations, `==` and `!=`, are called equivalency operators because they check if two things are exactly the same, or equivalent. For example, `9 == 9` is true because 9 is exactly the same as 9. Additionally, if we have a variable `myVar` and is set to 9, then `myVar == 9` is true. However, `9 == "nine"` is false because an integer (9) is never exactly the same as a `string` ("nine"). 
+The last two operations, `==` and `!=` check if two things are exactly the same. For example:
+
+* `9 == 9` is true because 9 is exactly the same as 9.
+* If we have a variable `myVar` and is set to 9, then `myVar == 9` is true.
+* However, `9 == "nine"` is false because an integer (9) is never exactly the same as a `string` ("nine"). 
 
 The important thing to understand about logical operators is that they return a **bool**. So, if you wrote `5 < 9`, it would be **false**, and if you wrote `10 > 9`, it would be **true**. 
 
@@ -28,7 +32,10 @@ The important thing to understand about logical operators is that they return a 
 
 `if` statements evaluate conditions. **if** something is true, do one thing; **else** do something else. 
 
-Put the **conditional clause**, which is the logical expression we are checking, in parentheses after the word "if". Then put all of the code that we want the computer to execute *if* the conditional clause is true inside of curly braces. After an `if`, we can put an `else if`. `else if` works exactly the same as an `if` but is only checked by the computer if the first `if` statement is false. We can also put an `else` after an `if` or `else if`, which is the code that is executed if all of the previous `if` and `else if` statements are false.
+Syntax of an `if` statement:
+* Put the logical expression we are checking in parentheses after the word `if`. Then put all of the code that we want the computer to execute *if* the conditional clause is true inside of curly braces.
+* We can put an `else if` after an `if`. `else if` works exactly the same as an `if` but is only checked by the computer if the first `if` statement is false.
+* We can put an `else` after an `if` or `else if`. `else` is executed if all of the previous `if` and `else if` statements are false.
 
 Here is an example of a simple `if` statement use case:
 
