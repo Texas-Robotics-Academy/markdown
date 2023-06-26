@@ -106,10 +106,11 @@ We will come back to what **return** means later in the academy. For now, just p
 
 ## Compiling and Executing from the Command Line
 
-Compiling code turns the code into a program that can be **executed**.
+**Compiling** code turns the code into a program that can be **executed**.
 
 - Go back to your terminal where you should be in ~/cpp_exercises/3_1
   - Use the `cd` command to get there if you aren't there already!
+  - Let a PA know if you need help learning the `cd` command!
 
 {{ site.data.alerts.terminal_commands }}
 g++ ex_3_1.cpp -o HelloWorld
@@ -123,7 +124,7 @@ g++ ex_3_1.cpp -o HelloWorld
 
 - Check the output in the terminal to see if the build was a success.
   - If your build is successful, there will be no output.
-- Run your program
+- Run your program.
 
 {{ site.data.alerts.terminal_commands }}
 ./HelloWorld
@@ -134,9 +135,19 @@ g++ ex_3_1.cpp -o HelloWorld
 This is a relative path, so this literally tells the computer, "Run the HelloWorld that is in this directory."
 {{ site.data.alerts.end }}
 
+{{ site.data.alerts.warning }}
+You will be compiling many times throughout the course of these exercises. Before you run the code to compile and execute in the terminal, make sure you are currently in a directory that has access to the code you wrote! 
+
+For example, if your Hello World code is located in a file called ex_3_1.cpp in a directory called 3_1, make sure your terminal is correctly navigated to that directory! Ask a PA if you need help with this.
+{{ site.data.alerts.end }}
+
+{{ site.data.alerts.note }}
+We use "directory" and "folder" interchangeably. You probably know them as folders in the Files application, but computer scientists call them directories in the terminal.
+{{ site.data.alerts.end }}
+
 ## Exercise 3.1:
 
-- Modify the Hello World program so that it prints, "Hello <Your Name>!"
+- Modify the Hello World program so that it prints, "Hello *Your Name*!"
     - For example, if your name is Justin, it would display, *Hello Justin!*
 - Next, add a second line of text that says, "Programming is actually pretty fun when you get right down to it."
 
@@ -144,6 +155,10 @@ This is a relative path, so this literally tells the computer, "Run the HelloWor
 
 From here on out you will be creating new files for each exercise you do. It would be a good idea to name the files for each exercise according to the exercise name. For example, directory 3_1 will contain exercise ex_3_1.cpp, and directory 3_2 will contain exercises ex_3_2_1.cpp, ex_3_2_2.cpp, and ex_3_2_3.cpp
 {{site.data.alerts.end}}
+
+{{ site.data.alerts.warning }}
+Make sure you name your files correctly in VSCode! All C++ files should have *.cpp* appended to the end of the file name.
+{{ site.data.alerts.end }}
 
 {{+}}Tutorial 3.1, 3_1{{+}}
 
