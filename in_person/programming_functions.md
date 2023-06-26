@@ -9,7 +9,7 @@ Look at `main()`
 {{ site.data.alerts.callout_code_div }}
 ```
 int main(){
-     //code goes here
+     // code goes here
      return 0;
 }
 ```
@@ -20,7 +20,7 @@ Just like variables, functions also have a type! The main difference is that a v
 The type of value that a function returns is called its **return type**.
 {{ site.data.alerts.end }}
 
-`main()`'s return type is `int` (it says so to the left of `main`). `return` gives a value back to the thing that called the function, in this case, the operating system.
+`main()`'s return type is `int` (it says so to the left of `main`). `return 0;` gives a value (0) back to the thing that called the function.
 
 When `main()` is done running, it gives back an int to Linux.
 
@@ -164,7 +164,7 @@ int main(){
 
 During the execution of this code, the variable `userName` is copied to the **parameter** `name` in `printGreeting`.
 
-While the computer is executing the code in `printGreeting`, it can't use the variable `userName`. This is because `userName` is only defined (available) in `main` (due to **scoping**). 
+While the computer is executing the code in `printGreeting`, it can't use the variable `userName`. This is because `userName` is only available in `main` (due to **scoping**). 
 
 This is why we have the parameter `name` - the value of `userName` gets passed in as the parameter `name` so that `printGreeting` has access to that data. 
 
@@ -174,7 +174,7 @@ When the computer finishes executing `printGreeting` and returns to `main`, it c
 Code blocks are a great way to keep track of scoping! Any variables that are declared inside of a block (enclosed by `{}`) can only be used inside of that block.
 {{ site.data.alerts.end }}
 
-Functions are great because they can be called with different arguments being passed in to the same parameters.
+Functions are great because they can be called with different arguments being passed into the same parameters.
 
 To illustrate this, without changing `printGreeting`, we can use it to print greetings to three different people:
 
@@ -245,9 +245,7 @@ float squareANum(float num){
 
 Notice that since we're returning a float value, we have the return type as `float` instead of `void`, and then tell the computer to `return numSquared` to the function that called it.
 
-Since we are returning something to `main`, we need to set up a variable to store the value that we are returning.
-
-This part of programming is like playing a game of catch. You can imagine that the functions `squareANum` and `main` are playing a game of catch, and `squareANum` is throwing the variable `numSquared` at `main`. If `main` doesn't catch the ball, the ball will fall into the grass and be lost. In programming, `main` "catches the ball" by having a variable in place to store the return value---if it doesn't, the value is gone forever. Since we want to store the result, we'll set our call to `squareANum` in `main` equal to the variable `theSquaredNumber`. 
+Since we are returning something to `main`, we need to set up a variable in `main` to store the value that is received from `squareANum`. Let's call this variable `theSquareNumber`.
 
 In other words, we need to create a variable in `main` to store the value that is returned from `squareANum`. Here's the whole program:
 
