@@ -187,19 +187,19 @@ Let’s make a simple program that will help Spock determine if a student is qua
 
 The conditions are as follows:
 
-* A score below 70 in __EITHER__ math or science means automatic denial.
+* A score below 70 in __EITHER__ math or science results in an automatic denial.
   
-* A score of 70 - 79 in __EITHER__ math or science results in them being waitlisted.
+* A score of 70 - 79 in __EITHER__ math or science results in a waitlist.
   
-* A score of 80 - 89 in math results in them being deferred.
-* A score of 80 - 89 in science requires a supplementary recommendation letter.
+* A score of 80 - 89 in math results in an automatic deferral.
+* If the math score is higher than 89, a score of 80 - 89 in science requires a supplementary recommendation letter.
   
-* A score of 90 or above in math requires a supplementary science test.
-* A score of 90 or above in science requires a supplementary math test.
+* A score of 90 or above in __ONLY__ math requires a supplementary science test.
+* A score of 90 or above in __ONLY__ science requires a supplementary math test.
   
 * A score of 90 or above in __BOTH__ math and science guarantees automatic admission.
 
-The program should ask the user to input a math and science score and it should output the admissions result based on the conditions above.
+Your program should ask the user to input a math and science score and then output the admissions result based on the conditions above (using `if` statements).
 
 {{+}}Tutorial 3.4.2, 3_4_2{{+}}
 
