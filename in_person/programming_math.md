@@ -108,7 +108,7 @@ It's good practice to have short comments in your code to remember what your cod
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
   float conversionFactor, earthWeight, moonWeight;  // define variables as floats
 
   // prompt the user to enter weight
