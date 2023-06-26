@@ -136,9 +136,9 @@ This is a relative path, so this literally tells the computer, "Run the HelloWor
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.warning }}
-You will be compiling many times throughout the course of these exercises. Before you run the code to compile and execute in the terminal, make sure you are currently in a directory that has access to the code you wrote! 
+You will be compiling many times throughout the course of these exercises. Before you run the above-provided code to compile and execute in the terminal, make sure you are currently in a directory that has access to the code you wrote! 
 
-For example, if your Hello World code is located in a file called ex_3_1.cpp in a directory called 3_1, make sure your terminal is correctly navigated to that directory! Ask a PA if you need help with this.
+For example, if your Hello World code is located in a file called ex_3_1.cpp in a directory called 3_1 (and if 3_1 is in a directory called cpp_exercises), make sure your terminal is correctly navigated to that directory (so your current directory should look something like ~/cpp_exercises/3_1)! Ask a PA if you need help with this.
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.note }}
