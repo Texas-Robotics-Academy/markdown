@@ -4,6 +4,8 @@ In C++, multiplication is represented with the * symbol.
 
 C++ stores values in **variables**.
 
+In code, a variable is a thing that stores a value.
+
 For example:
 
 {{ site.data.alerts.callout_code_div }}
@@ -14,7 +16,7 @@ y = 5 * x;
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.tip }}
-Unlike in mathematical formulas, the `=` sign means **assignment**. It sets the value of the variable, but does not state that those two things are equal.
+Unlike in mathematical formulas, the `=` sign does not mean equals. Rather, it means **assignment**. It sets the value of the variable. It does not state that those two things are equal.
 
 So in this short program:
 
@@ -24,7 +26,7 @@ x = y;
 y = 5;
 ```
 
-At the end, x has 0 in it, not 5!
+In the end, x has 0 in it, not 5!
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.tip }}
@@ -39,9 +41,9 @@ Variable names cannot have spaces in them and cannot start with numbers.
 
 C++ requires types for variables.
 
-A variable storing a number with a decimal should be a `float`, which stands for floating (decimal) point number.
+A variable storing a number with a decimal should be a `float`, which stands for a decimal number.
 
-Variables must be declared before they are used. This is done by saying the variable **type** and then the name of the variable.
+Variables must be declared before they are used. This is done by saying the **type** of the variable and then the name of the variable.
 
 Here's a quick reference.
 
@@ -50,19 +52,19 @@ Type    | Example
 float	| 0.124 or 4.0
 int	    | 4 or -134
 string	| "Hello World"
-bool	| true/false
+bool	| true false
 
 An object that weighs 1.0 pounds on Earth would weigh 0.1654 pounds on the moon. You will now write a short computer program which converts Earth weight to Moon weight. (This is a brief outline of all the steps.)
 
-1. Save the conversion factor (0.1654) as the variable `conversionFactor`
+1. Save the conversion factor (0.1654) as the variable `conversionFactor`.
 
-2. Ask the user's weight
+2. Ask the user's weight.
 
-3. Save the weight to a variable called `earthWeight`
+3. Save the weight to a variable called `earthWeight`.
 
-4. Multiply `earthWeight` and `conversionFactor` and save the result as the variable `moonWeight`
+4. Multiply `earthWeight` and `conversionFactor` and save the result as the variable `moonWeight`.
 
-5. Display `moonWeight` to the user
+5. Display `moonWeight` to the user.
 
 ## Getting User Input
 
@@ -98,7 +100,7 @@ Comments are ignored by the compiler and are used by programmers to explain part
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.tip }}
-It's good practice to have short comments in your code to remeber what your code does later.
+It's good practice to have short comments in your code to remember what your code does later.
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.callout_code_div }}
@@ -107,15 +109,15 @@ It's good practice to have short comments in your code to remeber what your code
 using namespace std;
 
 int main(){
-  float conversionFactor, earthWeight, moonWeight;  //define variables as floats
+  float conversionFactor, earthWeight, moonWeight;  // define variables as floats
 
-  //Prompt the user to enter weight
-  //Note that there is no "endl", so the prompt will appear on the same line.
+  // prompt the user to enter weight
+  // note that there is no endl, so the prompt will appear on the same line
   cout << "Enter your weight on earth: ";
-  cin >> earthWeight; //Store what the user types as earthWeight
+  cin >> earthWeight; // store what the user types as earthWeight
   conversionFactor = 0.1654;
-  moonWeight = earthWeight*conversionFactor;
-  //print out conversion
+  moonWeight = earthWeight * conversionFactor;
+  // print out conversion
   cout << "Something weighing " << earthWeight << "lbs on earth would weigh "<< moonWeight << " lbs on the moon." << endl;  
   return 0;
 }
@@ -123,7 +125,7 @@ int main(){
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.tip }}
-Notice how the value for earthWeight is printed with "lbs" right next to it? Cout will not add spaces between the strings and the variables you print. For readability, it's good practice to include these spaces yourself.
+Notice how the value for `earthWeight` is printed with "lbs" right next to it? `cout` will not add spaces between the strings and the variables you print. For readability, it's good practice to include these spaces yourself.
 {{ site.data.alerts.end }}
 
 
@@ -139,9 +141,9 @@ Operator |	Operation
 /	     | division
 %	     | modulus (remainder)
 
-When you divide two integers, the remainder of the two numbers is left out. This is called **truncation**.
+When you divide two variables of the `int` type, the remainder of the two numbers is left out. This is called **truncation**.
 
-In integer division, `5 / 2` will give you 2, not 2.5. If you want the full value, you must use a float.
+So, in integer division, `5 / 2` will give you 2, not 2.5. If you want the full value, you must use a float.
 
 The `%` (**modulus**) operator gives you the remainder of integer division.
 
@@ -150,15 +152,18 @@ So if you want the remainder of `5 / 2` (which is 1), you would say:
 {{ site.data.alerts.callout_code_div }}
 ```
 int rem;
-rem = 5%2;
+rem = 5 % 2;
 ```
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.note }}
-In programming there is a difference between variable defintition and assignment. The first line in the above code block is an example of variable definition because a variable of type `int` named rem was declared. The second line is an example of variable assignment because the variable was given the value of 5%2.
+In programming, there is a difference between variable declaration and assignment. The first line in the above code block is an example of variable declaration because a variable of type `int` named rem was declared (it now exists in the code). The second line is an example of variable assignment because the variable was given the value of 5 % 2 (it is given a value to store).
+
+You could combine the declaration and assignment into the following code: `int rem = 5 % 2;`
+This produces the same effect and is arguably easier.
 {{ site.data.alerts.end }}
 
-This is very useful in programming, since you can easily decide if a number is even, odd, or a multiple of some other number.
+Using the remainder operator (%) is very useful in programming since you can easily decide if a number is even, odd, or a multiple of some other number.
 
 ### Exercise 3.2.1:
 Copy the code above (Tutorial 3.2.1) into a new file named ex_3_2_1.cpp in the directory named 3_2. Then compile and run this program to ensure it is working properly.
@@ -177,7 +182,7 @@ What's the mathematical opposite of multiplication?
 
 ### Exercise 3.2.3:
 
-Write a new program that asks the user for two numbers, and then prints out the sum of the two numbers. Hint: Use multiple cin commands.
+Write a new program that asks the user for two numbers, and then prints out the sum of the two numbers. Hint: Use multiple `cin` commands.
 
 {{+}}Tutorial 3.2.3, 3_2_3{{+}}
 
