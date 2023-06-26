@@ -45,7 +45,7 @@ To create a new file in VSCode, type *"ctrl+n"*. To save the file, type *"ctrl+s
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
   // endl (lowercase L)
   cout << "Hello World!" << endl;
   return 0;
@@ -76,7 +76,7 @@ For the purposes of this camp, just include `using namespace std` in your progra
 {{ site.data.alerts.end }}
 
 ```cpp
-int main(){
+int main() {
 ```
 
 This next line defines the `main` function. This tells the computer that there is a function called `main` that **returns** an integer (more on this later).
