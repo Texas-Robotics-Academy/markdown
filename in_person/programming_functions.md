@@ -267,9 +267,7 @@ int main(){
    float numToSquare, theSquaredNumber;
 
    numToSquare = 5.5;
-   float otherNumToSquare = 4.4;
-   theSquaredNumber = squareANum(numToSquare);  // catch the returned value
-   squareANum(otherNumToSquare); // executes, but we lose the value. We never caught it!
+   theSquaredNumber = squareANum(numToSquare);  // catch the returned value by storing it in a variable
    cout << numToSquare << " squared equals " << theSquaredNumber << endl;
    return 0;
 }
