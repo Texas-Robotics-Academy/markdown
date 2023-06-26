@@ -1,6 +1,6 @@
 # Functions
 
-A **function**: a short program that is used as part of a larger program. It is a set of instructions with a common goal, working together to find a value. It is enclosed by curly braces {}.
+A **function** is a short program that is used as part of a larger program. It is a set of instructions with a common goal, working together to find a value. It is enclosed by curly braces {}.
 
 ## Defining a Function
 
@@ -8,7 +8,7 @@ Look at `main()`
 
 {{ site.data.alerts.callout_code_div }}
 ```
-int main(){
+int main() {
      // code goes here
      return 0;
 }
@@ -42,11 +42,11 @@ A function that does not return anything has a **return type** of **void**. This
 #include <iostream>
 using namespace std;
 
-void printGreeting(){
+void printGreeting() {
    cout << "Hello World!" << endl;
 }
 
-int main(){
+int main() {
    printGreeting();
    return 0;
 }
@@ -96,7 +96,7 @@ The general layout of this program will be:
 
 {{ site.data.alerts.callout_code_div }}
 ```
-void printGreeting(string name){
+void printGreeting(string name) {
    cout << "Hello " << name << "!" << endl;
 }
 ```
@@ -106,7 +106,7 @@ void printGreeting(string name){
 
 {{ site.data.alerts.callout_code_div }}
 ```
-int main(){
+int main() {
    string userName;
    cout << "Enter a name: ";
    cin >> userName;
@@ -126,12 +126,12 @@ Similarly, if you declare a variable inside `printGreeting`, you cannot use it o
 
 {{ site.data.alerts.callout_code_div }}
 ```
-void printGreeting(string name){
+void printGreeting(string name) {
    string myName = "Bob";
    cout << "Hello " << name << "! My name is " << myName << "." << endl;
 }
 
-int main(){
+int main() {
    printGreeting("Hannah");
    cout << "Hello " << myName << "!" <<endl;
 }
@@ -151,11 +151,11 @@ The **argument** is the information.
 
 {{ site.data.alerts.callout_code_div }}
 ```
-void printGreeting(string name){
+void printGreeting(string name) {
    cout << "Hello " << name << "!" << endl;
 }
 
-int main(){
+int main() {
    string userName ="Hannah";
    printGreeting(userName);
 }
@@ -183,12 +183,12 @@ To illustrate this, without changing `printGreeting`, we can use it to print gre
 #include <iostream>
 using namespace std;
 
-void printGreeting(string name){
+void printGreeting(string name) {
    cout << "Hello " << name << "!" << endl;
 }
 
 
-int main(){
+int main() {
    printGreeting("Peter");
    printGreeting("Justin");
    printGreeting("Joydeep");
@@ -234,7 +234,7 @@ Now we're ready to write our function:
 
 {{ site.data.alerts.callout_code_div }}
 ```
-float squareANum(float num){
+float squareANum(float num) {
    float numSquared;
 
    numSquared = num * num;
@@ -254,14 +254,14 @@ In other words, we need to create a variable in `main` to store the value that i
 #include <iostream>
 using namespace std;
 
-float squareANum(float num){
+float squareANum(float num) {
    float numSquared;
 
    numSquared = num * num;
    return numSquared;
 }
 
-int main(){
+int main() {
    float numToSquare, theSquaredNumber;
 
    numToSquare = 5.5;
@@ -294,13 +294,13 @@ For example, we can modify the `printGreeting` function so that it takes both a 
 
 using namespace std;
 
-void printGreeting(string name, int age){
+void printGreeting(string name, int age) {
    cout << "Hello " << name << "." << endl;
    cout << "You are " << age << " years old." << endl;
 }
 
 
-int main(){
+int main() {
    printGreeting("Ronald McDonald", 49);
    return 0;
 }
