@@ -20,7 +20,7 @@ This chart shows the logical operators:
 |!=   | is not the same as           | 3 != 5                |
 
 
-The last two operations, `==` and `!=` check if two things are exactly the same. For example:
+The last two operations, `==` and `!=`, check if two things are exactly the same. For example:
 
 * `9 == 9` is true because 9 is exactly the same as 9.
 * If we have a variable `myVar` that stores the value 9, then `myVar == 9` is true.
