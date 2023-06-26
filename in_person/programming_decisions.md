@@ -24,7 +24,7 @@ The last two operations, `==` and `!=`, are called equivalency operators because
 
 The important thing to understand about logical operators is that they return a **bool**. So, if you wrote `5 < 9`, it would be **false**, and if you wrote `10 > 9`, it would be **true**. 
 
-## if-statements
+## `if` statements
 
 `if` statements evaluate conditions. **if** something is true, do one thing; **else** do something else. 
 
@@ -65,7 +65,7 @@ PLEASE ASK QUESTIONS if any of this explanation didn't make sense—-we are happ
 
 {{+}}Tutorial 3.4.1, 3_4_1{{+}}
 
-## Nested if-statements
+## Nested `if` statements
 
 You can also put `if` statements inside each other to handle more complex scenarios. Here is an example:
 
@@ -111,7 +111,7 @@ AND and OR operators let us check two conditions in the same `if` statement. The
 
 ### The AND Operator
 
-The **and operator** combines two logical expressions and checks if both are true. If so, it evalutes to true; otherwise, it evaluates to false.
+The **and operator** combines two logical expressions and checks if both are true. If both conditions are true, it evalutes to true; otherwise, it evaluates to false.
 
 ```
 int x = 1;
@@ -122,7 +122,8 @@ if ((x == 1) && (y == 2)) {
 }
 
 if ((x == 2) && (y == 2)) {
-    // the first condition evaluates to false, so the whole statement is false. Code here will NOT execute
+    // the first condition evaluates to false, so the whole statement is false
+    // code here will NOT execute
 }
 
 if ((x == 2) && (y == 3)) {
@@ -132,7 +133,7 @@ if ((x == 2) && (y == 3)) {
 
 ### The OR Operator
 
-The **or operator** checks if ONE of two separate conditions returns true. If so, it evaluates to true; otherwise, it evaluates to false.
+The **or operator** checks if ONE of two separate conditions returns true. If either condition is true, it evaluates to true; otherwise, it evaluates to false.
 
 ```
 int x = 1;
@@ -142,30 +143,32 @@ if ((x == 1) || (y == 2)) {
     // code in this if statement WILL execute, because both conditions evaluated to true
 }
 
-if ((x==2) || (y==2)) {
+if ((x == 2) || (y == 2)) {
     // code here WILL execute because the second condition evaluates to true
 }
 
-if ((x==2) || (y==3)) {
+if ((x == 2) || (y == 3)) {
     // both conditions are false, so code here will NOT execute
 }
 ```
 
 ### The NOT Operator
 
-The **not operator** “flips” the result of some condition. Here is the **not operator** in action:
+The **not operator** “flips” the result of some condition from true to false or from false to true. Here is the **not operator** in action:
 
 ```
 int x = 1;
 
 if (!(x == 1)) {
-    // x is equal to 1, so we get true, but the not operator would “flip” true to false, so we won’t 
-    // enter the if-statement
+    // x is equal to 1, so (x == 1) evaluates to true
+    // adding the not operator “flips” true to false
+    // since the entire condition is false, code inside this if statement will NOT execute
 }
 
 if (!(x == 2)) {
-    // x is not equal to 1, so we get false, but the not operator would “flip” false to true, so we 
-    // would enter the if-statement
+    // x is not equal to 1, so (x == 1) evaluates to false
+    // adding the not operator “flips” false to true
+    // since the entire condition is true, code inside this if statement WILL execute
 }
 ```
 
@@ -180,21 +183,29 @@ Here's a quick overview of all of the conditional operators.
 
 ### Exercise 3.4.2:
 
-Let’s make a simple program that will help Spock determine if a student is qualified for the Vulcan Academy of Science and Technology! Here are the conditions:
+Let’s make a simple program that will help Spock determine if a student is qualified for the Vulcan Academy of Science and Technology based on their math and science grades.
 
-If a student scored above a 97 in both math and science, they’re automatically in
-If a student scored above a 90 in math, they need to take the supplementary science test
-If a student scored above a 90 in science, they need to take the supplementary math test
-If a student scored below 90 but above 80 in math, they should be deferred
-If a student scored below 90 but above 80 in science, they should submit a supplemental recommendation letter
-If a student scored below 80 but above 70 in both math and science, put them on the waitlist
-If a student did not score 70 or above, they should try again next year
+The conditions are as follows:
+
+* A score below 70 in __EITHER__ math or science means automatic denial.
+  
+* A score of 70 - 79 in __EITHER__ math or science results in them being waitlisted.
+  
+* A score of 80 - 89 in math results in them being deferred.
+* A score of 80 - 89 in science requires a supplementary recommendation letter.
+  
+* A score of 90 or above in math requires a supplementary science test.
+* A score of 90 or above in science requires a supplementary math test.
+  
+* A score of 90 or above in __BOTH__ math and science guarantees automatic admission.
+
+The program should ask the user to input a math and science score and it should output the admissions result based on the conditions above.
 
 {{+}}Tutorial 3.4.2, 3_4_2{{+}}
 
 ## switch-statements
 
-switch statements allow the programmer to make a choice based on the value of an integer. They make a choice, like if statements do, but the choice is from a list of options defined by the programmer
+`switch` statements allow the programmer to make a choice based on the value of an integer.
 
 {{ site.data.alerts.callout_code_div }}
 ```
@@ -204,13 +215,13 @@ int main() {
   cin >> option;
 
   switch (option) {
-    case 0: // if the option is 0
+    case 0: // if the variable is equal to 0
         cout << “You get to go to Disney Land!” << endl;
         break;
-    case 1: // if the option is 1
+    case 1: // if the variable equal to is 1
         cout << “You get to go to Universal Studios!” << endl;
         break;
-    // Have as many cases as you want
+    // default is kind of like the else statement—it occurs if all previous statements were skipped over
     default:
         cout << “You don’t get to go on vacation right now, sorry!” << endl;
         break;
@@ -222,12 +233,12 @@ int main() {
 {{ site.data.alerts.end }}
 
 {{site.data.alerts.note}}
-Note the `break` at the end of each case. It is important that you put that break, otherwise you would just keep going through the cases below!
+Note the `break` at the end of each case. It is important that you put that break; otherwise, you would just keep going through the cases below!
 {{site.data.alerts.end}}
 
 ### Exercise 3.4.3
 
-- Write a simple ordering system in which the user picks what they would like to have for lunch using an `if` statement. For example, `1` might be an apple, `2` might be fugu, and `3` might be a donut.
+- Write a simple ordering system in which the user picks what they would like to have for lunch using a `switch` statement. For example, `1` might be an apple, `2` might be fugu, and `3` might be a donut.
 
 {{site.data.alerts.note}}
 Fugu is a dish made from puffer fish. If is an adventurous Japanese delicacy valued for the skill that a chef must have in order to prepare it. If it is not prepared exactly correctly, the chef may accidentally slice into one of the venom sacs in the puffer fish's skin, or worse, serve the sac to their guest. Only the most highly-trained chefs should prepare this dish, because eating fugu is fatal if the venom is consumed.
