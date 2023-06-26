@@ -1,7 +1,7 @@
 # Hello World!
 
 {{ site.data.alerts.note }}
-It's customary when you learn a new programming language, to write a program to display the text "Hello World."
+It's customary when you learn a new programming language to write a program to display the text "Hello World."
 
 Displaying text is often referred to as "printing" it, so we're going to learn how to print "Hello World".
 {{ site.data.alerts.end }}
@@ -23,7 +23,7 @@ C++ programs begin in a function called **main**. You will understand this after
 
 Libraries save time by providing code that does common things.
 
-The "Hello World" example uses the **iostream** library. iostream includes a **stream** called **cout**. cout allows users to write to the terminal, which is often called **printing**.
+The "Hello World" example uses the **iostream** library. iostream includes a **stream** called **cout**. **cout** allows users to write to the terminal, which is often called **printing**.
 
 {{ site.data.alerts.terminal_commands }}
 cd ~/cpp_exercises/3_1
@@ -31,7 +31,7 @@ code .
 {{ site.data.alerts.terminal_commands_end }}
 
 {{site.data.alerts.tip}}
-The line *"code ."* is how we can open up VSCode via the command line interface. The . symbol means that we are talking about the current working directory.
+The line `code .` is how we can open up VSCode via the terminal. The `.` symbol means that we are talking about the current working directory.
 {{site.data.alerts.end}}
 
 In VSCode, make a new file in the 3_1 directory, and name it ex_3_1.cpp. Copy the following program into that file and save it.
@@ -46,7 +46,7 @@ To create a new file in VSCode, type *"ctrl+n"*. To save the file, type *"ctrl+s
 using namespace std;
 
 int main(){
-  //endl is a l not a 1
+  // endl (lowercase L)
   cout << "Hello World!" << endl;
   return 0;
 }
@@ -59,43 +59,43 @@ Let's look at this code line-by-line.
 #include <iostream>
 ``` 
 
-This line **includes** `iostream` into our program, making its contents available to our program. `iostream` is what is called a **header** or a **header file**. It contains the code needed to interface a library called the *Standard Input/Output Streams Library*. Including `iostream` allows us to use `cout`.
+This line **includes** the library `iostream` into our program, making its contents available to our program. `iostream` is what is called a **header** or a **header file**. Including `iostream` allows us to use `cout`.
 
 {{ site.data.alerts.note }}
-In general you will enclose header names in angle brackets. 
+Don't forget to enclose header names in angle brackets!
 {{ site.data.alerts.end }}
 
 ```cpp
 using namespace std;
 ```
 
-This line tells the compiler that if things are included in the *std* namespace, they don't need to lead the name with *std*. In the program here, *cout* is a part of the *std* namespace. If we did not **use** the *std* namespace, we would write it as `std::cout`.
+This line tells the compiler that if things are included in the `std` namespace, they don't need to lead the name with `std`. In the program here, `cout` is a part of the `std` namespace. If we did not **use** the `std` namespace, we would write it as `std::cout`.
 
 {{ site.data.alerts.tip }}
-For the purposes of this camp, just include *using namespace std* in your programs. Namespacing will become important if you continue programming, but we only use one namespace in this camp.
+For the purposes of this camp, just include `using namespace std` in your programs. Namespacing will become important if you continue programming, but we only use one namespace in this camp.
 {{ site.data.alerts.end }}
 
 ```cpp
 int main(){
 ```
 
-This next line defines the *main* function. This tells the computer that there is a function called *main* that **returns** an integer (more on this later).
+This next line defines the `main` function. This tells the computer that there is a function called `main` that **returns** an integer (more on this later).
 
-The code for *main*, like the code for all functions, is wrapped in curly braces. We call the code wrapped in braces a **block**. In this line, we are beginning the block with an opening brace.
+The code for `main`, like the code for all functions, is wrapped in curly braces. We call the code wrapped in braces a **block**. In this line, we are beginning the block with an opening brace.
 
 ```cpp
 cout << "Hello World!" << endl;
 ```
 
-Here print using *cout*. Put what should be printed after *<<*.
+Here we print "Hello World!" using `cout`. Make sure to include the `<<` before what you want to print.
 
-The double left-angle brackets are like an arrow pointing toward *cout*, sending something into it (in this case, *"Hello World"*) to *cout*.
+The double left-angle brackets (`<<`) are like an arrow pointing toward `cout`, sending something into it (in this case, sending "Hello World") to `cout`.
 
-After *"Hello World"* there is `<< endl`. This tells the program to end the line of text and put any new content on the next line.
+After "Hello World" there is `<< endl`. This tells the program to end the line of text and put any new content on the next line.
 
 The quotation marks indicate that what is inside is a **string**, that is, literal text that we want in the program.
 
-In c++, every line of code (ones without braces) ends in a semi-colon.
+In C++, every line of code (ones without braces) ends in a semi-colon.
 
 ```cpp
 return 0;
