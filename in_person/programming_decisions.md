@@ -1,16 +1,12 @@
 # If and Switch
 
-if-else statements enable the programmer to make a decision at a given point during the program’s operation.
+`if`, `else if`, and `else` statements are used to make a decision based on information we have.
 
-Before learning if-statements, we must learn logical operators. 
+Before learning `if` statements, we must learn logical operators. 
 
 ## Logical Operators
 
 Logical operators are used to compare two different variables.
-
-{{site.data.alerts.tip}}
-You cannot use logical operators to compare strings in C++!
-{{site.data.alerts.end}}
 
 This chart shows the logical operators:
 
@@ -24,17 +20,17 @@ This chart shows the logical operators:
 |!=   | is not the same as           | 3 != 5                |
 
 
-The last two operations, `==` and `!=`, are called equivalency operators because they check if two things are exactly the same, or equivalent. For example, 9==9 is true because 9 is exactly the same as 9. Additionally, if we have a variable `myVar` and is set to 9, then `myVar==9` is true. However, 9=="nine" is false because an integer (9) is never exactly the same as a `string` ("nine"). 
+The last two operations, `==` and `!=`, are called equivalency operators because they check if two things are exactly the same, or equivalent. For example, `9 == 9` is true because 9 is exactly the same as 9. Additionally, if we have a variable `myVar` and is set to 9, then `myVar == 9` is true. However, `9 == "nine"` is false because an integer (9) is never exactly the same as a `string` ("nine"). 
 
-The important thing to understand about logical operators is that they return a **bool**. So, if you wrote `5 < 9`, it would return **false**, and if you wrote `10 > 9`, it would return **true**. 
+The important thing to understand about logical operators is that they return a **bool**. So, if you wrote `5 < 9`, it would be **false**, and if you wrote `10 > 9`, it would be **true**. 
 
 ## if-statements
 
-if-statements evaluate conditions. **if** something is true, do one thing; **else** do something else. 
+`if` statements evaluate conditions. **if** something is true, do one thing; **else** do something else. 
 
-When we use if statements, we put the **conditional clause**, which is the logical expression we are checking, in parentheses after the word "if". Then we put all of the code that we want the computer to execute *if* the conditional clause is true inside of curly braces. After an `if`, we can have an `else if`, which works exactly the same as an `if` but is only checked by the computer when the if the first statement is false, or an `else`, which is the code that is executed if the `if` statement is false, or nothing.
+Put the **conditional clause**, which is the logical expression we are checking, in parentheses after the word "if". Then put all of the code that we want the computer to execute *if* the conditional clause is true inside of curly braces. After an `if`, we can put an `else if`. `else if` works exactly the same as an `if` but is only checked by the computer if the first `if` statement is false. We can also put an `else` after an `if` or `else if`, which is the code that is executed if all of the previous `if` and `else if` statements are false.
 
-Here is an example of a simple if-statement use case:
+Here is an example of a simple `if` statement use case:
 
 {{site.data.alerts.callout_code_div}}
 ```
@@ -46,9 +42,9 @@ int main() {
     cout << "Enter your age:  ";
     cin >> age;
 
-    if(age >= 20) {
+    if (age >= 20) {
         cout << “You are more than 20 years old!” << endl;
-    } else if(age >= 13) {
+    } else if (age >= 13) {
         cout << “Wow, you’re a teenager!” << endl;
     } else {
         cout << “You’ve still got a ways to go young Padawan” << endl;
@@ -60,18 +56,18 @@ int main() {
 {{site.data.alerts.end}}
 
 {{site.data.alerts.note}}
-Please ask questions if any of this explanation didn't make sense—-we are happy to explain in person.
+PLEASE ASK QUESTIONS if any of this explanation didn't make sense—-we are happy to explain in person.
 {{site.data.alerts.end}}
 
 ### Exercise 3.4.1:
 
-- Write a short program, like the one from the example, in which the user enters the number of miles they drive to work. Tell the user if you think that they live "near," "far," or "very far" from their workplace using if statements.
+- Write a short program, like the one from the example, in which the user enters the number of miles they drive to work. Tell the user if you think that they live "near," "far," or "very far" from their workplace using `if` statements.
 
 {{+}}Tutorial 3.4.1, 3_4_1{{+}}
 
 ## Nested if-statements
 
-You can also nest if-statements inside each other to handle more complex scenarios. Here is an example:
+You can also put `if` statements inside each other to handle more complex scenarios. Here is an example:
 
 {{site.data.alerts.callout_code_div}}
 ```
@@ -88,8 +84,8 @@ int main() {
     cout << “Enter password: “ << endl;
     cin >> password;
 
-    if(username.compare(“Bevo”) == 0) {
-        if(password.compare(“bot28”) == 0) {
+    if (username.compare(“Bevo”) == 0) {
+        if (password.compare(“bot28”) == 0) {
             cout << “You have successfully logged in!” << endl;
         } else {
             cout << “Incorrect password, please try again” << enld;
@@ -106,53 +102,52 @@ int main() {
 {{site.data.alerts.note}}
 Notice that we are using the function `compare()` to compare two strings. This is how string comparisons should be done in C++.
 
-If you would like to use this method in your program, be sure to include <string> in your program. 
+If you would like to use this method in your program, be sure to `#include <string>` in your program. 
 {{site.data.alerts.end}}
 
 ## AND, OR, and NOT operators
 
-AND and OR operators let us check two conditions in the same if statement. The three types of conditional operators - the **and operator** &&, the **or operator** ||, and the **not operator** !. 
+AND and OR operators let us check two conditions in the same `if` statement. There are three types of conditional operators - the **and operator** `&&`, the **or operator** `||`, and the **not operator** `!`. 
 
 ### The AND Operator
 
-The **and operator** checks if two separate conditions both return true. If so, then it returns, true, otherwise it returns false.
+The **and operator** combines two logical expressions and checks if both are true. If so, it evalutes to true; otherwise, it evaluates to false.
 
 ```
 int x = 1;
 int y = 2;
 
-if((x==1) && (y==2)) {
-    // this will enter the if statement, because both the conditions evaluated to true
+if ((x == 1) && (y == 2)) {
+    // code in this if statement WILL execute, because both conditions evaluated to true
 }
 
-if((x==2) && (y==2)) {
-    // the first condition evaluates to false, so the whole statement is false. We won’t enter the      
-    // if-statement
+if ((x == 2) && (y == 2)) {
+    // the first condition evaluates to false, so the whole statement is false. Code here will NOT execute
 }
 
-if((x==2) && (y==3)) {
-    // both conditions are false, so we won’t enter this if-statement
+if ((x == 2) && (y == 3)) {
+    // both conditions are false, so code here will not execute
 }
 ```
 
 ### The OR Operator
 
-The **or operator** checks if ONE of two separate conditions returns true. If so, it returns true, otherwise it returns false.
+The **or operator** checks if ONE of two separate conditions returns true. If so, it evaluates to true; otherwise, it evaluates to false.
 
 ```
 int x = 1;
 int y = 2;
 
-if((x==1) || (y==2)) {
-    // this will enter the if statement, because both the conditions evaluated to true
+if ((x == 1) || (y == 2)) {
+    // code in this if statement WILL execute, because both conditions evaluated to true
 }
 
-if((x==2) || (y==2)) {
-    // we will still enter the if-statement because the second condition evaluates to true
+if ((x==2) || (y==2)) {
+    // code here WILL execute because the second condition evaluates to true
 }
 
-if((x==2) || (y==3)) {
-    // both conditions are false, so we won’t enter this if-statement
+if ((x==2) || (y==3)) {
+    // both conditions are false, so code here will NOT execute
 }
 ```
 
@@ -163,12 +158,12 @@ The **not operator** “flips” the result of some condition. Here is the **not
 ```
 int x = 1;
 
-if(!(x==1)) {
+if (!(x == 1)) {
     // x is equal to 1, so we get true, but the not operator would “flip” true to false, so we won’t 
     // enter the if-statement
 }
 
-if(!(x==2)) {
+if (!(x == 2)) {
     // x is not equal to 1, so we get false, but the not operator would “flip” false to true, so we 
     // would enter the if-statement
 }
