@@ -34,11 +34,12 @@ Number = 4
 {{ site.data.alerts.end }}
 
 Let's take a look at the syntax of `for` loops: `for (int i = 0; i < 5; i++) {`
-* `for (` This is the starting syntax for a `for` loop. Inside the parentheses, we use three elements of code to define the number of times the loop should run. They are as follows
+
+`for (` This is the starting syntax for a `for` loop. Inside the parentheses, we use 3 elements of code to define the number of times the loop should run. They are as follows
 1. `int i = 0; ` We create a variable called `i` to count how many times our loop has executed. Let's start at 0. NOTE THE SEMICOLON!!!
 2. ` i < 5; ` We define a logical expression that will be checked after each time the loop executes. So here, we say that `i` must be less than 5 after each time. So, this loop will run as long as our counter, `i`, is less than 5. Since we're starting at 0, this loop will run exactly 5 times. NOTE THE SEMICOLON!!!
 3. `i++` We increase our counter, `i`, by 1 each time the loop executes, in order to count how many times it has already run. Here we say `i++`, which is the same as `i += 1`
-* Inside the curly braces, we write the **loop body**, or any code that we want to execute during each repetition of the `for` loop. 
+Inside the curly braces, we write the **loop body**, or any code that we want to execute during each repetition of the `for` loop. 
 
 {{site.data.alerts.note}}
 PLEASE ASK QUESTIONS about loops! High school CS classes typically spend up to a month learning about loops, but y'all are doing it in only one day! Kudos to you!
