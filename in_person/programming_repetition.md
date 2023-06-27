@@ -43,11 +43,7 @@ Let's take a look at the syntax of `for` loops: `for (int i = 0; i < 5; i++) {`
    
 Inside the curly braces, we write the **loop body**, or any code that we want to execute during each repetition of the `for` loop. 
 
-{{site.data.alerts.note}}
-PLEASE ASK QUESTIONS about loops! High school CS classes typically spend up to a month learning about loops, but y'all are doing it in only one day! Kudos to you!
-{{site.data.alerts.end}}
-
-Within the **body** of the `for` loop (the section inside the curly braces), we write some code that will be executed at each step. This is the basic structure of a `for` loop, and any of the elements mentioned above can be changed to produce different results. Here is another example:
+This is the basic structure of a `for` loop, and any of the elements mentioned above can be changed to produce different results. Here is another example:
 
 {{ site.data.alerts.callout_code_div }}
 ```
@@ -77,6 +73,11 @@ Number = 3
 - Write a loop that prints every third number starting at 15 and going down to 6 (so 6 is included in the loop).
 
 {{+}}Tutorial 3.5.1, 3_5_1{{+}}
+
+
+{{site.data.alerts.note}}
+PLEASE ASK QUESTIONS about loops! High school CS classes typically spend up to a month learning about loops, but y'all are doing it in only one day! Kudos to you!
+{{site.data.alerts.end}}
 
 ## While Loops
 
