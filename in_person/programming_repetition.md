@@ -4,7 +4,7 @@ Loops are used to execute the same block of code multiple times until they reach
 
 There are two kinds of loops that we will work with: `for` loops and `while` loops.
 
-## for Loops
+## For Loops
 
 A `for` loop repeats code a specific number of times. If you know exactly how many times you want some lines of code to repeat, you'll want to use a loop. Here is an example:
 
