@@ -84,7 +84,7 @@ The formulas for your controller now look like `K_c + (K_p * p + K_d * d)` `K_c 
 
 ## Exercise 7.1.5 - A Proportional Integral Derivative (PID) Controller for Line Following (Optional)
 
-Probably the best known controller is the PID controller, where I stands for **integral**, and, yes, it means the same thing as in calculus.
+Probably the best known controller is the PID controller, where I stands for **integral** - area under the curve.
 
 In practice, you can compute your numerical integral by adding up your errors over time to arrive at area under the curve for your potential.
 
