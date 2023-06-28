@@ -37,23 +37,17 @@ Right in the middle would be 3.5.
 
 ## Exercise 7.1.3 - A Proportional Controller for Line Following
 
-You may be familiar with the formula for the slope of a line. That would be `y = mx + c`. The term m is slope. (You may have seen this as `y = mx + b`, it's the same thing.)
+In Exercise 7.1.2, you calculated which channel (0-7) the line is closest to. This is called the **potential**. Let’s combine this concept with a linear formula (`y = mx + c`), so we have a simple linear controller – called a proportional controller.
 
-We haven't *actually* computed the slope of a line. What we've computed is called a **potential**. It indicates where the line is on the robot. However, we can combine this concept with the formula for the slope of a line to create a simple **linear controller**. This controller is **linear** because the formula that it uses is a linear function. This controller is more commonly known as a **proportional** controller.
+This will look something like this: 
 
-As realized on our robot, this will look something like this.
+- The potential computed in Exercise 7.1.2 is used to steer the robot. This is the **m** value in `y = mx + c`.
+- The **c** value refers to speed. The robot should default to going forward at a constant speed.
+  - Your constant term in your program will look something like this: `one.move (constant, constant)`
+- The **x** value is the how much the robot corrects itself during its course – called the proportional gain (**K_p**)
+- So now think of the formula as something like this: `speed = c + mx`, `speed = c = mx`.
 
-- The potential that you computed in Exercise 7.1.2 is going to be used to steer the robot.
-- The robot should default to going forward at a constant speed. You do this with a **constant term** or **constant weight**. In `y = mx + c`, that term is `c`.
-  - Your constant term in your program will look something like `one.move(constant, constant)`.
-- The potential that you computed in Exercise 7.1.2 can be thought of as the term `m` in `y = mx + c`. When you turn the robot, you want to spin one wheel more than the other. To accomplish this, you should compute how a number, using `y = mx + c` where you add mx to one side, and subtract `mx` from the other side. You can think of the formula now as `speed = b + mx, speed = b - mx`.
-  - `c` is your constant weight, or **constant gain** (`K_c`).
-  - `x` is your **proportional weight**, or, as it is better known **proportional gain** (`K_p`).
-
-
-- Write a program that creates a proportional controller, using the facts that have been written here.
-- Write an interface using the push buttons on the robot to allow you to adjust the constant and linear weights up and down.
-- Take your robot out to the bridge and try it on our race course using the proportional controller.
+Write a program that creates a proportional controller, using the facts stated above. Create an interface using the push buttons to be able to manually adjust the **K_p** and **constant** values on the robot. Take your robot out to the bridge and try it on our race course using the proportional controller. Adjust **K_p** and **constant** values as needed.
 
 {{+}}Exercise 7.1.3, 7_1_3{{+}}
 
