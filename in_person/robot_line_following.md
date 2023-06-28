@@ -55,27 +55,29 @@ Write a program that creates a proportional controller, using the facts stated a
 
 You probably noticed that your robot jerked around when using the proportional controller. This is known as "bang-bang control," and we try to prevent it from happening.
 
-We can improve on our control by adding the **derivative term**. Derivative comes from the term in calculus, meaning rate of change.
-
-If you've taken calculus, you've heard of the **finite differences method.** What it basically says is that you can approximate instantaneous slope of a tangent line (its rate of change, or derivative) by subtracting one point from another point along a cuve. This works well if the two points are close together.
+We can improve on our control by adding a **derivative** term. The derivative term approximates the rate of change at a particular point in a curve by subtracting one point from another along the curve, and finding the slope of the tangent line.
 
 Think of your robot as sampling two points on a curve, and the angle that you want the robot to steer at as the tangent line on the curve.
+
+What this all means is that you can take the potential calculated in Exercise 7.1.2 at your current time step, subtract the potential computed at the *previous* time step (a time step being one execution of your `loop` function) and arrive at the derivative that you want.
 
 {{ site.data.alerts.tip }}
 If this doesn't make sense to you, get a counselor to help you. If it doesn't make sense to them, get them to get Justin, and make them listen to the explanation too.
 {{ site.data.alerts.end }}
 
-What this all means is that you can take the potential calculated in Exercise 7.1.2 at your current time step, subtract the potential computed at the *previous* time step (a time step being one execution of your `loop` function) and arrive at the derivative that you want.
-
-You now have 3 terms for your controller:
+You now have 3 (adjustable) terms for your controller:
 - **Constant gain** (`K_c`).
 - **Proportional gain** (`K_p`).
 - **Derivative gain** (`K_d`).
 
+And two calculated terms:
+- **Potential** (p)
+- **Derivative** (d)
+
 The formulas for your controller now look like `K_c + (K_p * p + K_d * d)` `K_c - (K_p * p + K_d * d)`
 
 - Implement this on your robot.
-- Add `K_d` to your user interface.
+- Add K_d to your user interface, so it is adjustable using push buttons.
 - Take your robot out to the bridge and try it on our race course using the PD controller.
 
 {{+}}Exercise 7.1.4, 7_1_4{{+}}
