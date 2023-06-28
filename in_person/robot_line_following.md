@@ -45,7 +45,7 @@ This will look something like this:
 - The **c** value refers to speed. The robot should default to going forward at a constant speed.
   - Your constant term in your program will look something like this: `one.move (constant, constant)`
 - The **x** value is the how much the robot corrects itself during its course – called the proportional gain (**K_p**)
-- So now think of the formula as something like this: `speed = c + mx`, `speed = c = mx`.
+- So now think of the formula as something like this: `speed = c + mx`, `speed = c - mx`.
 
 Write a program that creates a proportional controller, using the facts stated above. Create an interface using the push buttons to be able to manually adjust the **K_p** and **constant** values on the robot. Take your robot out to the bridge and try it on our race course using the proportional controller. Adjust **K_p** and **constant** values as needed.
 
