@@ -1,5 +1,5 @@
 # Software Manual
-The robot comes with a software manual that you may find helpful in this week's adventure. You can find it [here](forms/software_manual.pdf)
+The robot comes with a software manual that you may find helpful in this week's adventure. You can find it [here](https://botnroll.com/onea/downloads/Software-User-Manual-Bot'n-Roll-ONE-A.pdf)
 
 # Function List
 
