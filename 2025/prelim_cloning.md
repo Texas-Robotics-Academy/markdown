@@ -8,7 +8,7 @@ Need help opening a terminal? Look back to the slides by clicking on "Welcome!" 
 {{ site.data.alerts.end }}
 
 {{ site.data.alerts.terminal_commands }}
-git clone git@github.com:Texas-Robotics-Academy/activities.git
+git clone https://github.com/Texas-Robotics-Academy/activities.git
 cd activities
 code .
 arduino &
