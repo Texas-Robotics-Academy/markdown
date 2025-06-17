@@ -7,9 +7,11 @@ Open a terminal.
 Need help opening a terminal? Look back to the slides by clicking on "Welcome!" and navigating to them.
 {{ site.data.alerts.end }}
 
-{{ site.data.alerts.terminal_commands}}
+{{ site.data.alerts.terminal_commands }}
 echo "export PATH=$PATH:/lusr/opt/firstbytes/arduino-1.8.19" >> ~/.bashrc
-{{ site.data.aleters.termina_commands_end}}
+{{ site.data.alerts.terminal_commands_end }}
+
+Log out, then log back in.
 
 {{ site.data.alerts.terminal_commands }}
 git clone https://github.com/Texas-Robotics-Academy/activities.git
