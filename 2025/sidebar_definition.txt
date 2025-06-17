@@ -1,0 +1,47 @@
+begin_header
+    markdown_page: 2025/welcome.md
+    label: Welcome!
+end_header
+begin_block
+    block_label: Handy Guides
+    begin_folder
+        folder_label: Reference Pages 
+
+        markdown_page: 2025/cheat_botnroll.md
+        label: Bot'n Roll Reference
+
+    end_folder
+end_block
+begin_block
+    block_label: Activities
+    begin_folder
+        folder_label: Preliminaries
+
+        markdown_page: 2025/prelim_cloning.md
+        label: Cloning The Exercises
+
+    end_folder
+
+    begin_folder
+        folder_label: Programming
+
+        markdown_page: 2025/exercise_hello.md
+        label: Hello World!
+
+        markdown_page: 2025/exercise_variables_delay.md
+        label: Variables and a few robot functions
+
+        markdown_page: 2025/exercise_loops_globals.md
+        label: Loops and Global Variables
+
+        markdown_page: 2025/exercise_range_sensors.md
+        label: Range Sensors
+
+        markdown_page: 2025/exercise_switch.md
+        label: Switch Statements
+
+        markdown_page: 2025/exercise_motors.md
+        label: Controlling the Motors
+        
+    end_folder
+end_block
