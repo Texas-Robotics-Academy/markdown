@@ -26,6 +26,12 @@ Hello World should print on the screen.
 {{+}}Exercise 2.1, 2_1{{+}}
 
 
+{{ site.data.alerts.note }}
+Before you compile Bot'n Roll code, you have to install the Bot'n Roll Library in Arduino.
+
+Instructions can be found on page 24 of the slides, found [Here](https://drive.google.com/file/d/1xN-hKcO_3fxsRq1eVrVbWX-4r4rsxufk/view?usp=drive_link)
+{{ site.data.alerts.end }}
+
 ## Exercise 2.2:
 
 Go to your Arduino IDE. Navigate to the ex2_2.ino file (in ex2/ex2_2).
