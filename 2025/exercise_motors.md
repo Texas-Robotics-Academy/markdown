@@ -52,3 +52,5 @@ The maximum speed that a motor can turn is 100. It can also spin backwards, and 
 
 
 {{+}}Exercise 7, 7{{+}}
+
+{{-}}Exercise 8: Turn & Push, 2025/exercise_obstacles.md, Next{{-}}

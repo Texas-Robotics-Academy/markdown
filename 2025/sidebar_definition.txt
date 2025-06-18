@@ -42,6 +42,9 @@ begin_block
 
         markdown_page: 2025/exercise_motors.md
         label: Controlling the Motors
+
+        markdown_page: 2025/exercise_obstacles.md
+        label: Turn & Push
         
     end_folder
 end_block

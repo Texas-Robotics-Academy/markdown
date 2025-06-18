@@ -1,5 +1,10 @@
 # Please follow these instructions
 
+
+{{ site.data.alerts.note }}
+Today - FIRST THING - go to your activities directory and do "git pull"
+{{ site.data.alerts.end }}
+
 {{ site.data.alerts.good_job }}
 Thanks for creating an account and registering your user.
 {{ site.data.alerts.end }}

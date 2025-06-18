@@ -1,22 +1,15 @@
-# Exercise 8: Turn & Push
+# Exercise 9: The Line Sensor
 
-## Exercise 8.1: Reading the Obstacle Sensors
-In Exercise 5.1, you read the range sensors on the robot. Now, we will use them to control the robot.
+{{ site.data.alerts.note }}
+Obstacle sensors are neat, but in this exercise, you'll read and threshold the line sensor. The techniques you'll use are basic computer vision techniques.
+{{ site.data.alerts.end }}
 
-- Make a directory called ex8.
-- Save ex7_1 as ex8_1.
-- Comment out menu.buttonPress(), menu.runMotor(), and menu.PrintMenu() from loop()
-  - Basically all of the code in loop() - yes - but you'll need it later.
-- In setup() use one.obstacleSensorsEmitters(const bool state) to turn on the obstacle sensors
-- Write a class. Call it TurnAndPush. Declare it AFTER MotorMenu and AFTER "MotorMenu menu".
-- Give TurnAndPush a class method. Call it void reactToObstacles(byte obstacles).
-- Make reactToObstacles() print on LCD 1:
-  - "No obstacle" - When there is no obstacle.
-  - "Left" - When there is an obstactle on the left side.
-  - "Right" - When there is an obstacle on the right side.
-  - "Both" - When both obstacle sensors have been activated.
+## Exercise 9.1: Arrays
+The line sensor uses an array, so we want you to practice arrays first.
 
-{{+}}Exercise 8.1, 8_1{{+}}
+Look in ex_9. There is already an ex9_1.cpp file in there for you to edit.
+
+{{+}}Exercise 9.1, 9_1{{+}}
   
 ## Exercise 8.2: Updating MotorMenu
 

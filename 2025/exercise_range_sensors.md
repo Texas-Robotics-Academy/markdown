@@ -6,6 +6,7 @@
 Save ex4_2 as ex5.
 
 Write a short program.
+- In setup() use one.obstacleSensorsEmitters(const bool state) to turn on the obstacle sensors
 - Use one.readLeftRangeSensor() and one.readRightRangeSensor() to read the two range sensors
 - Print the values on LCD 1 and LCD 2
 - Place your robot so that it is facing a wall
