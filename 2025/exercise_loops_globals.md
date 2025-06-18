@@ -8,9 +8,9 @@ cd into the ex4 directory.
 Write a short program using a for loop, an if statement, an else if statement, and an else statement.
 - Using for, count from 0 to 10 in variable "i"
 - Inside the loop
-  - If i is less than 10 print "< the value stored in i, not this text > is less than 10"
-  - If i is equal to 10 print "< the value stored in i, not this text > equals 10"
-  - If i is greater than 10 print "< the value stored in i, not this text > is greater than 10"
+  - If i is less than 5 print "< the value stored in i, not this text > is less than 5"
+  - If i is equal to 5 print "< the value stored in i, not this text > equals 5"
+  - If i is greater than 5 print "< the value stored in i, not this text > is greater than 5"
 
 {{+}}Exercise 4.1, 4_1{{+}}
 
