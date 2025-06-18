@@ -9,7 +9,15 @@ In Exercise 5.1, you read the range sensors on the robot. Now, we will use them 
   - Basically all of the code in loop() - yes - but you'll need it later.
 - In setup() use one.obstacleSensorsEmitters(const bool state) to turn on the obstacle sensors
 - Write a class. Call it TurnAndPush. Declare it AFTER MotorMenu and AFTER "MotorMenu menu".
-- Give TurnAndPush a class method. Call it void reactToObstacles(byte obstacles).
+- Give TurnAndPush a class method. Call it void reactToObstacles().
+- Inside void reactToObstacles():
+  - Make a variable called obstacleDetection.
+  - Make a variable called threshold.
+  - Use one.readLeftRangeSensor(), one.readRightRangeSensor(). Store the values of both in variables, leftO and rightO. (Calling them again can change the value they return.)
+  - If neither is > threshold, make obstacleDetection = 0.
+  - If only left is > threshold, make obstacleDetection = 1.
+  - If only right is > threshold, make obstacleDetection = 2.
+  - If both are > threshold, make obstacleDetection 3.
 - Make reactToObstacles() print on LCD 1:
   - "No obstacle" - When there is no obstacle.
   - "Left" - When there is an obstactle on the left side.
