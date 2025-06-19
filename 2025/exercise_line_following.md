@@ -48,3 +48,23 @@ In runMotors()
   - rightSpeed = _kC - (_kP * error)
 
 {{+}}Exercise 10.2, 10_2{{+}}
+
+## Exercise 10.3: Proportional & Derivative (PD) Control
+
+- Save ex10_2 as ex10_3.
+
+Add a variable to PIDController:
+- float _lastError = 0;
+  - This will store the error from the previous step.
+  - At the end of runMotors() you should store error in _lastError.
+
+Edit runMotors()
+- At the start of the method, compute float d - your gradient (derivative)
+  - d should be error - _lastTerror
+
+In runMotors()
+- Compute float leftSpeed and rightSpeed, using an updated formula for your PD controller
+  - leftSpeed = _kC + (_kP * error + _kD * d)
+  - rightSpeed = _kC - (_kP * error + _kD * d)
+
+{{+}}Exercise 10.3, 10_3{{+}}
