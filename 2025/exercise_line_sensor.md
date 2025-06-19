@@ -93,3 +93,5 @@ Add a function void findLine()
 - Modify printScreen() to print _linePotential on LCD 1, and the asterisks on LCD 2.
 
 {{+}}Exercise 9.4, 9_4{{+}}
+
+{{-}}Exercise 10: PID Control, 2025/exercise_line_following.md, Next{{-}}

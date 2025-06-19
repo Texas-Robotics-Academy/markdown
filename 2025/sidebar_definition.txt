@@ -48,6 +48,9 @@ begin_block
 
         markdown_page: 2025/exercise_line_sensor.md
         label: The Line Sensor
+
+        markdown_page: 2025/exercise_line_following.md
+        label: PID Control
         
     end_folder
 end_block
