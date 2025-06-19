@@ -53,6 +53,7 @@ You'll add a few variables to your menu. Before, your robot had a variable sayin
 
 - Modify your buttonPress() and printMenu() methods. buttonPress() should allow you to change _forwardSpeed, _backLeft, _backRight, and _backupTime. printMenu() should print the values of these new variables, rather than the old ones.
 
+- Comment out the part of reactToObstacles() that prints to LCD 1, or simply delete it.
 
 {{+}}Exercise 8.2, 8_2{{+}}
 
@@ -83,3 +84,5 @@ Congrats! This is your robot's first autonomous behavior!
 {{ site.data.alerts.end }}
 
 {{+}}Exercise 8.4, 8_4{{+}}
+
+{{-}}Exercise 9: The Line Sensor, 2025/exercise_obstacles.md, Next{{-}}

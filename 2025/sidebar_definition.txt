@@ -45,6 +45,9 @@ begin_block
 
         markdown_page: 2025/exercise_obstacles.md
         label: Turn & Push
+
+        markdown_page: 2025/exercise_line_sensor.md
+        label: The Line Sensor
         
     end_folder
 end_block
