@@ -68,3 +68,22 @@ In runMotors()
   - rightSpeed = _kC - (_kP * error + _kD * d)
 
 {{+}}Exercise 10.3, 10_3{{+}}
+
+## Exercise 10.4: Proportional, Integral, & Derivative (PID) Control
+
+- Save ex10_3 as ex10_4.
+
+Add a variable to PIDController:
+- float _i = 0;
+  - This will store the Reimann Sum (integral) of error.
+
+Edit runMotors()
+- At the start of runMotors() you should add error to _i
+- I is cumulative for the entire run of the robot. You set it to 0 when the robot starts running, and just keep adding to it.
+
+In runMotors()
+- Compute float leftSpeed and rightSpeed, using an updated formula for your PD controller
+  - leftSpeed = _kC + (_kP * error + _kD * d + _kI * _i)
+  - rightSpeed = _kC - (_kP * error + _kD * d + _kI * _i)
+
+{{+}}Exercise 10.4, 10_4{{+}}
