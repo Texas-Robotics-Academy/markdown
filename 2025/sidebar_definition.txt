@@ -51,6 +51,9 @@ begin_block
 
         markdown_page: 2025/exercise_line_following.md
         label: PID Control
+
+        markdown_page: 2025/exercise_race.md
+        label: RACE!
         
     end_folder
 end_block
