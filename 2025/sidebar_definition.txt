@@ -60,6 +60,9 @@ begin_block
     begin_folder
         folder_label: Reference Solutions
 
+        markdown_page: 2025/reference_8.md
+        label: Turn & Push
+
         markdown_page: 2025/reference_9.md
         label: The Line Sensor
 
