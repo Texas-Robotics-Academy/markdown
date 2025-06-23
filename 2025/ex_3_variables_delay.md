@@ -1,4 +1,4 @@
-# Exercise 3: Variables and a few robot functions
+# Exercise 3: Variables, delay(), setLED()
 
 
 ## Exercise 3.1:

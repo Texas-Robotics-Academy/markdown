@@ -45,8 +45,8 @@ Go to your Arduino IDE. Navigate to the ex2_2.ino file (in ex2/ex2_2).
 
 Go to your Arduino IDE. Use the File/Save As menu item to save ex2_2 as ex2_3, so that your directory structure looks like
 
-ex2
-ex2/ex2_2
+ex2  
+ex2/ex2_2  
 ex2/ex2_3
 
 - Use Serial.println() to print "Texas Robotics Academy" to the serial port. Open the Serial Monitor in the Arduino IDE to see your output.

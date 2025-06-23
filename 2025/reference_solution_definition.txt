@@ -1,0 +1,12 @@
+    begin_folder
+        folder_label: Reference Solutions
+
+        markdown_page: 2025/reference_8.md
+        label: Turn & Push
+
+        markdown_page: 2025/reference_9.md
+        label: The Line Sensor
+
+        markdown_page: 2025/reference_10.md
+        label: PID Control
+    end_folder

@@ -17,7 +17,7 @@ begin_block
     begin_folder
         folder_label: Preliminaries
 
-        markdown_page: 2025/prelim_cloning.md
+        markdown_page: 2025/ex_1_cloning.md
         label: Cloning The Exercises
 
     end_folder
@@ -25,7 +25,7 @@ begin_block
     begin_folder
         folder_label: Programming
 
-        markdown_page: 2025/exercise_hello.md
+        markdown_page: 2025/ex_2_hello.md
         label: Hello World!
 
         markdown_page: 2025/exercise_variables_delay.md
@@ -57,16 +57,4 @@ begin_block
         
     end_folder
 
-    begin_folder
-        folder_label: Reference Solutions
-
-        markdown_page: 2025/reference_8.md
-        label: Turn & Push
-
-        markdown_page: 2025/reference_9.md
-        label: The Line Sensor
-
-        markdown_page: 2025/reference_10.md
-        label: PID Control
-    end_folder
 end_block

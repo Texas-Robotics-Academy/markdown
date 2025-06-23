@@ -15,4 +15,4 @@ Thanks for creating an account and registering your user.
 Looking for the slides from the lecture content? You can find them [HERE](https://drive.google.com/file/d/1xN-hKcO_3fxsRq1eVrVbWX-4r4rsxufk/view?usp=drive_link).
 
 
-{{-}}Cloning the Exercises, 2025/prelim_cloning.md, Next{{-}}
+{{-}}Cloning the Exercises, 2025/ex_1_cloning.md, Next{{-}}
