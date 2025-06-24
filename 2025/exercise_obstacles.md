@@ -84,3 +84,5 @@ Congrats! This is your robot's first autonomous behavior!
 {{ site.data.alerts.end }}
 
 {{+}}Exercise 8.4, 8_4{{+}}
+
+{{-}}Exercise 9: The Line Sensor, 2025/exercise_line_sensor.md, Next{{-}}

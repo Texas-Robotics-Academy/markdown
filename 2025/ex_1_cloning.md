@@ -1,4 +1,4 @@
-# Cloning the Exercises (Exercise 1)
+# Exercise 1: Cloning the Exercises
 
 Open a terminal.
 
@@ -24,4 +24,4 @@ You should now have a Visual Studio Code window open and an Arduino window open.
 
 {{+}}Exercise 1, 1{{+}}
 
-{{-}}Exercise 2: Hello World, 2025/ex_2_hello.md, Next{{-}}
+{{-}}Exercise 2: Hello World, 2025/ex_2_hello_world.md, Next{{-}}

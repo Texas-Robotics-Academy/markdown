@@ -53,4 +53,4 @@ ex2/ex2_3
 
 {{+}}Exercise 2.3, 2_3{{+}}
 
-{{-}}Exercise 3: Variables and a few robot functions, 2025/exercise_variables_delay.md, Next{{-}}
+{{-}}Exercise 3: Variables and a few robot functions, 2025/ex_3_variables_delay.md, Next{{-}}
