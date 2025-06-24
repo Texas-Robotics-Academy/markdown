@@ -1,6 +1,6 @@
 # Solution - Exercise 2: Hello World!
 
-# Exercise 2.1
+## Exercise 2.1
 {{ site.data.alerts.callout_code_div }}
 ```
 #include <iostream>

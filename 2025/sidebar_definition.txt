@@ -57,4 +57,15 @@ begin_block
         
     end_folder
 
+        begin_folder
+        folder_label: Reference Solutions
+
+        markdown_page: 2025/ref_2_hello_world.md
+        label: Hello World!
+
+        markdown_page: 2025/ref_3_variables_delay.md
+        label: Variables and a few robot functions
+
+    end_folder
+
 end_block
