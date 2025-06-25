@@ -34,7 +34,7 @@ begin_block
         markdown_page: 2025/ex_4_loops_globals.md
         label: Loops and Global Variables
 
-        markdown_page: 2025/exercise_range_sensors.md
+        markdown_page: 2025/ex_5_range_sensors.md
         label: Range Sensors
 
         markdown_page: 2025/exercise_switch.md
@@ -65,6 +65,12 @@ begin_block
 
         markdown_page: 2025/ref_3_variables_delay.md
         label: Variables and a few robot functions
+
+        markdown_page: 2025/ref_4_loops_globals.md
+        label: Loops and Global Variables
+
+        markdown_page: 2025/ref_5_range_sensors.md
+        label: Range Sensors
 
     end_folder
 

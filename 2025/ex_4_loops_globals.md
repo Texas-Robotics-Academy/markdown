@@ -26,4 +26,4 @@ Go to your Arduino IDE. Use the File/Save As menu item to save ex3_3 as ex4_2.
 
 {{+}}Exercise 4.2, 4_2{{+}}
 
-{{-}}Exercise 5: Range Sensors, 2025/exercise_range_sensors.md, Next{{-}}
+{{-}}Exercise 5: Range Sensors, 2025/ex_5_range_sensors.md, Next{{-}}
