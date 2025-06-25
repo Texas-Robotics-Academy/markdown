@@ -31,7 +31,7 @@ begin_block
         markdown_page: 2025/ex_3_variables_delay.md
         label: Variables and a few robot functions
 
-        markdown_page: 2025/exercise_loops_globals.md
+        markdown_page: 2025/ex_4_loops_globals.md
         label: Loops and Global Variables
 
         markdown_page: 2025/exercise_range_sensors.md

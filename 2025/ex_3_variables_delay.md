@@ -48,4 +48,4 @@ Use the File/Save As menu item to save ex3_2 as ex3_3.
 
 {{+}}Exercise 3.3, 3_3{{+}}
 
-{{-}}Exercise 4: Loops and Global Variables, 2025/exercise_loops_globals.md, Next{{-}}
+{{-}}Exercise 4: Loops and Global Variables, 2025/ex_4_loops_globals.md, Next{{-}}
