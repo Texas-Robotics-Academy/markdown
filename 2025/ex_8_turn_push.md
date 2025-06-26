@@ -55,6 +55,10 @@ You'll add a few variables to your menu. Before, your robot had a variable sayin
 - _backupTime  - (Should be positive)
 - Instead of _whichMotor, you'll have _whichItem
 
+{{ site.data.alerts.note }}
+Notice the change! You're changing 4 things, so you can no longer use a bool. You must use an int for _whichItem.
+{{ site.data.alerts.end }}
+
 - Modify your buttonPress() and printMenu() methods. buttonPress() should allow you to change _forwardSpeed, _backLeft, _backRight, and _backupTime. printMenu() should print the values of these new variables, rather than the old ones.
 
 - Comment out the part of reactToObstacles() that prints to LCD 1, or simply delete it.
