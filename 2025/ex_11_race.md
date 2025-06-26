@@ -6,3 +6,5 @@
 - Write your time on the whiteboard.
 
 The team with the best time is the winner.
+
+{{-}}Encoders, 2025/ex_12_encoders.md, Next{{-}}
