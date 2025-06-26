@@ -84,6 +84,9 @@ begin_block
         markdown_page: 2025/ref_7_motors.md
         label: Controlling the Motors
 
+        markdown_page: 2025/ref_8_motors.md
+        label: Turn & Push
+
     end_folder
 
 end_block
