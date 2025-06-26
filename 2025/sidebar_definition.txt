@@ -57,6 +57,9 @@ begin_block
 
         markdown_page: 2025/ex_12_encoders.md
         label: Encoders
+
+        markdown_page: 2025/ex_13_wheel_odometry.md
+        label: Wheel Odometry
         
     end_folder
 
