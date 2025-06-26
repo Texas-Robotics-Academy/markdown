@@ -14,4 +14,4 @@ Write a short program.
 
 {{+}}Exercise 5.1, 5_1{{+}}
 
-{{-}}Exercise 6: Switch Statements, 2025/exercise_switch.md, Next{{-}}
+{{-}}Exercise 6: Switch Statements, 2025/ex_6_switch.md, Next{{-}}

@@ -1,12 +1,32 @@
-    begin_folder
+        begin_folder
         folder_label: Reference Solutions
 
-        markdown_page: 2025/reference_8.md
+        markdown_page: 2025/ref_2_hello_world.md
+        label: Hello World!
+
+        markdown_page: 2025/ref_3_variables_delay.md
+        label: Variables and a few robot functions
+
+        markdown_page: 2025/ref_4_loops_globals.md
+        label: Loops and Global Variables
+
+        markdown_page: 2025/ref_5_range_sensors.md
+        label: Range Sensors
+
+        markdown_page: 2025/ref_6_switch.md
+        label: Switch Statements
+
+        markdown_page: 2025/ref_7_motors.md
+        label: Controlling the Motors
+
+        markdown_page: 2025/ref_8_turn_push.md
         label: Turn & Push
 
-        markdown_page: 2025/reference_9.md
+        markdown_page: 2025/ref_9_line_sensor.md
         label: The Line Sensor
 
-        markdown_page: 2025/reference_10.md
+        markdown_page: 2025/ref_10_pid_control.md
         label: PID Control
-    end_folder
+
+        markdown_page: 2025/ref_11_race.md
+        label: RACE!

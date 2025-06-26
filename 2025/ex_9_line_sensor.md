@@ -94,4 +94,4 @@ Add a function void findLine()
 
 {{+}}Exercise 9.4, 9_4{{+}}
 
-{{-}}Exercise 10: PID Control, 2025/exercise_line_following.md, Next{{-}}
+{{-}}Exercise 10: PID Control, 2025/ex_10_pid_control.md, Next{{-}}

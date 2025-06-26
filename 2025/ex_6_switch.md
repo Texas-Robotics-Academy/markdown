@@ -40,4 +40,4 @@ Save ex5 as ex6_2.
 
 {{+}}Exercise 6.2, 6_2{{+}}
 
-{{-}}Exercise 7: Controlling the Motors, 2025/exercise_motors.md, Next{{-}}
+{{-}}Exercise 7: Controlling the Motors, 2025/ex_7_motors.md, Next{{-}}

@@ -88,4 +88,4 @@ In runMotors()
 
 {{+}}Exercise 10.4, 10_4{{+}}
 
-{{-}}RACE!, 2025/exercise_race.md, Next{{-}}
+{{-}}RACE!, 2025/ex_11_race.md, Next{{-}}

@@ -23,6 +23,10 @@ In Exercise 5.1, you read the range sensors on the robot. Now, we will use them 
   - "Left" - When there is an obstactle on the left side.
   - "Right" - When there is an obstacle on the right side.
   - "Both" - When both obstacle sensors have been activated.
+- Make a TurnAndPush object.
+  - Call it turnAndPush.
+  - Put it in the global scope.
+- Call turnAndPush.reactToObstacles() in your loop().
 
 {{+}}Exercise 8.1, 8_1{{+}}
   
@@ -85,4 +89,4 @@ Congrats! This is your robot's first autonomous behavior!
 
 {{+}}Exercise 8.4, 8_4{{+}}
 
-{{-}}Exercise 9: The Line Sensor, 2025/exercise_line_sensor.md, Next{{-}}
+{{-}}Exercise 9: The Line Sensor, 2025/ex_9_line_sensor.md, Next{{-}}
