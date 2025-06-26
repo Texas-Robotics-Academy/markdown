@@ -70,4 +70,3 @@ Use what you know about the diameter of the wheels to convert setMotionGoal() to
 - Convert setMotionGoal() to meters
 - Convert your menu to meters
 - See how close you can get to the robot actually stopping at 1.0 meters.
-- Make it make precise circles, like a 1/4 circle with a diameter of 1.0 meters.
