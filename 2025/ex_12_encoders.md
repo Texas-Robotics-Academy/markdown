@@ -34,6 +34,8 @@ Make a class called RPM.
 
 So, this class should compute how far the motor is turning every 4 iterations through loop() in encoder ticks!
 
+{{+}}Exercise 12.1, 12_1{{+}}
+
 ## Exercise 12.2: Computing RPMs
 The encoder has 2250 counts per turn. Meaning, for every full rotation of the motor, the encoder will make 2250 "ticks."
 
@@ -46,6 +48,10 @@ Modify runMotors() to record the value of millis() in _millis at every iteration
 
 - Use these values to modify runMotors() and printDisplay() to show "Revolutions Per Minute" (RPM), rather than simply encoder ticks.
 
+{{+}}Exercise 12.2, 12_2{{+}}
+
 ## Exercise 12.3: Computing Meters per Second
 The diameter of each wheel is 63mm
 - Modify runMotors() and printDisplay() to show how fast the vehicle is moving in meters per second.
+
+{{+}}Exercise 12.3, 12_3{{+}}
