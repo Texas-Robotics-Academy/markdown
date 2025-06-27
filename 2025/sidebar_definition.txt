@@ -84,8 +84,11 @@ begin_block
         markdown_page: 2025/ref_7_motors.md
         label: Controlling the Motors
 
-        markdown_page: 2025/ref_8_motors.md
+        markdown_page: 2025/ref_8_turn_push.md
         label: Turn & Push
+
+        markdown_page: 2025/ref_9_line_sensor.md
+        label: The Line Sensor
 
     end_folder
 
