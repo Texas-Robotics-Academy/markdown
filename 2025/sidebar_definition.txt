@@ -90,6 +90,9 @@ begin_block
         markdown_page: 2025/ref_9_line_sensor.md
         label: The Line Sensor
 
+        markdown_page: 2025/ref_10_pid_control.md
+        label: PID Control
+
     end_folder
 
 end_block

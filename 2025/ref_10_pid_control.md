@@ -2,6 +2,7 @@
 
 {{ site.data.alerts.callout_code_div }}
 ```#include <BnrOneAPlus.h>
+#include <BnrOneAPlus.h>
 #include <SPI.h>
 
 #define SSPIN 2
@@ -10,12 +11,7 @@ BnrOneAPlus one;
 
 class LineFollowerInterface {
 public:
-  LineFollowerInterface() {
-    for(int i = 0; i < 16; i++) {
-      _asterisks[i] = '--';
-    }
-    _asterisks[16] = 0;
-  }
+  LineFollowerInterface() {}
 
   void readLineFollower() {
     for(int i=0; i < 8; i++) {
@@ -64,13 +60,10 @@ LineFollowerInterface lineFollowerInterface;
 class PIDController {
 protected:
   int _whichItem = 0, _lastButton = 0;
-  float _kc = 0.0, _kp = 0.0, _ki = 0.0, _kd = 0.0;
+  float _kc = 35, _kp = 65, _ki = 0.0, _kd = 16;
   float _lastError = 0.0, _i = 0.0, _delta = 0.1;
-  
 public:
-  PIDController() {
-    
-  }
+  PIDController() {}
   
   void buttonPress(byte button) {
     switch(button) {
